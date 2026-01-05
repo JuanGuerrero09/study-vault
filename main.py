@@ -1,5 +1,6 @@
 import json
 import os
+import random
 from typing import List, Optional
 from fastapi import FastAPI, HTTPException
 from fastapi.staticfiles import StaticFiles
@@ -11,9 +12,19 @@ app = FastAPI()
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
+# --- PAGE ROUTES ---
+
 @app.get("/")
 async def read_root():
-    return FileResponse("static/index.html")
+    return FileResponse("static/landing.html")
+
+@app.get("/bank")
+async def read_bank():
+    return FileResponse("static/question_bank.html")
+
+@app.get("/study")
+async def read_session():
+    return FileResponse("static/study_session.html")
 
 @app.get("/debug_files")
 def list_files():
@@ -29,7 +40,10 @@ def list_files():
 async def get_questions(
     subject: str = "Hydrology",
     difficulty: Optional[str] = None,
-    is_exam: Optional[bool] = None):
+    topic: Optional[str] = None,
+    is_exam: Optional[bool] = None,
+    limit: Optional[int] = None # New parameter
+):
 
     file_path = os.path.join("data", f"{subject.lower()}.json") # type: ignore
 
@@ -41,15 +55,18 @@ async def get_questions(
 
     questions = [Question(**item) for item in data]
 
-    print(f"Total questions before filtering: {len(questions)}")
-
 
     if difficulty:
         questions = [q for q in questions if q.difficulty.lower() == difficulty.lower()]
-    
+
+    if topic:
+        questions = [q for q in questions if q.topic.lower() == topic.lower()]
+
     if is_exam is not None:
         questions = [q for q in questions if q.is_exam == is_exam]
+    
+    if limit is not None:
+        questions = random.sample(questions, min(limit, len(questions)))
 
-    print(f"Total questions after filtering: {len(questions)}")
         
     return questions
