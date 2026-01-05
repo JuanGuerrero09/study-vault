@@ -1,0 +1,475 @@
+[
+  {
+    "subject": "Climatology",
+    "topic": "Intro Boundary-layer meteorology",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "What defines the atmospheric boundary layer, and why is it limited to roughly 1 km in height?",
+    "answer": "The BL is the air layer directly influenced by the Earth's surface. It is limited to roughly 1 km because it is the interface where surface friction and heating disrupt the free flow of the troposphere.",
+    "is_exam": false,
+    "tags": ["Definitions", "Atmosphere"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Intro Boundary-layer meteorology",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Why does wind shear dominate turbulence generation at night?",
+    "answer": "At night, the lack of solar radiation creates a stable layer with no convective buoyancy. Therefore, mechanical 'friction' or wind speed gradients (wind shear) are the only remaining sources of turbulence.",
+    "is_exam": false,
+    "tags": ["Turbulence", "Nighttime"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Intro Boundary-layer meteorology",
+    "entry_type": "COMPARATIVE",
+    "difficulty": "MEDIUM",
+    "question": "How do convective and stable boundary layers differ in terms of turbulence?",
+    "answer": "The daytime convective layer is driven by buoyancy/solar heating creating strong vertical turbulence. The nighttime stable layer has weak turbulence driven primarily by mechanical wind shear.",
+    "is_exam": false,
+    "tags": ["Turbulence", "Daily Cycle"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Surface energy and mass balances",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "Calculate the total emitted radiation (I) for a desert surface with T = 320 K and emissivity = 0.95.",
+    "answer": "I = epsilon * sigma * T^4 = 0.95 * (5.67e-8) * (320^4) = 564.82 W/m2.",
+    "is_exam": false,
+    "tags": ["Stefan-Boltzmann", "Calculations"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Surface energy and mass balances",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "According to Wien's Displacement Law, what is the peak wavelength (lambda_max) for a forest fire at 1200 K?",
+    "answer": "lambda_max = b / T = 2.897e-3 / 1200 = 2.41 micrometers.",
+    "is_exam": false,
+    "tags": ["Wien's Law", "Calculations"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Surface energy and mass balances",
+    "entry_type": "EXERCISE",
+    "difficulty": "HARD",
+    "question": "Calculate the Earth's radiative equilibrium temperature (T0) if the solar constant (S0) was 1300 W/m2 and albedo was 0.30.",
+    "answer": "T0 = ((S0/4 * (1 - alpha)) / (epsilon * sigma))^(1/4) = ((325 * 0.7) / (1 * 5.67e-8))^(1/4) = 251.68 K.",
+    "is_exam": false,
+    "tags": ["Energy Balance", "Equilibrium"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Surface energy and mass balances",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Why would a dry concrete lot have a higher Sensible Heat Flux (H) than a wet swamp given the same net radiation?",
+    "answer": "The concrete lot lacks water for evaporation (LE approx 0), forcing the majority of absorbed energy to be partitioned into sensible heat (heating the air).",
+    "is_exam": false,
+    "tags": ["Energy Partitioning", "Surface Types"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Surface energy and mass balances",
+    "entry_type": "COMPARATIVE",
+    "difficulty": "MEDIUM",
+    "question": "Distinguish between Albedo and Emissivity in terms of the wavelengths they affect.",
+    "answer": "Albedo affects the reflection of shortwave (solar) radiation, while Emissivity describes the efficiency of emitting longwave (terrestrial) radiation.",
+    "is_exam": false,
+    "tags": ["Wavelengths", "Surface Properties"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Surface energy and mass balances",
+    "entry_type": "TF",
+    "difficulty": "EASY",
+    "question": "According to Kirchhoff's Law, a poor absorber of a specific wavelength is an excellent emitter of that same wavelength.",
+    "answer": "False. Kirchhoff's Law states that absorptivity equals emissivity at a given wavelength; therefore, a poor absorber is also a poor emitter.",
+    "is_exam": false,
+    "tags": ["Kirchhoff's Law", "Physics"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Surface energy and mass balances",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What does Wien’s displacement law tell us about the wavelength of maximum emission?",
+    "answer": "The wavelength of maximum emission is inversely proportional to the temperature of the body; hotter bodies emit at shorter wavelengths.",
+    "is_exam": false,
+    "tags": ["Radiation", "Wien's Law"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Surface energy and mass balances",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "How does the greenhouse effect maintain the actual global average temperature higher than the theoretical black-body temperature?",
+    "answer": "It traps the longwave radiation emitted by the Earth in the atmosphere, warming the surface beyond its simple radiative equilibrium.",
+    "is_exam": false,
+    "tags": ["Atmosphere", "Greenhouse Effect"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Surface energy and mass balances",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "Why is the globally averaged incoming solar flux S0/4 instead of S0?",
+    "answer": "Because the solar radiation intercepted by the Earth's cross-sectional disk (pi * r^2) is distributed over the total surface area of the rotating sphere (4 * pi * r^2).",
+    "is_exam": false,
+    "tags": ["Geometry", "Solar Constant"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "Why is ground heat flux (QG) always directed toward lower temperatures?",
+    "answer": "QG follows the flux-gradient relationship where heat energy naturally moves via conduction from areas of high kinetic energy (high temperature) to low kinetic energy (low temperature) to eliminate the gradient.",
+    "is_exam": false,
+    "tags": ["Thermodynamics", "Conduction"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "Calculate the surface ground heat flux QG(0) if the measured flux at 10cm depth is 20 W/m2, the soil heat capacity is 2.5e6 J/m3K, and the layer warmed by 2K over 3600 seconds.",
+    "answer": "QG(0) = QG(-z) + (CG * dz * dT/dt). QG(0) = 20 + (2.5e6 * 0.1 * 2 / 3600) = 20 + 138.89 = 158.89 W/m2.",
+    "is_exam": false,
+    "tags": ["Calculations", "Heat Storage"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "Explain why thermal diffusivity (vT) decreases at very high soil moisture levels.",
+    "answer": "While water increases thermal conductivity (aG), it increases the volumetric heat capacity (CG) even more significantly due to water's high specific heat. Since vT = aG/CG, the large increase in storage capacity slows down the speed of heat transmission.",
+    "is_exam": false,
+    "tags": ["Soil Physics", "Diffusivity"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What is the physical significance of Virtual Temperature (Tv)?",
+    "answer": "Tv is the temperature dry air would need to have to match the density of a moist air parcel at the same pressure. It allows meteorologists to use dry-air equations (like the Ideal Gas Law) for moist atmospheric calculations.",
+    "is_exam": false,
+    "tags": ["Meteorology", "Moist Air"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "COMPARATIVE",
+    "difficulty": "MEDIUM",
+    "question": "Compare Specific Humidity (q) and Mixing Ratio (m).",
+    "answer": "Specific humidity is the ratio of water vapor mass to the total mass of the air parcel; Mixing ratio is the ratio of water vapor mass specifically to the mass of dry air only.",
+    "is_exam": false,
+    "tags": ["Humidity", "Definitions"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "What causes the 'Phase Lag' of temperature waves in subsurface soil?",
+    "answer": "The phase lag is caused by the time required for heat to conduct through the soil matrix. Because soil has thermal inertia, the temperature peak at depth occurs significantly later than the surface peak.",
+    "is_exam": false,
+    "tags": ["Diurnal Cycle", "Soil Temperature"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "EXERCISE",
+    "difficulty": "HARD",
+    "question": "Calculate the potential temperature (theta) for an air parcel at 700 hPa with a temperature of 280 K. (Assume p0 = 1000 hPa and RL/cp = 0.286).",
+    "answer": "theta = T * (p0/p)^0.286 = 280 * (1000/700)^0.286 = 280 * 1.107 = 309.96 K.",
+    "is_exam": false,
+    "tags": ["Adiabatic", "Potential Temperature"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "TF",
+    "difficulty": "EASY",
+    "question": "In the barometric equation, air pressure decreases linearly with increasing height.",
+    "answer": "False. Air pressure decreases exponentially with height because air is compressible and concentrated near the surface by gravity.",
+    "is_exam": false,
+    "tags": ["Pressure", "Barometric Equation"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "During which part of the day is the Ground Heat Flux (QG) typically positive, and why?",
+    "answer": "QG is typically positive during the day because solar radiation heats the surface, creating a gradient where the surface is hotter than the deeper soil, driving heat downward.",
+    "is_exam": false,
+    "tags": ["Energy Balance", "Diurnal Cycle"]
+  }
+  ,
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "Calculate QG(0) if QG(-0.08m) = 15 W/m2, CG = 2.2e6 J/m3K, and the layer warms by 1.5K in 1 hour.",
+    "answer": "QG(0) = 15 + (2.2e6 * 0.08 * 1.5 / 3600) = 15 + 73.33 = 88.33 W/m2.",
+    "is_exam": false,
+    "tags": ["Calculations", "Heat Storage"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "How does increasing soil moisture from dry to moderate affect thermal diffusivity (vT)?",
+    "answer": "Thermal diffusivity increases because the thermal conductivity improves significantly with better particle contact, allowing the temperature wave to travel faster to deeper layers.",
+    "is_exam": false,
+    "tags": ["Soil Physics", "Diffusivity"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What is the physical meaning of Virtual Temperature (Tv)?",
+    "answer": "Tv is the temperature dry air would need to have the same density as moist air at the same pressure. It accounts for the fact that water vapor is less dense than dry air.",
+    "is_exam": false,
+    "tags": ["Meteorology", "Moist Air"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "COMPARATIVE",
+    "difficulty": "MEDIUM",
+    "question": "Distinguish between Specific Humidity (q) and Mixing Ratio (m).",
+    "answer": "Specific humidity is the ratio of water vapor mass to the total mass of the air parcel; Mixing ratio is the ratio of water vapor mass to the mass of dry air only.",
+    "is_exam": false,
+    "tags": ["Humidity", "Definitions"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Why does a phase shift (lag) occur in soil temperature at depth?",
+    "answer": "Because soil has thermal inertia and low conductivity compared to air, it takes time for heat to conduct through the soil matrix, delaying the peak temperature arrival at deeper levels.",
+    "is_exam": false,
+    "tags": ["Diurnal Cycle", "Soil Temperature"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "EXERCISE",
+    "difficulty": "HARD",
+    "question": "Calculate the potential temperature (theta) for an air parcel at 800 hPa with T = 275 K. (Assume p0=1000, exponent=0.286).",
+    "answer": "theta = 275 * (1000/800)^0.286 = 275 * 1.066 = 293.15 K.",
+    "is_exam": false,
+    "tags": ["Adiabatic", "Potential Temperature"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "TF",
+    "difficulty": "EASY",
+    "question": "Heat transport in the Laminar Boundary Layer is primarily driven by turbulent eddies.",
+    "answer": "False. In the laminar layer, turbulence is suppressed; transport is driven by molecular diffusion and conduction.",
+    "is_exam": false,
+    "tags": ["Boundary Layer", "Physics"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Why does the Magnus formula differ for water versus ice?",
+    "answer": "Because the energy required to transition a molecule from a solid lattice (ice) to vapor is higher than from a liquid state, resulting in different saturation vapor pressures.",
+    "is_exam": false,
+    "tags": ["Vapor Pressure", "Phase Change"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "How does the barometric equation describe vertical pressure variation?",
+    "answer": "It describes an exponential decrease in pressure with height, reflecting that air is a compressible fluid concentrated near the surface by gravity.",
+    "is_exam": false,
+    "tags": ["Pressure", "Barometric Equation"]
+  }
+  ,
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "What is a flux and why does it occur?",
+    "answer": "A flux is a representation of the rate of transfer of a physical quantity; it occurs due to gradients (differences in concentration, temperature, or pressure) between two points.",
+    "is_exam": false,
+    "tags": ["Definitions", "Flux-Gradient"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Which thermal properties are affected by soil moisture in the context of ground heat flux?",
+    "answer": "Soil moisture affects thermal conductivity (increases due to better particle contact), volumetric heat capacity (increases linearly with water content), and thermal diffusivity (increases at low moisture, then decreases at high moisture).",
+    "is_exam": false,
+    "tags": ["Soil Physics", "Ground Heat Flux"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Which three fluxes describe energy and mass transport near the surface?",
+    "answer": "Sensible heat flux (H), latent heat flux (Lambda E), and Shear Stress flux (momentum transport).",
+    "is_exam": false,
+    "tags": ["Energy Balance", "Surface Fluxes"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Why is the virtual temperature (Tv) used in the ideal gas law instead of the actual temperature (T)?",
+    "answer": "Because Tv represents the equivalent temperature dry air would need to have to match the same pressure and density as a moist air sample, allowing the use of dry-air constants for moist air calculations.",
+    "is_exam": false,
+    "tags": ["Ideal Gas Law", "Meteorology"]
+  }
+  ,
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What influences the friction to determine the wind profile in the boundary layer?",
+    "answer": "The two primary factors are the Roughness Length (z0), which represents the surface obstacles, and the Atmospheric Stability, which determines how effectively momentum is mixed vertically.",
+    "is_exam": false,
+    "tags": ["Wind Profile", "Friction"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "Calculate the Bowen Ratio (beta) for H = 120 W/m2 and LE = 300 W/m2. Is the surface dry or moist?",
+    "answer": "beta = H / LE = 120 / 300 = 0.4. Since beta < 1, latent heat dominates, indicating a moist surface.",
+    "is_exam": false,
+    "tags": ["Bowen Ratio", "Energy Partitioning"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "EXERCISE",
+    "difficulty": "HARD",
+    "question": "Calculate the wind speed at 10m height if friction velocity (u*) = 0.4 m/s, z0 = 0.05m, and kappa = 0.40.",
+    "answer": "u(z) = (u*/kappa) * ln(z/z0) = (0.4/0.4) * ln(10/0.05) = 1 * ln(200) = 5.30 m/s.",
+    "is_exam": false,
+    "tags": ["Log-Wind Profile", "Calculations"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "An air parcel at the surface is 20°C. At 1km it is 15°C. Is the atmosphere stable or unstable for a dry parcel?",
+    "answer": "Stable. The ELR (5 K/km) is smaller than the DALR (9.8 K/km). This means a rising parcel cools faster than the surroundings, becoming colder and denser than the ambient air, causing it to sink back.",
+    "is_exam": false,
+    "tags": ["Atmospheric Stability", "Lapse Rates"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Why is turbulent diffusivity (Kx) considered a property of the flow rather than the fluid?",
+    "answer": "Unlike molecular diffusivity, which is a physical constant of the fluid, Kx depends on the intensity of turbulence (the flow state). Stronger winds or heating increase the mixing efficiency, thereby increasing Kx.",
+    "is_exam": false,
+    "tags": ["Turbulence", "Diffusivity"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "TF",
+    "difficulty": "EASY",
+    "question": "The potential temperature (theta) remains constant with height in a perfectly neutral atmosphere.",
+    "answer": "True. In a neutral atmosphere, the environmental lapse rate equals the adiabatic lapse rate, meaning the rate of change for potential temperature with height is zero.",
+    "is_exam": false,
+    "tags": ["Potential Temperature", "Stability"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "At what time does the boundary layer reach its maximum height and why?",
+    "answer": "It reaches maximum height in the late afternoon (4-5 PM). Even after peak solar radiation at noon, the ground continues to transfer heat to the air, causing the convective layer to grow until surface cooling begins.",
+    "is_exam": false,
+    "tags": ["Daily Cycle", "Boundary Layer"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What is the physical function of a 'Capping Inversion'?",
+    "answer": "It is a stable layer above the boundary layer that acts as a lid. It prevents rising convective air parcels from continuing upward because they encounter air that is warmer and less dense than themselves.",
+    "is_exam": false,
+    "tags": ["Capping Inversion", "Convection"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Why is turbulent diffusivity far more effective than molecular diffusivity?",
+    "answer": "Turbulent diffusivity is several orders of magnitude higher because it involves the bulk movement of air parcels (macroscopic mixing), whereas molecular diffusion is limited to the slow, random motion of individual molecules.",
+    "is_exam": false,
+    "tags": ["Diffusivity", "Mixing"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What are the three main characteristics of turbulent flow?",
+    "answer": "1. Irregularity (random fluctuations), 2. Mixing efficiency (high diffusivity of mass/energy), 3. Dissipation (kinetic energy turning into heat).",
+    "is_exam": false,
+    "tags": ["Turbulence", "Characteristics"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "How does the moist adiabatic lapse rate (MALR) vary with temperature?",
+    "answer": "MALR varies with temperature because warmer air holds more water vapor; when this vapor condenses, it releases more latent heat, which offsets adiabatic cooling more significantly, leading to a smaller lapse rate.",
+    "is_exam": false,
+    "tags": ["Lapse Rate", "Latent Heat"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "THEORY",
+    "difficulty": "HARD",
+    "question": "Under what specific conditions is the flux-gradient relationship considered invalid?",
+    "answer": "It is invalid in the Roughness Sublayer, where individual obstacles disrupt mean flow, and during counter-gradient flow, where large convective eddies move properties against the local gradient.",
+    "is_exam": false,
+    "tags": ["Flux", "Gradients"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What meteorological conditions lead to strong nocturnal temperature inversions?",
+    "answer": "Strong nocturnal inversions are caused by clear skies (allowing maximum longwave radiative cooling) and calm winds (preventing the mixing of warmer air from above down to the surface).",
+    "is_exam": false,
+    "tags": ["Inversions", "Nighttime"]
+  }
+]

@@ -1,0 +1,628 @@
+[
+  {
+    "subject": "Hydrology",
+    "topic": "Introduction",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "Define Hydrology and its primary focus.",
+    "answer": "Hydrology is the scientific study of the movement, distribution, and quality of water on Earth, focusing on quantifying the water cycle at or near the Earth's surface.",
+    "is_exam": false,
+    "tags": ["Definition", "Basics"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Introduction",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Why is hydrology considered a non-stationary science?",
+    "answer": "Because the statistical properties of hydrological variables (like mean flow or precipitation) change over time due to climate or land-use changes, meaning the past is not a perfect predictor of the future.",
+    "is_exam": false,
+    "tags": ["Definitions", "Stationarity"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Introduction",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Why is residence time a critical factor for groundwater pollutant transport?",
+    "answer": "Groundwater has a very long residence time (up to 10,000 years); pollutants are not 'flushed' quickly, leading to long-term 'legacy' contamination that is difficult to remediate.",
+    "is_exam": false,
+    "tags": ["Pollution", "Groundwater"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Introduction",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "If a lake has a residence time of 50 years, why will it not necessarily be clean 50 years after a chemical spill?",
+    "answer": "Residence time is an average value. Due to mixing, contaminated water particles can remain in the system much longer than the 50-year average.",
+    "is_exam": false,
+    "tags": ["Pollution", "Residence Time"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Global Hydrological Cycle",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "What are the two primary physical drivers of the hydrological cycle and their roles?",
+    "answer": "Solar radiation provides the energy for phase changes (evaporation, melting), while Gravity drives the physical movement of water (precipitation, runoff, infiltration).",
+    "is_exam": true,
+    "tags": ["Physics", "Drivers"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Global Hydrological Cycle",
+    "entry_type": "THEORY",
+    "difficulty": "HARD",
+    "question": "Rank the following reservoirs by residence time from shortest to longest: Oceans, Atmosphere, Groundwater, Rivers.",
+    "answer": "Atmosphere (9 days) < Rivers (~0.3-80 years) < Oceans (3,200 years) < Groundwater (up to 10,000 years).",
+    "is_exam": true,
+    "tags": ["Residence Time", "Reservoirs"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Global Hydrological Cycle",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "What drives the Global Conveyor Belt and why is it significant for the planet?",
+    "answer": "It is driven by thermohaline circulation (density differences from temperature and salinity). It is significant because it redistributes heat, nutrients, and CO2 globally.",
+    "is_exam": false,
+    "tags": ["Oceanography", "Climate"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Global Hydrological Cycle",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "What is the expected impact on the global conveyor belt if polar salinity decreases?",
+    "answer": "Lower salinity reduces water density in polar regions, preventing it from sinking. This weakens the thermohaline circulation, potentially slowing the transport of heat and nutrients.",
+    "is_exam": false,
+    "tags": ["Oceanography", "Salinity"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Global Hydrological Cycle",
+    "entry_type": "TF",
+    "difficulty": "EASY",
+    "question": "The Global Conveyor Belt is driven primarily by wind patterns on the ocean surface.",
+    "answer": "False. It is driven by thermohaline circulation (density differences due to temperature and salinity).",
+    "is_exam": false,
+    "tags": ["Oceanography", "Physics"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Global Hydrological Cycle",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "Rank the following reservoirs from highest to lowest total water volume: Oceans, Glaciers/Ice caps, Groundwater.",
+    "answer": "1. Oceans (~97%), 2. Glaciers/Ice caps (~2%), 3. Groundwater (~1%).",
+    "is_exam": false,
+    "tags": ["Reservoirs", "Statistics"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Global Hydrological Cycle",
+    "entry_type": "EXERCISE",
+    "difficulty": "EASY",
+    "question": "Write the simplified Water Balance equation assuming no groundwater flow and no change in storage.",
+    "answer": "P = ET + R (Precipitation = Evapotranspiration + Runoff).",
+    "is_exam": false,
+    "tags": ["Water Balance", "Equations"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Global Hydrological Cycle",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "How is the conservation of mass applied to a basin's water balance?",
+    "answer": "It is applied via the water balance equation (P - R - ET - G = ΔS), ensuring all water entering the system is accounted for as storage, phase change, or discharge.",
+    "is_exam": false,
+    "tags": ["Equations", "Mass Conservation"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Global Hydrological Cycle",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "EASY",
+    "question": "How do solar radiation and gravity interact to drive the hydrological cycle?",
+    "answer": "Solar radiation provides the energy for phase changes (evaporation, melting), while gravity allows the physical movement of water via precipitation, runoff, and groundwater flow.",
+    "is_exam": false,
+    "tags": ["Physics", "Drivers"]
+  }
+  ,
+  {
+    "subject": "Hydrology",
+    "topic": "Water Balance",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "EASY",
+    "question": "Why is the water balance equation considered an application of the law of conservation of mass?",
+    "answer": "It accounts for all water entering (input), leaving (output), or staying (storage) within a defined boundary, ensuring no mass is lost or created without explanation.",
+    "is_exam": false,
+    "tags": ["Physics", "Mass Conservation"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Water Balance",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "How does the water balance differ between humid and arid regions in terms of limiting factors?",
+    "answer": "In humid regions, ETR is often limited by available energy (radiation). In arid regions, ETR is limited by water availability (precipitation), leading to higher water deficits.",
+    "is_exam": false,
+    "tags": ["Climate", "ETR"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Water Balance",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "What happens to the storage term (ΔS) if P < ETR + R over a hydrological year?",
+    "answer": "The storage (groundwater, soil moisture, snow) decreases to compensate for the deficit between inputs and outputs.",
+    "is_exam": false,
+    "tags": ["Storage", "Water Balance"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Water Balance",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "How does increasing vegetation cover typically influence the balance between ETR and R?",
+    "answer": "Increased vegetation increases transpiration (higher ETR) and usually decreases surface runoff (R) by improving infiltration and interception.",
+    "is_exam": false,
+    "tags": ["Vegetation", "Runoff"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Water Balance",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "Using the general form P = ETR + ΔS + (SWout - SWin) + (GWout - GWin), how do you determine if a basin is a net exporter or importer?",
+    "answer": "A basin is a net exporter if total outflows (SWout + GWout) exceed total inflows (SWin + GWin). It is an importer if the opposite is true.",
+    "is_exam": false,
+    "tags": ["Basin Analysis", "Outflows"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Global Hydrological Cycle",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "Explain the functional link between 'energy driving phase changes' and the hydrological cycle.",
+    "answer": "Solar radiation is partitioned into fluxes (G, H, LE). The Latent Heat Flux (LE) represents the energy used specifically for evaporation/transpiration, directly connecting the thermal energy balance to water movement.",
+    "is_exam": false,
+    "tags": ["Energy Balance", "Phase Changes"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Global Hydrological Cycle",
+    "entry_type": "TF",
+    "difficulty": "EASY",
+    "question": "In Central Europe, the hydrological year begins on January 1st to align with the calendar year.",
+    "answer": "False. It begins on November 1st to better capture the full cycle of snow accumulation and melt within a single measurement period.",
+    "is_exam": false,
+    "tags": ["Terminology", "Central Europe"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Global Hydrological Cycle",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "If Net Radiation (Rn) is constant but the ground becomes saturated, how does the energy partitioning change?",
+    "answer": "Latent Heat (LE) increases due to high water availability, which decreases the Sensible Heat (H) flux and shifts the Bowen Ratio (H/LE) downward.",
+    "is_exam": false,
+    "tags": ["Energy Balance", "Bowen Ratio"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Water Balance",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "How does low infiltration capacity affect the balance between Surface Runoff and ETR?",
+    "answer": "Low infiltration capacity results in high surface runoff and lower ETR, as less water enters the soil storage to be available for later evaporation or plant transpiration.",
+    "is_exam": false,
+    "tags": ["Infiltration", "Soil"]
+  }
+  ,
+  {
+    "subject": "Hydrology",
+    "topic": "River Catchments",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "Define a Catchment and distinguish it from the Drainage Area.",
+    "answer": "A catchment is a 3D hydrological system where all water converges to a single outlet; the drainage area is its 2D horizontal projection used for spatial calculations.",
+    "is_exam": false,
+    "tags": ["Definitions", "Basins"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "River Catchments",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Why are surface and groundwater catchments often misaligned?",
+    "answer": "Surface divides are dictated by topography, whereas groundwater divides are controlled by subsurface geological structures and the geometry of impermeable bedrock.",
+    "is_exam": false,
+    "tags": ["Hydrogeology", "Divides"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "River Catchments",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "If measured Runoff (R) is significantly higher than Precipitation (P) in a small basin, what is a likely explanation?",
+    "answer": "The basin is likely receiving groundwater 'imports' from a neighboring catchment because the hydrogeological boundaries are more extensive than the topographic ones.",
+    "is_exam": false,
+    "tags": ["Water Balance", "Groundwater"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "River Catchments",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What is the Vadose Zone and how does it influence runoff formation?",
+    "answer": "The vadose zone is the unsaturated layer between the soil surface and the water table; it acts as a storage buffer that must be filled before groundwater recharge or subsurface flow occurs.",
+    "is_exam": false,
+    "tags": ["Soil", "Runoff Generation"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "River Catchments",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "How does low infiltration capacity modify the partitioning between R, ETR, and Storage?",
+    "answer": "Low infiltration increases surface runoff (R) and decreases both ETR and storage (ΔS), as water leaves the system quickly rather than soaking into the soil for plants or recharge.",
+    "is_exam": false,
+    "tags": ["Infiltration", "Partitioning"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "River Catchments",
+    "entry_type": "COMPARATIVE",
+    "difficulty": "MEDIUM",
+    "question": "Compare Lumped and Distributed hydrological models in terms of data requirements.",
+    "answer": "Lumped models use spatially averaged values (basin-wide P or R). Distributed models require spatially explicit data (like DEMs or soil maps) to represent variability cell-by-cell.",
+    "is_exam": false,
+    "tags": ["Modeling", "Spatial Analysis"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "River Catchments",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "Distinguish between Runoff Concentration and Flood Propagation.",
+    "answer": "Runoff concentration is the accumulation of water from the hillslopes into a main channel; flood propagation is the movement and timing of that water through the river system.",
+    "is_exam": false,
+    "tags": ["Runoff Generation", "Flood Analysis"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "River Catchments",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "Calculate the annual ETR in mm/a if P = 3000 mm/a and R = 943 mm/a.",
+    "answer": "ETR = P - R = 3000 - 943 = 2057 mm/a.",
+    "is_exam": false,
+    "tags": ["Calculations", "Water Balance"]
+  }
+  ,
+  {
+    "subject": "Hydrology",
+    "topic": "Hydrological Modelling",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "What are the three main stages of the runoff generation process?",
+    "answer": "1. Runoff formation (hillslope excess), 2. Runoff concentration (routing to channels), 3. Flood propagation (movement through river system).",
+    "is_exam": false,
+    "tags": ["Runoff", "Terminology"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Global Hydrological Cycle",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "List at least three types of water storage within a catchment.",
+    "answer": "Acceptable answers include at least three of the following: Soil moisture, Groundwater, Lakes and rivers, Interception, and Snow and ice.",
+    "is_exam": false,
+    "tags": ["Storage", "Water Cycle"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Hydrological Modelling",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "How does the storage constant (K) influence the shape of a hydrograph?",
+    "answer": "K represents the time scale of the catchment response. A small K leads to a fast, 'flashy' peak, while a large K results in a slower, more attenuated drainage response.",
+    "is_exam": false,
+    "tags": ["Linear Storage", "Hydrographs"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Hydrological Modelling",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "Why would a conceptual model be preferred over a physically based model in a large basin with scarce data?",
+    "answer": "Conceptual models require fewer parameters and lower computational power, making them more robust when the high-resolution spatial data required by physically based models is unavailable.",
+    "is_exam": false,
+    "tags": ["Model Selection", "Scales"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Hydrological Modelling",
+    "entry_type": "COMPARATIVE",
+    "difficulty": "MEDIUM",
+    "question": "Compare Black-box and White-box models regarding their transferability.",
+    "answer": "White-box (physically based) models are more transferable because they are based on general physical laws; Black-box models have poor transferability as they only replicate patterns in a specific dataset.",
+    "is_exam": false,
+    "tags": ["Model Types", "Transferability"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Hydrological Modelling",
+    "entry_type": "TF",
+    "difficulty": "EASY",
+    "question": "A Stochastic model produces a single, deterministic runoff value for every set of rainfall inputs.",
+    "answer": "False. Stochastic models incorporate randomness to produce probability distributions and quantify uncertainty.",
+    "is_exam": false,
+    "tags": ["Stochastic", "Uncertainty"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Hydrological Modelling",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Describe the three main steps of a Monte Carlo Simulation.",
+    "answer": "1. Randomly sample input parameters, 2. Run the model repeatedly (thousands of times), 3. Analyze the resulting distribution of outputs for patterns or reliability.",
+    "is_exam": false,
+    "tags": ["Uncertainty", "Monte Carlo"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Hydrological Modelling",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What does a Nash-Sutcliffe Efficiency (NSE) value of 1 indicate?",
+    "answer": "A perfect match between the observed and simulated data.",
+    "is_exam": false,
+    "tags": ["Calibration", "Statistics"]
+  }
+  ,
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "Name four forms of precipitation and the three parameters used to characterize a rainfall event.",
+    "answer": "Forms: Rain, snow, hail, and fog. Parameters: Depth (mm), Duration (min/hr), and Intensity (mm/hr).",
+    "is_exam": false,
+    "tags": ["Basics", "Terminology"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Define Adiabatic Cooling and explain its role in rainfall formation.",
+    "answer": "It is the temperature decrease caused by the expansion of rising air as pressure drops. It is the dominant mechanism for cooling air to its dew point to trigger condensation.",
+    "is_exam": false,
+    "tags": ["Physics", "Lapse Rate"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "How does the release of latent heat affect the moist adiabatic lapse rate compared to the dry rate?",
+    "answer": "Condensation releases latent heat into the air parcel, which partially offsets the cooling from expansion. This makes the moist lapse rate (~0.6°C/100m) smaller than the dry rate (~1°C/100m).",
+    "is_exam": false,
+    "tags": ["Energy Balance", "Phase Change"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Explain the 'Rain Shadow' effect on the leeward side of a mountain.",
+    "answer": "As air descends the leeward side, it warms and its relative humidity decreases, preventing precipitation and creating a dry region with higher temperatures.",
+    "is_exam": false,
+    "tags": ["Orographic", "Climate"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "COMPARATIVE",
+    "difficulty": "MEDIUM",
+    "question": "Compare the rainfall intensity and duration associated with Cold Fronts and Warm Fronts.",
+    "answer": "Cold fronts produce high-intensity, short-duration rainfall due to rapid uplift. Warm fronts produce moderate-intensity, long-duration, uniform rainfall.",
+    "is_exam": false,
+    "tags": ["Meteorology", "Fronts"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "TF",
+    "difficulty": "EASY",
+    "question": "Condensation nuclei are only necessary for the formation of snow and ice, not for liquid raindrops.",
+    "answer": "False. Nuclei (dust, salt, etc.) are required for water vapor to condense into liquid droplets by reducing the energy barrier for the phase change.",
+    "is_exam": false,
+    "tags": ["Condensation", "Physics"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "How does the selection of a Return Period influence stormwater infrastructure design?",
+    "answer": "The return period determines the design rainfall intensity; a longer return period represents a rarer, more extreme event, leading to larger and more resilient infrastructure dimensions.",
+    "is_exam": false,
+    "tags": ["Statistics", "Engineering"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What is the primary difference between cloud formation and precipitation?",
+    "answer": "Cloud formation only requires condensation into small droplets (0.001–0.2 mm); precipitation requires droplet growth (0.4–4 mm) so they become heavy enough to fall against atmospheric updrafts.",
+    "is_exam": false,
+    "tags": ["Droplet Growth", "Atmosphere"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Why do equatorial regions often experience two annual rainfall maxima?",
+    "answer": "Due to Zenithal rains; the sun is directly overhead twice a year (equinoxes), creating peak convective heating and maximum uplift/rainfall in those periods.",
+    "is_exam": false,
+    "tags": ["Climate", "Equator"]
+  }
+  ,
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "What is systematic undercatch and why is it significantly higher for snow?",
+    "answer": "Undercatch is the failure to capture all falling precipitation due to wind turbulence around the gauge orifice. It is higher for snow (up to 55%) because snow is lighter and more easily deflected by wind than raindrops.",
+    "is_exam": false,
+    "tags": ["Measurement Errors", "Wind"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "COMPARATIVE",
+    "difficulty": "MEDIUM",
+    "question": "Compare the use of non-recording storage gauges versus recording gauges for remote locations.",
+    "answer": "Non-recording storage gauges are ideal for long-term sums (monthly/semestral) in remote areas due to low maintenance. Recording gauges provide detailed intensity data but require more frequent data retrieval or power.",
+    "is_exam": false,
+    "tags": ["Instruments", "Remote Sensing"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "THEORY",
+    "difficulty": "HARD",
+    "question": "When is the Normal-ratio method preferred over the simple station average for gap-filling?",
+    "answer": "It is preferred when the long-term annual precipitation of the neighboring stations differs from the missing station by more than 10%, as it weights the data by their respective climatic averages.",
+    "is_exam": false,
+    "tags": ["Data Correction", "Statistics"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "COMPARATIVE",
+    "difficulty": "MEDIUM",
+    "question": "Which spatial interpolation method is best for mountainous catchments: Thiessen Polygons or Isohyetal?",
+    "answer": "The Isohyetal method is superior because it allows the integration of topographic and orographic influences when drawing lines of equal precipitation, unlike the purely geometric Thiessen Polygons.",
+    "is_exam": false,
+    "tags": ["Interpolation", "Topography"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "TF",
+    "difficulty": "EASY",
+    "question": "In Inverse Distance Weighting (IDW), a station further away from the point of interest receives more weight.",
+    "answer": "False. In IDW, the weight is inversely proportional to the distance; nearer stations have a greater influence on the estimated value.",
+    "is_exam": false,
+    "tags": ["IDW", "Spatial Analysis"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "What does a slope change in a Double Mass Curve signify to a hydrologist?",
+    "answer": "A slope change indicates a non-climatic inconsistency in the data series, such as an instrument relocation, change in gauge type, or a change in the immediate environment of the station.",
+    "is_exam": false,
+    "tags": ["Consistency", "Double Mass Curve"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "List the three most common systematic errors in rainfall measurement.",
+    "answer": "1. Wind-induced undercatch, 2. Evaporation from the gauge, 3. Wetting/Splashing losses.",
+    "is_exam": false,
+    "tags": ["Errors", "Hellmann Gauge"]
+  }
+  ,
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What is the functional difference between BHQ1 and BHQ2 in dam design?",
+    "answer": "BHQ1 is the design flood used for sizing spillways and overflow structures. BHQ2 is an extreme safety verification flood used to ensure global dam stability during catastrophic events.",
+    "is_exam": false,
+    "tags": ["Dam Safety", "DIN 19700"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "Why is PMP used for BHQ2 stability checks instead of standard return periods?",
+    "answer": "PMP represents the physical upper limit of precipitation possible at a location. It is used for stability checks because it provides a safety margin beyond statistical probability for high-risk infrastructure.",
+    "is_exam": false,
+    "tags": ["PMP", "Extreme Events"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "COMPARATIVE",
+    "difficulty": "MEDIUM",
+    "question": "Why is IDF often preferred over DDF in urban stormwater design?",
+    "answer": "Urban drainage systems are designed based on peak discharge (flow rate). IDF provides rainfall intensity (mm/hr), which directly correlates to peak flow, whereas DDF provides total accumulated depth.",
+    "is_exam": false,
+    "tags": ["Urban Hydrology", "IDF vs DDF"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "In a Gumbel distribution, what do the parameters 'u' and 'alpha' physically represent?",
+    "answer": "u (location) represents the mode or 'typical' annual maximum. alpha (scale) represents the variability or spread; a higher alpha indicates a greater difference between small and large return period events.",
+    "is_exam": false,
+    "tags": ["Statistics", "Gumbel"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "THEORY",
+    "difficulty": "HARD",
+    "question": "Why is it necessary to fit a theoretical distribution (e.g., Gumbel) to a rainfall series?",
+    "answer": "Empirical distributions can only describe observed history. A theoretical distribution is required to extrapolate and estimate extreme events (like 100-year storms) that may not have occurred during the record length.",
+    "is_exam": false,
+    "tags": ["Probability", "Extrapolation"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "Outline the steps to find rainfall depth (P) for a return period (R) using the Method of Moments for a Gumbel distribution.",
+    "answer": "1. Calculate alpha and u using the sample mean and standard deviation. 2. Calculate the non-exceedance probability F = 1 - 1/R. 3. Plug F, u, and alpha into the inverted Gumbel CDF to solve for P.",
+    "is_exam": false,
+    "tags": ["Calculations", "Quantiles"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "EASY",
+    "question": "Why do DDF curves flatten as the storm duration increases?",
+    "answer": "As duration increases, the average rate of rainfall typically decreases; it is physically rare for extreme high-intensity rainfall to be sustained over very long periods.",
+    "is_exam": false,
+    "tags": ["DDF Curves", "Duration"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "TF",
+    "difficulty": "EASY",
+    "question": "The Method of Moments is a goodness-of-fit test used to validate the choice of a Gumbel distribution.",
+    "answer": "False. The Method of Moments is used for parameter estimation (calculating u and alpha). Goodness-of-fit is tested using methods like the Kolmogorov-Smirnov or Chi-square tests.",
+    "is_exam": false,
+    "tags": ["Statistics", "Calibration"]
+  }
+]
