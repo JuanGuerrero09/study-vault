@@ -15,6 +15,16 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 async def read_root():
     return FileResponse("static/index.html")
 
+@app.get("/debug_files")
+def list_files():
+    import os
+    files_list = []
+    # Walk through all folders and list every file the server can see
+    for root, dirs, files in os.walk("."):
+        for name in files:
+            files_list.append(os.path.join(root, name))
+    return {"files": files_list}
+
 @app.get("/api/questions", response_model=List[Question])
 async def get_questions(
     subject: str = "Hydrology",
