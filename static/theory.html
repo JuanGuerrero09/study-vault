@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Theory Notes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: { "primary": "#136dec", "background-dark": "#101822", "surface-dark": "#1c242e" },
+                    fontFamily: { "display": ["Lexend", "sans-serif"] }
+                }
+            }
+        }
+    </script>
+    <style>body { font-family: 'Lexend', sans-serif; }</style>
+</head>
+<body class="bg-slate-50 dark:bg-background-dark text-slate-900 dark:text-white min-h-screen flex flex-col">
+
+    <header class="sticky top-0 z-50 bg-white/80 dark:bg-[#111418]/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
+        <div class="max-w-4xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <a href="/" class="flex items-center justify-center size-10 rounded-lg bg-primary/10 text-primary">
+                    <span class="material-symbols-outlined">arrow_back</span>
+                </a>
+                <h1 class="font-bold text-lg dark:text-white">Theory Notes</h1>
+            </div>
+            
+            <select id="theory-subject" onchange="loadNotes()" class="h-9 rounded-lg bg-slate-100 dark:bg-[#282f39] border-none text-sm font-medium px-3 outline-none focus:ring-2 focus:ring-primary/50">
+                <option value="Hydrology">Hydrology</option>
+                <option value="Climatology">Climatology</option>
+            </select>
+        </div>
+    </header>
+
+    <main class="flex-grow py-8 px-4">
+        <article class="max-w-4xl mx-auto bg-white dark:bg-surface-dark p-8 md:p-12 rounded-2xl shadow-sm border border-slate-200 dark:border-gray-800">
+            <div id="markdown-content" class="prose prose-slate dark:prose-invert max-w-none">
+                <div class="flex flex-col items-center justify-center py-10 gap-4 text-slate-400">
+                    <span class="material-symbols-outlined text-4xl animate-spin">refresh</span>
+                    <p>Loading notes...</p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Check if URL has a subject param (e.g. ?theory-subject=Hydrology)
+            // This allows the link from the Bank to automatically select the right dropdown
+            const urlParams = new URLSearchParams(window.location.search);
+            const subjectParam = urlParams.get('theory-subject');
+            
+            if (subjectParam) {
+                const select = document.getElementById('theory-subject');
+                // Check if the option exists before setting it
+                if ([...select.options].some(o => o.value === subjectParam)) {
+                    select.value = subjectParam;
+                }
+            }
+
+            // 2. Load the notes
+            loadNotes();
+        });
+
+        async function loadNotes() {
+            const subject = document.getElementById('theory-subject').value;
+            const container = document.getElementById('markdown-content');
+            
+            // Show loading
+            container.innerHTML = `<div class="flex flex-col items-center py-10 gap-4 text-slate-400"><span class="material-symbols-outlined text-4xl animate-spin">refresh</span><p>Loading...</p></div>`;
+
+            try {
+                // Fetch the raw markdown text
+                const response = await fetch(`/api/note/${subject}`);
+                const text = await response.text();
+
+                // Convert Markdown to HTML using marked.parse()
+                container.innerHTML = marked.parse(text);
+
+                renderMathInElement(container, {
+                    delimiters: [
+                        {left: '$$', right: '$$', display: true},  // Block math
+                        {left: '$', right: '$', display: false}    // Inline math
+                    ],
+                    throwOnError: false
+                });
+
+                // === SCROLL LOGIC ===
+                // Now that HTML exists, check if there is a hash (#topic)
+                if (window.location.hash) {
+                    const id = window.location.hash.substring(1); // remove '#'
+                    const element = document.getElementById(id);
+                    if (element) {
+                        // Wait a tiny bit for layout to settle, then scroll
+                        setTimeout(() => {
+                            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            // Optional: Highlight the section briefly
+                            element.classList.add('bg-yellow-100', 'dark:bg-yellow-900/30', 'transition-colors', 'duration-1000');
+                            setTimeout(() => element.classList.remove('bg-yellow-100', 'dark:bg-yellow-900/30'), 2000);
+                        }, 100);
+                    }}
+
+            } catch (error) {
+                container.innerHTML = `<p class="text-red-500">Error loading notes.</p>`;
+            }
+        }
+    </script>
+</body>
+</html>

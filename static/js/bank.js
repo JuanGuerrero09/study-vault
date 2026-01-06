@@ -6,11 +6,19 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('subject-select').addEventListener('change', loadBankQuestions);
 });
 
+function slugify(text) {
+    return text
+        .toString()
+        .toLowerCase()
+        .trim()
+        .replace(/\s+/g, '-')     // Replace spaces with -
+        .replace(/[^\w\-]+/g, '') // Remove all non-word chars
+        .replace(/\-\-+/g, '-');  // Replace multiple - with single -
+}
+
 async function loadBankQuestions() {
 
     const subject = document.getElementById('subject-select').value;
-
-    // 1. Fetch data from your Python Backend
     const response = await fetch(`/api/questions?subject=${subject}`); 
     const questions = await response.json();
     
@@ -23,6 +31,11 @@ async function loadBankQuestions() {
         if (q.difficulty.toUpperCase() === 'EASY') diffColor = "bg-green-500/10 text-green-500 border-green-500/20";
         if (q.difficulty.toUpperCase() === 'MEDIUM') diffColor = "bg-yellow-500/10 text-yellow-500 border-yellow-500/20";
         if (q.difficulty.toUpperCase() === 'HARD') diffColor = "bg-red-500/10 text-red-500 border-red-500/20";
+
+        // Create the Link URL
+        // Example: /theory?subject=Hydrology#introduction
+        const topicSlug = slugify(q.topic);
+        const theoryLink = `/theory?theory-subject=${q.subject}#${topicSlug}`;
 
         // 3. Create HTML Row
         const row = document.createElement('tr');
@@ -40,7 +53,10 @@ async function loadBankQuestions() {
             <td class="p-4 align-top pt-5">
                 <div class="flex flex-col gap-1">
                     <span class="text-sm font-semibold text-[#111418] dark:text-white">${q.subject}</span>
-                    <span class="text-xs text-[#637588] dark:text-[#9da8b9]">${q.topic}</span>
+                    <a href="${theoryLink}" class="text-xs text-primary hover:underline font-medium flex items-center gap-1">
+                        ${q.topic}
+                        <span class="material-symbols-outlined text-[10px]">open_in_new</span>
+                    </a>
                 </div>
             </td>
             <td class="p-4 align-top pt-5">

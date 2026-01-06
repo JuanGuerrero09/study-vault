@@ -25,8 +25,14 @@
         <aside class="hidden lg:flex flex-col w-72 h-full border-r border-[#e5e7eb] dark:border-[#283039] bg-surface-light dark:bg-surface-dark flex-shrink-0">
             <div class="p-4"><h1 class="font-bold text-xl px-2">Study Admin</h1></div>
             <nav class="flex flex-col gap-1 px-4">
-                <a class="flex items-center gap-3 px-3 py-3 rounded-lg hover:bg-black/5 dark:hover:bg-white/5" href="/">
+              <a class="flex items-center gap-3 px-3 py-3 rounded-lg hover:bg-black/5 dark:hover:bg-white/5" href="/">
                     <span class="material-symbols-outlined">dashboard</span> <p class="font-medium">Dashboard</p>
+                </a>
+                <a class="flex items-center gap-3 px-3 py-3 rounded-lg hover:bg-black/5 dark:hover:bg-white/5" href="/theory">
+                    <span class="material-symbols-outlined">book_2</span> <p class="font-medium">Theory</p>
+                </a>
+                <a class="flex items-center gap-3 px-3 py-3 rounded-lg hover:bg-black/5 dark:hover:bg-white/5" href="/study">
+                    <span class="material-symbols-outlined">play_circle</span> <p class="font-medium">Session</p>
                 </a>
                 <a class="flex items-center gap-3 px-3 py-3 rounded-lg bg-primary/10 dark:bg-primary/20 text-primary" href="#">
                     <span class="material-symbols-outlined">list_alt</span> <p class="font-medium">Question Bank</p>
@@ -53,13 +59,13 @@
 
                     <div class="rounded-xl border border-[#e5e7eb] dark:border-[#283039] bg-surface-light dark:bg-surface-dark overflow-hidden shadow-sm">
                         <div class="overflow-x-auto">
-                            <table class="w-full text-left border-collapse">
+                            <table class="w-full text-left table-fixed border-collapse">
                                 <thead class="bg-background-light dark:bg-[#151c24] border-b border-[#e5e7eb] dark:border-[#283039]">
                                     <tr>
-                                        <th class="p-4 pl-6 text-xs font-bold uppercase text-[#637588] dark:text-[#9da8b9]">Question</th>
-                                        <th class="p-4 text-xs font-bold uppercase text-[#637588] dark:text-[#9da8b9]">Topic</th>
-                                        <th class="p-4 text-xs font-bold uppercase text-[#637588] dark:text-[#9da8b9]">Difficulty</th>
-                                        <th class="p-4 text-xs font-bold uppercase text-[#637588] dark:text-[#9da8b9]">Type</th>
+                                        <th class="w-[55%] p-4 pl-6 text-xs font-bold uppercase text-[#637588] dark:text-[#9da8b9]">Question</th>
+                                        <th class="w-[20%] p-4 text-xs font-bold uppercase text-[#637588] dark:text-[#9da8b9]">Topic</th>
+                                        <th class="w-[15%] p-4 text-xs font-bold uppercase text-[#637588] dark:text-[#9da8b9]">Difficulty</th>
+                                        <th class="w-[10%] p-4 text-xs font-bold uppercase text-[#637588] dark:text-[#9da8b9]">Type</th>
                                     </tr>
                                 </thead>
                                 <tbody id="questions-body" class="divide-y divide-[#e5e7eb] dark:divide-[#283039]">
