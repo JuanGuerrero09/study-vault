@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Exam Simulation</title>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#136dec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101822",
+                        "card-dark": "#1e293b",
+                        "card-light": "#ffffff",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for the question palette */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background-color: #334155;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display overflow-hidden h-screen flex flex-col">
+<!-- Top Navigation / Header -->
+<header class="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 bg-card-light dark:bg-card-dark px-6 py-3 h-18 shrink-0 z-20">
+<div class="flex items-center gap-4">
+<button class="text-slate-500 hover:text-primary dark:text-slate-400 transition-colors">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<div>
+<h1 class="text-lg font-bold leading-tight tracking-tight">Final Assessment: Advanced Calculus</h1>
+<p class="text-xs text-slate-500 dark:text-slate-400 font-medium">Math Dept • Section B</p>
+</div>
+</div>
+<!-- Timer Display (Sticky Header Style) -->
+<div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden md:flex items-center gap-3 bg-slate-100 dark:bg-slate-800 px-4 py-2 rounded-full border border-slate-200 dark:border-slate-700">
+<span class="material-symbols-outlined text-primary text-xl">timer</span>
+<div class="flex items-center gap-1 text-lg font-mono font-bold tracking-widest text-slate-800 dark:text-slate-100">
+<span>00</span><span class="text-slate-400">:</span><span>42</span><span class="text-slate-400">:</span><span>15</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<!-- Mobile Timer Toggle -->
+<button class="md:hidden p-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200">
+<span class="material-symbols-outlined">timer</span>
+</button>
+<button class="hidden sm:flex items-center justify-center gap-2 h-10 px-4 rounded-lg border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 font-bold text-sm hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+<span>Pause</span>
+</button>
+<button class="flex items-center justify-center gap-2 h-10 px-5 rounded-lg bg-red-500/10 text-red-600 dark:text-red-400 border border-red-500/20 font-bold text-sm hover:bg-red-500/20 transition-colors">
+<span class="hidden sm:inline">Quit Exam</span>
+<span class="sm:hidden material-symbols-outlined text-sm">close</span>
+</button>
+</div>
+</header>
+<!-- Main Layout -->
+<div class="flex flex-1 overflow-hidden relative">
+<!-- Sidebar: Question Palette -->
+<aside class="w-80 bg-card-light dark:bg-[#161e2c] border-r border-slate-200 dark:border-slate-800 flex flex-col hidden lg:flex h-full">
+<div class="p-5 border-b border-slate-200 dark:border-slate-800">
+<h2 class="text-sm font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-4">Question Palette</h2>
+<div class="grid grid-cols-2 gap-2 mb-2">
+<div class="flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400">
+<div class="w-3 h-3 rounded-full bg-primary"></div> Current
+                    </div>
+<div class="flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400">
+<div class="w-3 h-3 rounded-full bg-emerald-500"></div> Answered
+                    </div>
+<div class="flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400">
+<div class="w-3 h-3 rounded-full bg-amber-500"></div> Flagged
+                    </div>
+<div class="flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400">
+<div class="w-3 h-3 rounded-full border border-slate-500 bg-transparent"></div> Unanswered
+                    </div>
+</div>
+</div>
+<!-- Scrollable Grid -->
+<div class="flex-1 overflow-y-auto p-5 custom-scrollbar">
+<div class="grid grid-cols-5 gap-3">
+<!-- Q1: Answered -->
+<button class="aspect-square flex items-center justify-center rounded bg-emerald-500 text-white font-medium text-sm hover:opacity-90 transition">1</button>
+<!-- Q2: Answered -->
+<button class="aspect-square flex items-center justify-center rounded bg-emerald-500 text-white font-medium text-sm hover:opacity-90 transition">2</button>
+<!-- Q3: Answered -->
+<button class="aspect-square flex items-center justify-center rounded bg-emerald-500 text-white font-medium text-sm hover:opacity-90 transition">3</button>
+<!-- Q4: Flagged -->
+<button class="aspect-square flex items-center justify-center rounded bg-amber-500 text-white font-medium text-sm hover:opacity-90 transition relative">
+                        4
+                        <div class="absolute -top-1 -right-1 w-2.5 h-2.5 bg-amber-700 rounded-full border-2 border-[#161e2c]"></div>
+</button>
+<!-- Q5: Current -->
+<button class="aspect-square flex items-center justify-center rounded bg-primary text-white font-bold text-base shadow-lg shadow-primary/30 ring-2 ring-primary ring-offset-2 ring-offset-[#161e2c] transition">5</button>
+<!-- Q6-Q20 Generated placeholders -->
+<button class="aspect-square flex items-center justify-center rounded border border-slate-300 dark:border-slate-700 text-slate-500 dark:text-slate-400 font-medium text-sm hover:bg-slate-100 dark:hover:bg-slate-800 transition">6</button>
+<button class="aspect-square flex items-center justify-center rounded border border-slate-300 dark:border-slate-700 text-slate-500 dark:text-slate-400 font-medium text-sm hover:bg-slate-100 dark:hover:bg-slate-800 transition">7</button>
+<button class="aspect-square flex items-center justify-center rounded border border-slate-300 dark:border-slate-700 text-slate-500 dark:text-slate-400 font-medium text-sm hover:bg-slate-100 dark:hover:bg-slate-800 transition">8</button>
+<button class="aspect-square flex items-center justify-center rounded border border-slate-300 dark:border-slate-700 text-slate-500 dark:text-slate-400 font-medium text-sm hover:bg-slate-100 dark:hover:bg-slate-800 transition">9</button>
+<button class="aspect-square flex items-center justify-center rounded border border-slate-300 dark:border-slate-700 text-slate-500 dark:text-slate-400 font-medium text-sm hover:bg-slate-100 dark:hover:bg-slate-800 transition">10</button>
+<!-- More Placeholders -->
+<button class="aspect-square flex items-center justify-center rounded border border-slate-300 dark:border-slate-700 text-slate-500 dark:text-slate-400 font-medium text-sm hover:bg-slate-100 dark:hover:bg-slate-800 transition">11</button>
+<button class="aspect-square flex items-center justify-center rounded border border-slate-300 dark:border-slate-700 text-slate-500 dark:text-slate-400 font-medium text-sm hover:bg-slate-100 dark:hover:bg-slate-800 transition">12</button>
+<button class="aspect-square flex items-center justify-center rounded border border-slate-300 dark:border-slate-700 text-slate-500 dark:text-slate-400 font-medium text-sm hover:bg-slate-100 dark:hover:bg-slate-800 transition">13</button>
+<button class="aspect-square flex items-center justify-center rounded border border-slate-300 dark:border-slate-700 text-slate-500 dark:text-slate-400 font-medium text-sm hover:bg-slate-100 dark:hover:bg-slate-800 transition">14</button>
+<button class="aspect-square flex items-center justify-center rounded border border-slate-300 dark:border-slate-700 text-slate-500 dark:text-slate-400 font-medium text-sm hover:bg-slate-100 dark:hover:bg-slate-800 transition">15</button>
+</div>
+</div>
+<!-- Sidebar Footer -->
+<div class="p-5 border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-[#0f1520]">
+<button class="w-full flex items-center justify-center gap-2 rounded-lg bg-primary h-12 text-white font-bold shadow-lg shadow-blue-500/20 hover:bg-blue-600 transition-all active:scale-[0.98]">
+<span>Submit All Answers</span>
+<span class="material-symbols-outlined text-lg">check_circle</span>
+</button>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 overflow-y-auto relative flex flex-col items-center">
+<!-- Progress Bar Sticky Strip -->
+<div class="w-full sticky top-0 z-10 bg-background-light dark:bg-background-dark/95 backdrop-blur-sm border-b border-slate-200 dark:border-slate-800 px-6 py-4 flex flex-col gap-2">
+<div class="flex justify-between items-end max-w-4xl mx-auto w-full">
+<p class="text-sm font-semibold text-slate-600 dark:text-slate-300">Question 5 <span class="text-slate-400 font-normal">of 50</span></p>
+<p class="text-xs font-medium text-slate-400">10% Completed</p>
+</div>
+<div class="max-w-4xl mx-auto w-full h-1.5 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[10%] rounded-full shadow-[0_0_10px_rgba(19,109,236,0.5)]"></div>
+</div>
+</div>
+<!-- Question Card Container -->
+<div class="w-full max-w-4xl px-4 md:px-6 py-8 flex-1 flex flex-col justify-center">
+<div class="bg-card-light dark:bg-card-dark rounded-2xl shadow-xl shadow-slate-200/50 dark:shadow-none border border-slate-200 dark:border-slate-800 overflow-hidden">
+<!-- Card Header: Metadata -->
+<div class="px-6 py-5 bg-slate-50 dark:bg-[#161e2c] border-b border-slate-200 dark:border-slate-800 flex flex-wrap gap-3 items-center justify-between">
+<div class="flex gap-2 flex-wrap">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20">
+<span class="material-symbols-outlined text-[16px]">functions</span> Math
+                            </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-purple-500/10 text-purple-600 dark:text-purple-400 border border-purple-500/20">
+                                Algebra
+                            </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-orange-500/10 text-orange-600 dark:text-orange-400 border border-orange-500/20">
+<span class="material-symbols-outlined text-[16px]">signal_cellular_alt</span> Hard
+                            </span>
+</div>
+<button class="text-xs font-medium text-slate-500 hover:text-amber-500 flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-lg">flag</span>
+                            Flag for Review
+                        </button>
+</div>
+<!-- Question Body -->
+<div class="p-6 md:p-10">
+<div class="prose dark:prose-invert max-w-none mb-8">
+<h3 class="text-xl md:text-2xl font-medium leading-relaxed text-slate-800 dark:text-slate-100">
+                                If <span class="font-mono bg-slate-100 dark:bg-slate-800 px-1 py-0.5 rounded text-primary">f(x) = 3x² - 2x + 1</span>, what is the value of the derivative <span class="font-mono bg-slate-100 dark:bg-slate-800 px-1 py-0.5 rounded text-primary">f'(2)</span>?
+                            </h3>
+<p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">Select the correct option from the choices below. Only one answer is correct.</p>
+</div>
+<!-- Answer Options -->
+<div class="space-y-3">
+<!-- Option A -->
+<label class="group relative flex items-center p-4 rounded-xl border-2 border-slate-200 dark:border-slate-700 cursor-pointer hover:border-primary/50 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-all">
+<input class="peer sr-only" name="answer" type="radio"/>
+<div class="flex items-center justify-center w-8 h-8 rounded-full border-2 border-slate-300 dark:border-slate-600 text-slate-400 peer-checked:bg-primary peer-checked:border-primary peer-checked:text-white transition-all font-bold text-sm shrink-0 mr-4 group-hover:border-primary/50">
+                                    A
+                                </div>
+<span class="text-slate-700 dark:text-slate-300 font-medium text-lg flex-1">8</span>
+<div class="absolute inset-0 rounded-xl pointer-events-none ring-0 peer-checked:ring-2 peer-checked:ring-primary peer-checked:bg-primary/5 transition-all"></div>
+</label>
+<!-- Option B (Selected State Example) -->
+<label class="group relative flex items-center p-4 rounded-xl border-2 border-primary cursor-pointer bg-primary/5 transition-all">
+<input checked="" class="peer sr-only" name="answer" type="radio"/>
+<div class="flex items-center justify-center w-8 h-8 rounded-full border-2 bg-primary border-primary text-white transition-all font-bold text-sm shrink-0 mr-4 shadow-sm">
+<span class="material-symbols-outlined text-lg">check</span>
+</div>
+<span class="text-slate-900 dark:text-white font-medium text-lg flex-1">10</span>
+<div class="absolute inset-0 rounded-xl pointer-events-none ring-2 ring-primary bg-primary/5 transition-all"></div>
+</label>
+<!-- Option C -->
+<label class="group relative flex items-center p-4 rounded-xl border-2 border-slate-200 dark:border-slate-700 cursor-pointer hover:border-primary/50 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-all">
+<input class="peer sr-only" name="answer" type="radio"/>
+<div class="flex items-center justify-center w-8 h-8 rounded-full border-2 border-slate-300 dark:border-slate-600 text-slate-400 peer-checked:bg-primary peer-checked:border-primary peer-checked:text-white transition-all font-bold text-sm shrink-0 mr-4 group-hover:border-primary/50">
+                                    C
+                                </div>
+<span class="text-slate-700 dark:text-slate-300 font-medium text-lg flex-1">12</span>
+<div class="absolute inset-0 rounded-xl pointer-events-none ring-0 peer-checked:ring-2 peer-checked:ring-primary peer-checked:bg-primary/5 transition-all"></div>
+</label>
+<!-- Option D -->
+<label class="group relative flex items-center p-4 rounded-xl border-2 border-slate-200 dark:border-slate-700 cursor-pointer hover:border-primary/50 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-all">
+<input class="peer sr-only" name="answer" type="radio"/>
+<div class="flex items-center justify-center w-8 h-8 rounded-full border-2 border-slate-300 dark:border-slate-600 text-slate-400 peer-checked:bg-primary peer-checked:border-primary peer-checked:text-white transition-all font-bold text-sm shrink-0 mr-4 group-hover:border-primary/50">
+                                    D
+                                </div>
+<span class="text-slate-700 dark:text-slate-300 font-medium text-lg flex-1">14</span>
+<div class="absolute inset-0 rounded-xl pointer-events-none ring-0 peer-checked:ring-2 peer-checked:ring-primary peer-checked:bg-primary/5 transition-all"></div>
+</label>
+</div>
+</div>
+<!-- Card Footer -->
+<div class="px-6 py-4 bg-slate-50 dark:bg-[#161e2c] border-t border-slate-200 dark:border-slate-800 flex justify-between items-center">
+<p class="text-xs text-slate-400 hidden sm:block">ID: #Q-4921-MATH</p>
+<div class="flex gap-2">
+<!-- Action hint -->
+<span class="text-xs text-slate-400 self-center mr-2">Press <kbd class="font-mono bg-slate-200 dark:bg-slate-700 px-1 rounded">Enter</kbd> to confirm</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Navigation Bar -->
+<div class="w-full bg-card-light dark:bg-card-dark border-t border-slate-200 dark:border-slate-800 p-4 sticky bottom-0 z-20">
+<div class="max-w-4xl mx-auto flex justify-between items-center">
+<button class="flex items-center gap-2 px-6 h-12 rounded-lg border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 font-bold hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined">arrow_back</span>
+                        Previous
+                    </button>
+<button class="flex items-center gap-2 px-8 h-12 rounded-lg bg-primary text-white font-bold shadow-lg shadow-primary/30 hover:bg-blue-600 transition-all active:scale-95">
+                        Next Question
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</main>
+</div>
+</body></html>

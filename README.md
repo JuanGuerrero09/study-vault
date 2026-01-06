@@ -5,5 +5,5 @@ Initially it works for the winter semester of the TU Dresden Msc Hydro Science a
 
 Data currently in:
 
-- Climatology (Class 4)
+- Climatology (Class 8)
 - Hydrology (Class 8)
