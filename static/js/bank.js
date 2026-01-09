@@ -32,11 +32,6 @@ async function loadBankQuestions() {
         if (q.difficulty.toUpperCase() === 'MEDIUM') diffColor = "bg-yellow-500/10 text-yellow-500 border-yellow-500/20";
         if (q.difficulty.toUpperCase() === 'HARD') diffColor = "bg-red-500/10 text-red-500 border-red-500/20";
 
-        // Create the Link URL
-        // Example: /theory?subject=Hydrology#introduction
-        const topicSlug = slugify(q.topic);
-        const theoryLink = `/theory?theory-subject=${q.subject}#${topicSlug}`;
-
         // 3. Create HTML Row
         const row = document.createElement('tr');
         row.className = "group hover:bg-background-light dark:hover:bg-[#1c242e] transition-colors";
@@ -53,7 +48,7 @@ async function loadBankQuestions() {
             <td class="p-4 align-top pt-5">
                 <div class="flex flex-col gap-1">
                     <span class="text-sm font-semibold text-[#111418] dark:text-white">${q.subject}</span>
-                    <a href="${theoryLink}" class="text-xs text-primary hover:underline font-medium flex items-center gap-1">
+                    <a href="${"/theory"}" class="text-xs text-primary hover:underline font-medium flex items-center gap-1">
                         ${q.topic}
                         <span class="material-symbols-outlined text-[10px]">open_in_new</span>
                     </a>

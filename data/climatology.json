@@ -912,5 +912,415 @@
     "answer": "False. QG is very small in forests due to shading. Canopy storage (delta QS) is often much larger due to the high biomass (wood/leaves) that must be heated or cooled.",
     "is_exam": false,
     "tags": ["Energy Balance", "Forest"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Radiation Basics",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "Which physical law defines the wavelength (lambda_max) at which a black body emits its maximum energy?",
+    "answer": "Wien's Displacement Law. It states that the peak wavelength is inversely proportional to the absolute temperature (T) of the object.",
+    "is_exam": true,
+    "tags": ["Radiation", "Wien's Law"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Atmospheric Composition",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "In terms of the greenhouse effect, which gas is responsible for the greatest total absorption of terrestrial longwave radiation?",
+    "answer": "Water vapor. While CO2 is the most significant anthropogenic gas, water vapor is physically the most potent greenhouse gas due to its abundance and broad absorption spectrum.",
+    "is_exam": true,
+    "tags": ["Greenhouse Effect", "Water Vapor"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Radiation Laws",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "An opaque surface has a reflectance (rho) of 0.4. According to Kirchhoff's Law, what is the absorptance (alpha) of this surface?",
+    "answer": "0.6 (or 60%). For an opaque surface, transmittance is zero, so alpha + rho = 1. Therefore, 1 - 0.4 = 0.6.",
+    "is_exam": true,
+    "tags": ["Kirchhoff's Law", "Radiation"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Boundary Layer Structure",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Which layers can be distinguished within the atmospheric boundary layer?.",
+    "answer": "Surface Layer, Atmospheric boundary layer,  Troposphere and Tropopause.",
+    "is_exam": true,
+    "tags": ["ABL", "Structure"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Energy Balance",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "What would be the Earth's average surface temperature (in K and C) if the atmosphere had no greenhouse effect?",
+    "answer": "255 K (or -18°C). The natural greenhouse effect provides approximately 33K of warming to reach the current average of 288 K.",
+    "is_exam": true,
+    "tags": ["Greenhouse Effect", "Temperature"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Energy Balance",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Determine the typical signs (Positive or Negative) for Net Radiation (Q*), Sensible Heat Flux (H), and Ground Heat Flux (G) during a clear night.",
+    "answer": "All are typically Negative. Q* is negative (radiative loss), H is negative (heat moves from air to ground), and G is negative (heat moves from deep soil to surface).",
+    "is_exam": true,
+    "tags": ["Diurnal Cycle", "Fluxes"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Transport Mechanisms",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "Which heat transport mechanism is more effective in the atmosphere: Conduction or Convection?",
+    "answer": "Convection. It involves the bulk movement of fluid and turbulent mixing, which is significantly more efficient than the molecular-scale energy transfer of conduction.",
+    "is_exam": true,
+    "tags": ["Heat Transport", "Convection"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Carbon Cycle",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Rank the carbon uptake measures (NEP, NBP, NPP) from short-term to long-term scales.",
+    "answer": "NPP (Net Primary Production) -> NEP (Net Ecosystem Production) -> NBP (Net Biome Production).",
+    "is_exam": true,
+    "tags": ["Carbon Cycle", "NPP"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Thermodynamics",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What is the physical difference between actual air temperature (T) and potential temperature (theta)?",
+    "answer": "Air temperature is the current kinetic energy measured. Potential temperature is the temperature adjusted adiabatically to a reference pressure (1000 hPa), allowing comparison of air masses at different altitudes.",
+    "is_exam": true,
+    "tags": ["Potential Temperature", "Adiabatic"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Boundary Layer Mechanics",
+    "entry_type": "TF",
+    "difficulty": "EASY",
+    "question": "The entire atmospheric boundary layer is characterized by turbulent flow.",
+    "answer": "False. There is a very thin Laminar Boundary Layer (mm thick) directly in contact with the surface where molecular diffusion dominates.",
+    "is_exam": true,
+    "tags": ["Laminar Layer", "Turbulence"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Radiation Balance",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "With an incoming solar radiation of 1000 W/m2 and a forest albedo of 0.12, calculate the reflected radiation (K-up) and the net shortwave radiation (K*).",
+    "answer": "K-up = 1000 * 0.12 = 120 W/m2. K* = 1000 - 120 = 880 W/m2.",
+    "is_exam": true,
+    "tags": ["Albedo", "Radiation Balance"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Atmospheric Stability",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "If the Environmental Lapse Rate (ELR) is 12 K/km and the Dry Adiabatic Lapse Rate (DALR) is 9.8 K/km, is the atmosphere stable or unstable?",
+    "answer": "Unstable. Because the environment cools faster than the rising parcel, the parcel remains warmer and less dense than its surroundings, causing it to continue rising.",
+    "is_exam": true,
+    "tags": ["Stability", "Lapse Rates"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Aerodynamics",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Explain why forests generally have a larger roughness length (z0) than grasslands and how this impacts shear stress (tau).",
+    "answer": "Forests have greater height and structural complexity, creating more frictional drag. This larger z0 results in higher shear stress (momentum flux) for a given wind speed compared to smoother surfaces.",
+    "is_exam": true,
+    "tags": ["Roughness", "Shear Stress"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Humidity Units",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Why is the Mixing Ratio (m) a better unit than Relative Humidity (RH) for tracking an air mass?",
+    "answer": "Mixing Ratio is a conservative property that does not change with temperature or pressure (unless moisture is added/removed), whereas RH fluctuates with temperature changes even if moisture remains constant.",
+    "is_exam": true,
+    "tags": ["Humidity", "Mixing Ratio"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "Name three fundamental characteristics of turbulent flow.",
+    "answer": "Irregularity (randomness), mixing efficiency (high diffusivity), and dissipation (energy lost to heat). Others include three-dimensionality and vorticity.",
+    "is_exam": true,
+    "tags": ["Turbulence", "Definitions"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Intro Boundary-layer meteorology",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "Which dimensionless number is used to predict the transition from laminar to turbulent flow?",
+    "answer": "The Reynolds number (Re). It represents the ratio of inertial forces to viscous forces.",
+    "is_exam": true,
+    "tags": ["Reynolds Number", "Fluid Dynamics"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "TF",
+    "difficulty": "MEDIUM",
+    "question": "The vertical transport of momentum and scalars is typically enhanced under stable atmospheric conditions.",
+    "answer": "False. Stable conditions suppress vertical motion. Vertical transport is enhanced under unstable conditions (convection).",
+    "is_exam": true,
+    "tags": ["Stability", "Transport"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Intro Boundary-layer meteorology",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Within the surface layer (lowest 10% of the ABL), which of the following is assumed to be constant with height: Flux, Diffusivity, or Concentration?",
+    "answer": "Flux. This is why the surface layer is often referred to as the 'Constant Flux Layer'.",
+    "is_exam": true,
+    "tags": ["Surface Layer", "Flux"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Surface energy and mass balances",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "What does the Bowen ratio (beta) measure?",
+    "answer": "The partitioning of available surface energy between sensible heat flux (H) and latent heat flux (LE). Formula: beta = H / LE.",
+    "is_exam": true,
+    "tags": ["Bowen Ratio", "Energy Partitioning"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Which force driving atmospheric motion is typically ignored in the Navier-Stokes equations?",
+    "answer": "Centrifugal force. It is usually combined with the gravitational force to define 'apparent gravity'.",
+    "is_exam": true,
+    "tags": ["Navier-Stokes", "Forces"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Under what specific meteorological condition can the Pressure Gradient Force (PGF) be considered negligible?",
+    "answer": "At the exact center of a high-pressure or low-pressure system where the spatial change in pressure is zero.",
+    "is_exam": true,
+    "tags": ["PGF", "Pressure Systems"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "According to Reynolds decomposition, which part of a time series (Mean or Fluctuation) is responsible for turbulent fluxes?",
+    "answer": "The fluctuation part. Turbulent fluxes are determined by the covariances of these fluctuations (e.g., w'T').",
+    "is_exam": true,
+    "tags": ["Reynolds Decomposition", "Flux"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Provide an example of a local first-order closure approach used in boundary layer modeling.",
+    "answer": "The K-approach (or K-theory). It parameterizes turbulent fluxes as being proportional to the local mean gradient.",
+    "is_exam": true,
+    "tags": ["Closure", "K-theory"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "THEORY",
+    "difficulty": "HARD",
+    "question": "Which terms in the TKE budget equation are typically neglected in a steady-state, homogeneous surface layer?",
+    "answer": "The TKE tendency (local change), advection, the pressure term, and the turbulent transport of TKE.",
+    "is_exam": true,
+    "tags": ["TKE Budget", "Assumptions"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "A stability parameter (zeta = z/L) with a value less than zero indicates what type of stratification?",
+    "answer": "Unstable stratification. It means buoyancy is producing turbulence.",
+    "is_exam": true,
+    "tags": ["MOST", "Stability"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Intro Boundary-layer meteorology",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "In the regime of free convection, which velocity scale is used for dimensionless grouping?",
+    "answer": "The convective velocity scale (w*).",
+    "is_exam": true,
+    "tags": ["Scaling", "Free Convection"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "In which part of the turbulence spectrum (Macro or Micro range) is turbulent kinetic energy produced?",
+    "answer": "In the macro range, via large eddies driven by shear or buoyancy. Energy is dissipated in the micro range.",
+    "is_exam": true,
+    "tags": ["Turbulence", "Energy Cascade"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Intro Boundary-layer meteorology",
+    "entry_type": "TF",
+    "difficulty": "EASY",
+    "question": "True or False: Land-sea breezes and mountain-valley winds are both thermally induced wind systems.",
+    "answer": "True. These systems are driven by horizontal pressure gradients resulting from the differential heating and cooling of different surface types or terrain features.",
+    "is_exam": true,
+    "tags": ["Wind Systems", "Thermodynamics"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Surface energy and mass balances",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Atmospheric heat flux measurements show a latent heat flux (QE) of 0 W/m2. Which of the following surfaces could this be (Select all that apply): Desert, Ice, Forest, or Tropical Ocean?",
+    "answer": "Desert and Ice. Deserts lack water for evaporation, and very cold ice/snow packs have negligible sublimation/melting at low temperatures.",
+    "is_exam": true,
+    "tags": ["Latent Heat", "Land-cover"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "THEORY",
+    "difficulty": "HARD",
+    "question": "Where are counter-gradient fluxes most likely to occur: In an Oasis, a Forest, or over a Glacier?",
+    "answer": "In a Forest. Large-scale turbulent eddies (sweeps and ejections) within the dense canopy can transport heat or moisture against the local vertical gradient.",
+    "is_exam": true,
+    "tags": ["Counter-gradient", "Forest"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Surface energy and mass balances",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Where is the temperature maximum typically found in a crop field: At the top of the canopy, Inside the canopy, or At the ground surface?",
+    "answer": "Inside the canopy. This is the region where maximum solar radiation absorption occurs within the plant structure.",
+    "is_exam": true,
+    "tags": ["Crops", "Temperature Profiles"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Surface energy and mass balances",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "A negative daytime Net Ecosystem Exchange (NEE) indicates the presence of: Bare soil, Sandy desert, or Active vegetation?",
+    "answer": "Active vegetation. Negative NEE represents a net carbon sink where photosynthesis exceeds respiration.",
+    "is_exam": true,
+    "tags": ["Carbon Flux", "Vegetation"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Surface energy and mass balances",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "The Ground Heat Flux (QG) is nearly zero in which of the following cases (Select all that apply): 1m snow pack, Shallow water body, Dense forest, or Grassland?",
+    "answer": "1m snow pack (due to insulation) and Dense forest (due to canopy shading).",
+    "is_exam": true,
+    "tags": ["Ground Heat Flux", "Insulation"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Shortwave radiation is absorbed across a volume rather than at a skin-surface in which of the following cases (Select all that apply): Bare soil, Ice, Forest, Crops, or Desert?",
+    "answer": "Ice, Forest, and Crops. These are translucent or porous media that follow Beer's Law of radiation extinction.",
+    "is_exam": true,
+    "tags": ["Beer's Law", "Radiation"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Surface energy and mass balances",
+    "entry_type": "TF",
+    "difficulty": "EASY",
+    "question": "True or False: The surface temperature amplitude (diurnal range) of water is typically greater than that of land.",
+    "answer": "False. Water has higher thermal capacity, deep radiation penetration, and efficient vertical mixing, resulting in much smaller temperature fluctuations.",
+    "is_exam": true,
+    "tags": ["Thermal Inertia", "Water"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Which physical law determines the absorption of direct beam solar radiation based on the angle of incidence: Lambert's Cosine Law or Beer's Law?",
+    "answer": "Lambert's Cosine Law. Beer's Law describes the extinction of radiation as it passes through a medium.",
+    "is_exam": true,
+    "tags": ["Radiation", "Lambert's Law"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Surface energy and mass balances",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "Why does a shallow pond experience a much larger diurnal temperature range than a deep lake? (Select all that apply): Low thermal capacity of the volume, Radiation reaching the underlying soil (Beer's Law), or High evaporative cooling?",
+    "answer": "Low thermal capacity of the volume and Radiation reaching the underlying soil. The soil acts as a secondary heat source, and the small volume has low thermal inertia compared to a deep lake.",
+    "is_exam": true,
+    "tags": ["Water", "Thermal Inertia", "Beer's Law"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "THEORY",
+    "difficulty": "HARD",
+    "question": "During the day in a sandy desert, what is the typical stability state (zeta) and how does it affect the vertical transport of dust?",
+    "answer": "The state is strongly unstable (zeta << 0). Intense sensible heat flux (QH) generates powerful vertical convection, which enhances the vertical mixing and transport of dust into the upper boundary layer.",
+    "is_exam": true,
+    "tags": ["Desert", "Stability", "Convection"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Surface energy and mass balances",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Which of the following factors causes the albedo of a snowpack to decrease over time (Select all that apply): Accumulation of dust/impurities, Growth of ice crystal size (metamorphism), or Increased density?",
+    "answer": "Accumulation of dust and Growth of ice crystal size. Larger grains and darker particles absorb more radiation, significantly reducing the surface reflectance.",
+    "is_exam": true,
+    "tags": ["Snow", "Albedo"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "If a wind direction shift moves the 'flux footprint' from a forest to a paved parking lot, why does the data become invalid for the forest study?",
+    "answer": "The sensors are now measuring air modified by the parking lot's high sensible heat and lack of CO2 exchange. The measurements are no longer representative of the target forest ecosystem due to the change in fetch.",
+    "is_exam": true,
+    "tags": ["Eddy Covariance", "Footprint", "Fetch"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Surface energy and mass balances",
+    "entry_type": "TF",
+    "difficulty": "EASY",
+    "question": "True or False: In a forest at night, the air inside the canopy (stem space) typically cools faster than the air at the canopy top.",
+    "answer": "False. The canopy top is the radiative surface that loses longwave radiation to the sky, cooling rapidly. The stem space is sheltered and remains warmer due to the insulating effect of the biomass above.",
+    "is_exam": true,
+    "tags": ["Forest", "Radiation", "Diurnal Cycle"]
   }
 ]

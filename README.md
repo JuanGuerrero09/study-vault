@@ -7,3 +7,6 @@ Data currently in:
 
 - Climatology (Class 8)
 - Hydrology (Class 8)
+
+To run the program:
+uv run uvicorn main:app --reload

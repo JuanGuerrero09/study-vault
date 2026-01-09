@@ -26,9 +26,9 @@ async def read_bank():
 async def read_session():
     return FileResponse("static/study_session.html")
 
-@app.get("/exam")
-async def read_exam():
-    return FileResponse("static/exam.html")
+# @app.get("/exam")
+# async def read_exam():
+#     return FileResponse("static/exam.html")
 
 @app.get(path="/theory")
 async def read_theory():
@@ -76,6 +76,8 @@ async def get_questions(
     with open(file_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
+
+    questions = [print(item) for item in data]
     questions = [Question(**item) for item in data]
 
 
