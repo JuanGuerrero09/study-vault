@@ -1322,5 +1322,145 @@
     "answer": "False. The canopy top is the radiative surface that loses longwave radiation to the sky, cooling rapidly. The stem space is sheltered and remains warmer due to the insulating effect of the biomass above.",
     "is_exam": true,
     "tags": ["Forest", "Radiation", "Diurnal Cycle"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Surface energy and mass balances",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "How are the water and energy cycles connected?",
+    "answer": "They are coupled primarily through Evapotranspiration (Latent Heat Flux). Solar energy is required to change liquid water into vapor (energy cycle), which then moves water from the surface to the atmosphere (water cycle).",
+    "is_exam": true,
+    "tags": ["Water Cycle", "Energy Cycle", "Latent Heat"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Carbon Cycle",
+    "entry_type": "TF",
+    "difficulty": "MEDIUM",
+    "question": "Net primary productivity (NPP) includes litter respiration.",
+    "answer": "False. NPP is Gross Primary Productivity (GPP) minus plant (autotrophic) respiration. Litter (heterotrophic) respiration is subtracted to find Net Ecosystem Productivity (NEP).",
+    "is_exam": true,
+    "tags": ["Carbon Cycle", "NPP", "Respiration"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Physical basics of boundary layer meteorology",
+    "entry_type": "TF",
+    "difficulty": "EASY",
+    "question": "Soil thermal conductivity depends on soil moisture.",
+    "answer": "True. Water is a much better conductor of heat than the air pockets it replaces in the soil, so adding moisture significantly increases conductivity.",
+    "is_exam": true,
+    "tags": ["Soil Physics", "Conductivity"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Boundary Layer Structure",
+    "entry_type": "TF",
+    "difficulty": "EASY",
+    "question": "The boundary layer height changes throughout the day.",
+    "answer": "True. It typically grows deep during the day due to convective heating and collapses to a shallow stable layer at night.",
+    "is_exam": true,
+    "tags": ["Boundary Layer", "Diurnal Cycle"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Boundary Layer Structure",
+    "entry_type": "TF",
+    "difficulty": "MEDIUM",
+    "question": "The boundary layer is limited by an inversion at the top.",
+    "answer": "True. A 'Capping Inversion' (layer of warmer air) typically sits atop the boundary layer, trapping turbulence and pollutants below it.",
+    "is_exam": true,
+    "tags": ["Inversion", "Structure"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Surface energy and mass balances",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "In which units do we usually express sensible and latent heat fluxes to calculate the Bowen ratio?",
+    "answer": "Energetic units (W/m²). The Bowen ratio is the ratio of Sensible Heat Flux (H) to Latent Heat Flux (LE).",
+    "is_exam": true,
+    "tags": ["Bowen Ratio", "Units"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Atmospheric Stability",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Name two measures of atmospheric stability.",
+    "answer": "Common measures include the Richardson Number (Ri), the Monin-Obukhov Length (L), and the Brunt-Väisälä Frequency (N).",
+    "is_exam": true,
+    "tags": ["Stability", "Definitions"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Near-surface turbulence and land-cover types",
+    "entry_type": "TF",
+    "difficulty": "MEDIUM",
+    "question": "Atmospheric flux measurements (Eddy Covariance) always consider the same source area (footprint).",
+    "answer": "False. The 'flux footprint' changes constantly depending on wind direction, wind speed, and atmospheric stability.",
+    "is_exam": true,
+    "tags": ["Eddy Covariance", "Footprint"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Radiation Laws",
+    "entry_type": "EXERCISE",
+    "difficulty": "EASY",
+    "question": "Calculate the amount of radiation emitted by the Earth with a surface temperature of 30°C, assuming it is a black body.",
+    "answer": "Using Stefan-Boltzmann Law (L = sigma * T^4) with T in Kelvin (303.15 K) and sigma = 5.67e-8. L = 5.67e-8 * (303.15)^4 = 479.1 W/m2.",
+    "is_exam": true,
+    "tags": ["Stefan-Boltzmann", "Radiation"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Eddy Covariance",
+    "entry_type": "EXERCISE",
+    "difficulty": "HARD",
+    "question": "Convert 30-min covariances w'T' = 0.2 K m/s and w'e' = 0.2 hPa m/s (T=295K, p=1000hPa) into heat fluxes and find the Bowen ratio.",
+    "answer": "H = rho * cp * w'T' = 1.18 * 1005 * 0.2 = 237.2 W/m2. LE = (rho * Lv * 0.622 / p) * w'e' = (1.18 * 2.45e6 * 0.622 / 1000) * 0.2 = 359.6 W/m2. Bowen Ratio (H/LE) = 0.66.",
+    "is_exam": true,
+    "tags": ["Sensible Heat", "Latent Heat", "Bowen Ratio"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Wind Profiles",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "Calculate the roughness length (z0) over a non-vegetated surface where u* = 0.4 m/s and u(10m) = 6 m/s.",
+    "answer": "Using u(z) = (u*/k) * ln(z/z0). 6 = (0.4/0.4) * ln(10/z0) -> 6 = ln(10/z0) -> e^6 = 10/z0. z0 = 10 / 403.4 = 0.0248 m.",
+    "is_exam": true,
+    "tags": ["Roughness Length", "Logarithmic Wind Profile"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Wind Profiles",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "Calculate wind speed at 10m over grassland (height 0.9m) with u* = 0.4 m/s.",
+    "answer": "d = 0.6m (2/3 height), z0 = 0.09m (0.1 height). u(10) = (0.4/0.4) * ln((10-0.6)/0.09) = 4.65 m/s.",
+    "is_exam": true,
+    "tags": ["Grassland", "Wind Speed"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Energy Balance",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "Estimate latent heat flux given partial T = 1.5K, partial e = 2hPa, H = 150 W/m2, and gamma = 0.667 hPa/K.",
+    "answer": "Bowen ratio (beta) = gamma * (dT/de) = 0.667 * (1.5/2) = 0.5. LE = H / beta = 150 / 0.5 = 300 W/m2.",
+    "is_exam": true,
+    "tags": ["Psychrometric", "Latent Heat"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Wind Profiles",
+    "entry_type": "EXERCISE",
+    "difficulty": "HARD",
+    "question": "Over 0.9m tall grass, horizontal wind speed is 3 m/s at 2m height. Calculate the wind speed at 10m.",
+    "answer": "d=0.6, z0=0.09. First find u*: 3 = (u*/0.4) * ln((2-0.6)/0.09) -> u* = 0.437 m/s. Then find u(10): u(10) = (0.437/0.4) * ln((10-0.6)/0.09) = 5.08 m/s.",
+    "is_exam": true,
+    "tags": ["Extrapolation", "Logarithmic Profile"]
   }
 ]

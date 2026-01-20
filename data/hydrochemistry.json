@@ -1,0 +1,1432 @@
+[
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Structure and Properties of Water",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "Why does the 104.5° bond angle make water a polar molecule compared to CO2?",
+    "answer": "The bent geometry prevents the O-H bond dipoles from canceling out, creating a net dipole moment. CO2 is linear (180°), so its dipoles cancel, making it non-polar.",
+    "is_exam": false,
+    "tags": ["Molecular Geometry", "Polarity"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Structure and Properties of Water",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Explain the significance of water's density maximum at 4 °C for aquatic ecosystems.",
+    "answer": "At 4 °C water is at its densest and sinks to the bottom. Below 4 °C, it expands as it freezes. This ensures that ice forms on the surface, insulating the liquid water below and allowing life to survive winter.",
+    "is_exam": false,
+    "tags": ["Density Anomaly", "Lakes"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Speciation",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "In the ammonia system, which species dominates at a pH of 11: NH3 or NH4+?",
+    "answer": "NH3 (Ammonia). At high pH (alkaline), the concentration of H+ ions is low, favoring the deprotonated, uncharged toxic gas form.",
+    "is_exam": false,
+    "tags": ["Speciation", "Ammonia", "pH"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Speciation",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "Order the dominant inorganic carbon species from low pH to high pH.",
+    "answer": "CO2 (dissolved gas/carbonic acid) -> HCO3- (Bicarbonate) -> CO3(2-) (Carbonate).",
+    "is_exam": false,
+    "tags": ["Carbon System", "pH"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Water Analysis",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What is the Cation-Anion Balance (CAB) and why is it used to check water analyses?",
+    "answer": "The CAB is a calculation to ensure the sum of cations equals the sum of anions in meq/L. It is based on the principle of electroneutrality; a deviation > 5% suggests an error in the analytical measurement.",
+    "is_exam": false,
+    "tags": ["CAB", "Water Quality"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Structure and Properties of Water",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "Explain how water's high dielectric constant aids in the dissolution of ionic salts.",
+    "answer": "Water's high dielectric constant (approx. 80) reduces the electrostatic force of attraction between cations and anions, allowing them to separate and be stabilized within hydration shells.",
+    "is_exam": false,
+    "tags": ["Solubility", "Dielectric Constant"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Microscopic–macroscopic link",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Why is the boiling point of water much higher than expected based on its molecular mass?",
+    "answer": "Water forms a 3D network of four hydrogen bonds per molecule (2 donors, 2 acceptors). Breaking this extensive network to transition into a gas requires significantly more thermal energy than other molecules of similar mass.",
+    "is_exam": false,
+    "tags": ["Hydrogen Bonding", "Boiling Point"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Vapor Pressure",
+    "entry_type": "EXERCISE",
+    "difficulty": "HARD",
+    "question": "Using the Kelvin equation, explain why smaller droplets evaporate faster than larger ones.",
+    "answer": "Decreasing the radius (r) increases the saturation vapor pressure (p) above the curved surface. This higher pressure increases the escape tendency of molecules, leading to faster evaporation compared to flat or larger surfaces.",
+    "is_exam": false,
+    "tags": ["Kelvin Equation", "Vapor Pressure"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Surface Tension",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "How do cohesion and adhesion together explain capillary rise?",
+    "answer": "Adhesion attracts water molecules to the tube walls, pulling the edges upward. Cohesion holds the water molecules together, dragging the rest of the column up behind the edges.",
+    "is_exam": false,
+    "tags": ["Capillary Rise", "Cohesion", "Adhesion"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Thermodynamics",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Differentiate between enthalpy of fusion and enthalpy of vaporization; why is the latter much larger for water?",
+    "answer": "Fusion is the energy to loosen bonds to melt ice; vaporization is the energy to break all hydrogen bonds to create gas. Vaporization is larger because it requires total disconnection of the H-bond network.",
+    "is_exam": false,
+    "tags": ["Enthalpy", "Phase Change"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Thermodynamics",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "For a process with positive enthalpy (delta H > 0) and positive entropy (delta S > 0), under what condition is it spontaneous?",
+    "answer": "The process is spontaneous (delta G < 0) only at high temperatures, specifically when T > (delta H / delta S).",
+    "is_exam": false,
+    "tags": ["Gibbs Energy", "Entropy"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Surface Tension",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "EASY",
+    "question": "Provide two natural examples where surface tension is critical.",
+    "answer": "1. Water striders walking on the water surface without sinking. 2. The formation of spherical rain droplets to minimize surface area.",
+    "is_exam": false,
+    "tags": ["Surface Tension", "Cohesion"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Phase Dynamics",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "How does increasing pressure alter the ice structure and its melting behavior?",
+    "answer": "Increasing pressure breaks the open tetrahedral structure of ice, forcing molecules closer together. In water's unique phase diagram, this lowers the melting temperature.",
+    "is_exam": false,
+    "tags": ["Phase Diagram", "Pressure"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Thermodynamics",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Explain how water's high heat capacity stabilizes climate and aquatic environments.",
+    "answer": "Water can absorb or release large amounts of heat with minimal change in its own temperature. This 'thermal buffering' prevents extreme temperature swings in oceans and lakes.",
+    "is_exam": false,
+    "tags": ["Heat Capacity", "Thermal Stability"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Microscopic–macroscopic link",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "Why do dispersion (London) forces matter even in nonpolar liquids?",
+    "answer": "They are the only intermolecular forces present in nonpolar substances. Without these temporary dipoles, nonpolar gases like O2 or CH4 could never condense into liquids.",
+    "is_exam": false,
+    "tags": ["Dispersion Forces", "Intermolecular Forces"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Vapor Pressure",
+    "entry_type": "EXERCISE",
+    "difficulty": "HARD",
+    "question": "If a droplet has a radius of 10^-9 m, will p/p0 be greater or less than 1, and what does this imply for cloud growth?",
+    "answer": "p/p0 will be greater than 1. This implies the droplet requires supersaturated conditions (>100% relative humidity) to grow; otherwise, it will evaporate.",
+    "is_exam": false,
+    "tags": ["Kelvin Equation", "Cloud Physics"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Thermodynamics",
+    "entry_type": "COMPARATIVE",
+    "difficulty": "MEDIUM",
+    "question": "Why does the temperature of the ocean change slower than beach sand?",
+    "answer": "Water has a much higher molar heat capacity than the minerals in sand, and radiation is absorbed through a deep volume in water compared to the opaque surface layer of sand.",
+    "is_exam": false,
+    "tags": ["Heat Capacity", "Thermal Inertia"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Thermodynamics",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "When a metastable heat pack crystallizes, is the process exothermic/endothermic and what happens to entropy?",
+    "answer": "The process is exothermic (releases heat). Entropy decreases (delta S < 0) because the molecules move from a disordered liquid to an ordered solid crystal lattice.",
+    "is_exam": false,
+    "tags": ["Entropy", "Crystallization"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Surface Tension",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Why is detergent added to water to clean clothes in terms of surface tension?",
+    "answer": "Detergents are surfactants that lower the surface tension of water, allowing it to 'wet' the fabric and penetrate small pores to remove dirt more effectively.",
+    "is_exam": false,
+    "tags": ["Surfactants", "Surface Tension"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Properties of Aqueous Solutions",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "Provide the formulas for the following concentration measures: Mass Concentration, Molar Concentration, and Molal Concentration.",
+    "answer": "Mass Concentration (beta) = Mass / Volume. Molar Concentration (c) = Moles / Volume. Molal Concentration (cm) = Moles / Mass of solvent.",
+    "is_exam": false,
+    "tags": ["Formulas", "Concentrations"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Properties of Aqueous Solutions",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Explain the calculation and physical meaning of Equivalent Concentration (ceq) and Mole Fractions (x).",
+    "answer": "Equivalent Concentration (ceq) = Molar Concentration * Ionic Charge (z). Mole Fraction (x) = Moles of solute / Total moles in solution. Equivalent concentration represents the charge-carrying capacity of the ions.",
+    "is_exam": false,
+    "tags": ["Equivalent Concentration", "Mole Fraction"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Properties of Aqueous Solutions",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "How is the partial pressure of a gas calculated in a mixture using Dalton's Law?",
+    "answer": "Partial Pressure = (Moles of specific gas / Total moles of gas) * Total Pressure. It represents the pressure that gas would exert if it occupied the volume alone.",
+    "is_exam": false,
+    "tags": ["Dalton's Law", "Partial Pressure"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Hardness of Water",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Define and distinguish between Total Hardness (TH), Carbonate Hardness (CH), and Non-Carbonate Hardness (NCH).",
+    "answer": "TH is the sum of Mg2+ and Ca2+ concentrations. CH is the part of TH balanced by bicarbonate/carbonate ions (temporary). NCH is the part balanced by other ions like sulfate or chloride (permanent). TH = CH + NCH.",
+    "is_exam": false,
+    "tags": ["Hardness", "Water Chemistry"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Hardness of Water",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Name two operational problems caused by increased water hardness and explain the chemical basis.",
+    "answer": "1. Scaling: Heating causes CaCO3 to precipitate, clogging pipes. 2. Soap Scum: Divalent cations react with soap molecules to form insoluble solids, reducing cleaning efficiency.",
+    "is_exam": false,
+    "tags": ["Scaling", "Soap Scum", "Hardness"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Water Analysis",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "How is the electrical neutrality condition used to evaluate the plausibility of a water analysis?",
+    "answer": "In a neutral solution, the sum of cation equivalents must equal the sum of anion equivalents. A Cation-Anion Balance (CAB) error of <5% indicates a plausible and accurate analysis.",
+    "is_exam": false,
+    "tags": ["Neutrality", "CAB", "Plausibility"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Properties of Aqueous Solutions",
+    "entry_type": "THEORY",
+    "difficulty": "HARD",
+    "question": "How are activity coefficients calculated for ions, and how does the charge of the ion affect the result?",
+    "answer": "Activity coefficients are typically calculated using the Debye-Huckel equation, which depends on the ionic strength of the solution. Multivalent ions (e.g., Ca2+) have significantly lower activity coefficients than monovalent ions (e.g., Na+) as ionic strength increases.",
+    "is_exam": false,
+    "tags": ["Activity", "Debye-Huckel", "Ionic Strength"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Properties of Aqueous Solutions",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "What is the physical meaning of Avogadro's number (6.022 x 10^23)?",
+    "answer": "It serves as the bridge between the microscopic world (individual atoms/molecules) and the macroscopic world (grams), defining the number of entities in one mole.",
+    "is_exam": false,
+    "tags": ["Avogadro", "Mole"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Properties of Aqueous Solutions",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "Calculate the molar concentration of 100g of water (H2O) in a 1L volume (M = 18 g/mol).",
+    "answer": "n = 1000g / 18g/mol = 55.56 mol. c = 55.56 mol / 1L = 55.56 mol/L.",
+    "is_exam": false,
+    "tags": ["Molarity", "Calculations"]
+  },
+  {
+    "subject": "Hardness of Water",
+    "topic": "Hardness of Water",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Why is carbonate hardness referred to as 'temporary hardness'?",
+    "answer": "Because it can be removed by boiling. Heating water causes calcium and magnesium bicarbonates to decompose, releasing CO2 and forming insoluble carbonate precipitates (scale).",
+    "is_exam": false,
+    "tags": ["Hardness", "Scaling"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Properties of Aqueous Solutions",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Compare molarity and molality regarding their sensitivity to temperature changes.",
+    "answer": "Molarity (mol/L) is temperature-dependent because volume changes with temperature. Molality (mol/kg) is independent of temperature because mass remains constant.",
+    "is_exam": false,
+    "tags": ["Molarity", "Molality"]
+  },
+  {
+    "subject": "Hardness of Water",
+    "topic": "Hardness of Water",
+    "entry_type": "EXERCISE",
+    "difficulty": "HARD",
+    "question": "Explain the stoichiometric reason why carbonate hardness is calculated as 0.5 * c(HCO3-).",
+    "answer": "Charge neutrality requires two monovalent bicarbonate ions (HCO3-) to balance one divalent cation (Ca2+ or Mg2+) in the bicarbonate system.",
+    "is_exam": false,
+    "tags": ["Hardness", "Stoichiometry"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Properties of Aqueous Solutions",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "State the condition of electrical neutrality for an aqueous solution.",
+    "answer": "The sum of the equivalent concentrations of all cations must equal the sum of the equivalent concentrations of all anions: sum(ci * zi) = 0.",
+    "is_exam": false,
+    "tags": ["Electrical Neutrality", "CAB"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Properties of Aqueous Solutions",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "Calculate the equivalent concentration (meq/L) for 5 mmol/L of Sulfate (SO4^2-).",
+    "answer": "ceq = z * c = 2 * 5 mmol/L = 10 meq/L.",
+    "is_exam": false,
+    "tags": ["Equivalent Concentration", "Sulfate"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Properties of Aqueous Solutions",
+    "entry_type": "EXERCISE",
+    "difficulty": "HARD",
+    "question": "Using Dalton's Law, find the partial pressure of CO2 in a mixture at 1 atm if the concentration is 415 ppm.",
+    "answer": "Pi = xi * Ptotal. 415 ppm = 0.000415. Partial Pressure = 0.000415 * 1 atm = 0.000415 atm.",
+    "is_exam": false,
+    "tags": ["Dalton", "Partial Pressure"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Properties of Aqueous Solutions",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "A water sample contains Na+ = 2.0 meq/L, Ca2+ = 3.0 meq/L, and Cl- = 5.0 meq/L. Does this satisfy the electrical neutrality condition?",
+    "answer": "Yes. Sum of cations = 2.0 + 3.0 = 5.0 meq/L. Sum of anions = 5.0 meq/L. Cations = Anions, so neutrality is satisfied.",
+    "is_exam": false,
+    "tags": ["Neutrality", "Cation-Anion Balance"]
+  },
+  {
+    "subject": "Hardness of Water",
+    "topic": "Hardness of Water",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Compare Sample A (high chloride) and Sample B (high bicarbonate) with equal Total Hardness; which causes more scaling when heated?",
+    "answer": "Sample B. Bicarbonate-associated hardness is temporary and precipitates as CaCO3 upon heating. Chloride-associated hardness is permanent and remains dissolved.",
+    "is_exam": false,
+    "tags": ["Hardness", "Scaling"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Properties of Aqueous Solutions",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "According to Avogadro's Principle, how does the number of molecules in 1L of pure O2 compare to 1L of a mixture of N2 and O2 at the same T and P?",
+    "answer": "They contain the exact same number of molecules. Avogadro's Principle states that equal volumes of any gas at the same temperature and pressure contain the same number of particles.",
+    "is_exam": false,
+    "tags": ["Avogadro's Principle", "Ideal Gas"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Properties of Aqueous Solutions",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Why is molality (mol/kg) preferred over molarity (mol/L) in high-pressure environments like the deep sea?",
+    "answer": "Volume is sensitive to pressure (compressibility), which would change the molarity calculation. Mass is independent of pressure, making molality a stable measure of concentration.",
+    "is_exam": false,
+    "tags": ["Molality", "Pressure"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Properties of Aqueous Solutions",
+    "entry_type": "EXERCISE",
+    "difficulty": "EASY",
+    "question": "How many individual ions are present in one mole of fully dissolved MgCl2?",
+    "answer": "3 moles of ions (1 mole of Mg2+ and 2 moles of Cl-).",
+    "is_exam": false,
+    "tags": ["Dissociation", "Ions"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Properties of Aqueous Solutions",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "Calculate the concentration of Phosphorus (as P) in a sample containing 95 mg/L of Phosphate (PO4^3-). (Atomic weights: P=31, O=16)",
+    "answer": "Mass fraction of P in PO4 = 31/95 = 0.326. Concentration as P = 95 mg/L * 0.326 = 31 mg/L as P.",
+    "is_exam": false,
+    "tags": ["Phosphorus", "Conversions"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Properties of Aqueous Solutions",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "Convert K+ = 39 mg/L (M=39) and SO4^2- = 48 mg/L (M=96) to meq/L and determine if the charges are balanced.",
+    "answer": "K+ = (39/39)*1 = 1 meq/L. SO4^2- = (48/96)*2 = 1 meq/L. The charges are balanced (1 meq/L = 1 meq/L).",
+    "is_exam": false,
+    "tags": ["Potassium", "Sulfate", "Equivalent Concentration"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Properties of Aqueous Solutions",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "A solution has 0.5 moles of solute in 500g of water with a total volume of 0.6L. Calculate Molarity and Molality.",
+    "answer": "Molarity = 0.5 mol / 0.6 L = 0.83 mol/L. Molality = 0.5 mol / 0.5 kg = 1.0 mol/kg.",
+    "is_exam": false,
+    "tags": ["Molarity", "Molality"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Properties of Aqueous Solutions",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "Calculate the mole fraction of ethanol in a mixture of 46g Ethanol (M=46) and 54g Water (M=18).",
+    "answer": "n(Ethanol) = 46/46 = 1 mol. n(Water) = 54/18 = 3 mol. Total moles = 4. Mole fraction = 1/4 = 0.25 (25%).",
+    "is_exam": false,
+    "tags": ["Mole Fraction", "Ethanol"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Hardness of Water",
+    "entry_type": "EXERCISE",
+    "difficulty": "HARD",
+    "question": "A sample has TH = 3.0 mmol/L and Bicarbonate = 8.0 mmol/L. Calculate CH and NCH.",
+    "answer": "Theoretical CH = 8.0 / 2 = 4.0 mmol/L. Since CH cannot exceed TH, CH = 3.0 mmol/L and NCH = 0 mmol/L.",
+    "is_exam": false,
+    "tags": ["Hardness", "Constraint"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Properties of Aqueous Solutions",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "A water analysis shows Ca2+ = 40 mg/L (M=40) and Cl- = 71 mg/L (M=35.5). Convert both to meq/L.",
+    "answer": "Ca2+ = (40 mg/L / 40 g/mol) * 2 = 2 meq/L. Cl- = (71 mg/L / 35.5 g/mol) * 1 = 2 meq/L.",
+    "is_exam": false,
+    "tags": ["Calcium", "Chloride", "meq/L"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Properties of Aqueous Solutions",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "Calculate the Molality of a solution containing 100g of NaCl (M=58.5) dissolved in 1 kg of water.",
+    "answer": "n = 100g / 58.5 g/mol = 1.709 mol. Molality = 1.709 mol / 1 kg = 1.709 mol/kg.",
+    "is_exam": false,
+    "tags": ["NaCl", "Molality"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Properties of Aqueous Solutions",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "How are activity coefficients calculated for monovalent and multivalent ions in solutions with different ionic strengths?",
+    "answer": "Using the Debye-Hückel (for I < 0.005) or Güntelberg (for I < 0.1) equations. The calculation depends on the ionic strength and the square of the ion's charge.",
+    "is_exam": false,
+    "tags": ["Activity", "Debye-Hückel", "Güntelberg"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Properties of Aqueous Solutions",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Why do multivalent ions contribute more strongly to ionic strength (I) than univalent ions?",
+    "answer": "Because the ionic strength formula uses the square of the ion's charge (z^2). A divalent ion (z=2) contributes 4 times as much to the electrostatic environment as a monovalent ion (z=1) at the same molarity.",
+    "is_exam": false,
+    "tags": ["Ionic Strength", "Charge"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Hardness of Water",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "How does water hardness influence both scaling and corrosion processes?",
+    "answer": "Hardness causes scaling through CaCO3 precipitation. However, it can inhibit corrosion by forming a protective CaCO3 layer (passivation) on metal surfaces, preventing oxidation.",
+    "is_exam": false,
+    "tags": ["Scaling", "Corrosion", "Hardness"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Properties of Aqueous Solutions",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Why does the activity coefficient (gamma) approach 1 at infinite dilution?",
+    "answer": "At infinite dilution, ions are so far apart that electrostatic interactions and shielding (the ion atmosphere) become zero. In this state, activity equals concentration.",
+    "is_exam": false,
+    "tags": ["Activity", "Infinite Dilution"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Properties of Aqueous Solutions",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What limitations does the Debye-Hückel equation have in natural waters?",
+    "answer": "It is only valid for very dilute solutions where ionic strength (I) is less than 0.005 mol/L. It fails in saline or brackish waters.",
+    "is_exam": false,
+    "tags": ["Debye-Hückel", "Limits"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Reaction Equilibria",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Why are solids and the solvent (water) excluded from Law of Mass Action (LMA) expressions?",
+    "answer": "Because their activities are constant. A solid's activity is defined as 1, and in dilute solutions, water is present in such excess that its activity also remains essentially 1.",
+    "is_exam": false,
+    "tags": ["LMA", "Activity"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Reaction Equilibria",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "How does ionic strength affect the solubility of sparingly soluble salts?",
+    "answer": "This is the 'Salt Effect.' Increasing ionic strength lowers the activity coefficients of the ions (more shielding). To maintain the equilibrium constant K, more salt must dissolve to compensate.",
+    "is_exam": false,
+    "tags": ["Solubility", "Salt Effect"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Reaction Equilibria",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "What is the physical meaning of a large equilibrium constant (K)?",
+    "answer": "A large K indicates that at equilibrium, the products dominate over the reactants (the reaction goes nearly to completion).",
+    "is_exam": false,
+    "tags": ["Equilibrium Constant", "K"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Properties of Aqueous Solutions",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Why do higher ionic strengths reduce electrostatic interactions between primary ions?",
+    "answer": "Higher ionic strength creates a denser 'Ion Atmosphere' or cloud of opposite charges around an ion. This cloud shields the ion, muffling its electric field.",
+    "is_exam": false,
+    "tags": ["Ion Atmosphere", "Shielding"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Properties of Aqueous Solutions",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "Why is conductivity a useful proxy for estimating ionic strength in the field?",
+    "answer": "Both depend on the total concentration and charge of dissolved ions. The rule of thumb I = conductivity / 6200 allows for quick estimation without a full lab analysis.",
+    "is_exam": false,
+    "tags": ["Conductivity", "Ionic Strength"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Properties of Aqueous Solutions",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "If the activity coefficient for a univalent ion (gamma_1) is 0.91, calculate gamma_2 for a divalent ion using the square-law relation.",
+    "answer": "gamma_2 = gamma_1^(z^2) = 0.91^(2^2) = 0.91^4 = 0.6857.",
+    "is_exam": false,
+    "tags": ["Calculation", "Activity"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Reaction Equilibria",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "In the equilibrium: CaCO3(s) + CO2(g) + H2O <-> Ca2+ + 2HCO3-, what happens to the dissolution of limestone if the partial pressure of CO2 is increased?",
+    "answer": "Increasing CO2 pressure shifts the equilibrium to the right, causing more limestone to dissolve to produce more Ca2+ and HCO3- ions.",
+    "is_exam": false,
+    "tags": ["Le Chatelier", "LMA"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Properties of Aqueous Solutions",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Between the Debye-Hückel and Güntelberg equations, which is more accurate for high ionic strength solutions like seawater?",
+    "answer": "The Güntelberg equation, as it is designed for higher ionic strengths up to 0.1 mol/L, whereas Debye-Hückel is only for very dilute solutions.",
+    "is_exam": false,
+    "tags": ["Equations", "Ionic Strength"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Properties of Aqueous Solutions",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "What happens to the activity coefficient (gamma) when a saline solution is diluted with distilled water?",
+    "answer": "The ionic strength decreases. As a result, the 'shielding' effect of the ion atmosphere decreases, and the activity coefficient increases toward 1.",
+    "is_exam": false,
+    "tags": ["Dilution", "Activity"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Properties of Aqueous Solutions",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "Calculate the Ionic Strength (I) in mol/L for a sample with conductivity k = 42 mS/m. Which activity equation is most appropriate?",
+    "answer": "I = 42 / 6200 = 0.00677 mol/L. Since I > 0.005 mol/L, the Güntelberg equation is more appropriate than the simple Debye-Hückel.",
+    "is_exam": false,
+    "tags": ["Conductivity", "Ionic Strength"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Properties of Aqueous Solutions",
+    "entry_type": "EXERCISE",
+    "difficulty": "HARD",
+    "question": "Calculate the exact Ionic Strength (I) for a solution with Na+ = 1.2 mmol/L, Mg2+ = 0.8 mmol/L, and Cl- = 2.8 mmol/L.",
+    "answer": "I = 0.5 * (1.2*1^2 + 0.8*2^2 + 2.8*1^2) = 0.5 * (1.2 + 3.2 + 2.8) = 3.6 mmol/L = 0.0036 mol/L.",
+    "is_exam": false,
+    "tags": ["Ionic Strength", "Calculation"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Properties of Aqueous Solutions",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "Given a univalent activity coefficient (gamma_1) of 0.88, calculate the activity coefficient (gamma_2) and the activity (a) for 0.8 mmol/L of Mg2+.",
+    "answer": "gamma_2 = 0.88^4 = 0.6. Activity (a) = 0.6 * 0.0008 mol/L = 0.00048 mol/L.",
+    "is_exam": false,
+    "tags": ["Activity", "Mg2+"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Reaction Equilibria",
+    "entry_type": "EXERCISE",
+    "difficulty": "HARD",
+    "question": "For the Gypsum dissolution (K* = 10^-4.6), if activity of Ca2+ = 10^-2.3, what is the required activity of SO4^2- for equilibrium?",
+    "answer": "LMA: K* = a(Ca2+) * a(SO4^2-). a(SO4^2-) = 10^-4.6 / 10^-2.3 = 10^-2.3 mol/L.",
+    "is_exam": false,
+    "tags": ["LMA", "Solubility", "Gypsum"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Reaction Equilibria",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "How does adding a non-reactive salt like NaCl affect the solubility of sparingly soluble Gypsum?",
+    "answer": "Adding NaCl increases ionic strength, which decreases activity coefficients (shielding). To maintain equilibrium (K*), the actual concentration of ions must increase, causing more solid Gypsum to dissolve (the Salt Effect).",
+    "is_exam": false,
+    "tags": ["Salt Effect", "Ionic Strength", "Solubility"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Colligative Properties",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "How do the vapor pressure, boiling point, and freezing point change in a phase diagram for an aqueous solution due to colligative properties?",
+    "answer": "Vapor pressure decreases, causing the boiling point to increase (boiling point elevation) and the freezing point to decrease (freezing point depression).",
+    "is_exam": false,
+    "tags": ["Phase Diagram", "Colligative Properties"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Colligative Properties",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "How do you calculate the relative changes of vapor pressure, boiling point, freezing point, and osmotic pressure depending on molal concentration (with and without dissociation)?",
+    "answer": "Using the formulas: delta P/P0 = i*x2 (Vapor Pressure), delta Tf = i*b*KKr (Freezing), delta Tb = i*b*Keb (Boiling), and pi = i*cRT (Osmotic). The van't Hoff factor (i) is 1 for non-dissociated solutes and >1 for ionic solutes.",
+    "is_exam": false,
+    "tags": ["Formulas", "van't Hoff"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Colligative Properties",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Why does CaCl2 cool more efficiently than NaCl when mixed with ice?",
+    "answer": "CaCl2 dissociates into 3 particles (i=3) while NaCl only produces 2 (i=2). Since colligative properties depend on the number of particles, CaCl2 creates a significantly larger freezing point depression.",
+    "is_exam": false,
+    "tags": ["Cooling", "Dissociation"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Colligative Properties",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Explain why pi = cRT is analogous to the ideal gas law.",
+    "answer": "The equation is mathematically identical to P = (n/V)RT. In a solution, solute particles create a pressure against the semipermeable membrane that follows the same thermodynamic laws as gas particles hitting a container wall.",
+    "is_exam": false,
+    "tags": ["Osmosis", "Ideal Gas Law"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Colligative Properties",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "Pure water has a vapor pressure of 23.8 mmHg at 25°C. You dissolve 2 moles of sugar in 50 moles of water. Calculate the Mole Fraction (x2) and the Vapor Pressure Lowering (delta p).",
+    "answer": "x2 = 2 / (50+2) = 0.0385. delta p = 0.0385 * 23.8 = 0.916 mmHg.",
+    "is_exam": false,
+    "tags": ["Vapor Pressure", "Exercise"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Colligative Properties",
+    "entry_type": "EXERCISE",
+    "difficulty": "HARD",
+    "question": "Calculate the freezing point of a 1 mol/kg solution of MgCl2 (i=3, KKr = -1.86).",
+    "answer": "delta Tf = 3 * 1.0 * -1.86 = -5.58 K. The freezing point is -5.58°C.",
+    "is_exam": false,
+    "tags": ["Freezing Point", "Exercise"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Colligative Properties",
+    "entry_type": "THEORY",
+    "difficulty": "HARD",
+    "question": "Explain in terms of entropy why adding salt to water increases the boiling point.",
+    "answer": "Adding salt increases the entropy (disorder) of the liquid phase, making it more energetically stable. This reduces the tendency of water molecules to escape into the gas phase, requiring higher temperatures to boil.",
+    "is_exam": false,
+    "tags": ["Entropy", "Boiling Point"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Colligative Properties",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "A red blood cell is placed in a hypertonic (salty) solution. Will the cell shrink or burst? Explain the water flow.",
+    "answer": "The cell will shrink (crenation). Water flows out of the cell toward the higher solute concentration outside to reach osmotic equilibrium.",
+    "is_exam": false,
+    "tags": ["Osmosis", "Biology"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Colligative Properties",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "If seawater has an osmotic pressure of 27 bar, and you apply a pump pressure of 20 bar, will you get fresh water out? Why?",
+    "answer": "No. To reverse osmosis, the applied pressure must be greater than the osmotic pressure. At 20 bar, the natural osmotic flow toward the salt water will continue.",
+    "is_exam": false,
+    "tags": ["Reverse Osmosis", "Pressure"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Colligative Properties",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "Define colligative properties and identify the four main types.",
+    "answer": "Properties that depend only on the number of solute particles, not their chemical identity. The types are: Vapor pressure lowering, Freezing point depression, Boiling point elevation, and Osmotic pressure.",
+    "is_exam": false,
+    "tags": ["Definitions"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Colligative Properties",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Why does the liquid phase region of a substance broaden on a phase diagram when a solute is added?",
+    "answer": "The solute acts as a 'chemical anchor' by lowering vapor pressure. This simultaneously raises the boiling point and lowers the freezing point, extending the liquid temperature range.",
+    "is_exam": false,
+    "tags": ["Phase Diagram"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Colligative Properties",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "Under what condition does Reverse Osmosis occur, and what is its primary industrial use?",
+    "answer": "It occurs when external pressure exceeds osmotic pressure. Its primary use is desalination (producing fresh water from seawater).",
+    "is_exam": false,
+    "tags": ["Reverse Osmosis"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Colligative Properties",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What does the osmotic coefficient (theta) represent in real-world aqueous solutions?",
+    "answer": "It represents the ratio between real osmotic pressure and ideal osmotic pressure, accounting for deviations from ideal behavior in non-dilute solutions.",
+    "is_exam": false,
+    "tags": ["Osmotic Coefficient"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Henry's Law",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "How do you compute the solubility of N2, O2, and CO2 at different temperatures using Henry’s law?",
+    "answer": "Solubility is calculated by finding the Henry constant (H) at the specific determined temperature for the gas and multiplying it by the partial pressure (p) of that gas.",
+    "is_exam": false,
+    "tags": ["Henry's Law", "Solubility", "Temperature"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Reaction Equilibria",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "How do you calculate equilibrium concentrations in open versus closed systems?",
+    "answer": "In an open system, concentrations are determined using Henry’s law directly. In a closed system, concentrations are calculated by performing a material balance to account for the finite amount of substance redistributing between the phases.",
+    "is_exam": false,
+    "tags": ["Open System", "Closed System", "Material Balance"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Reaction Equilibria",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "What is Le Chatelier’s principle and how does it explain the effect of increasing p(CO2) on pH?",
+    "answer": "Le Chatelier's principle states that altering the dynamic equilibrium of a system shifts the equilibrium in a direction that counteracts the change. Increasing p(CO2) shifts the carbonate equilibrium to the right, producing more H+ ions and lowering the pH.",
+    "is_exam": false,
+    "tags": ["Le Chatelier", "pH", "Ocean Acidification"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Reaction Equilibria",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "How does the value of the equilibrium constant (K) indicate whether reactants or products dominate at equilibrium?",
+    "answer": "Because the numerator of the K expression represents products, a value of K > 1 indicates that products dominate. Conversely, a value of K < 1 indicates that reactants dominate at equilibrium.",
+    "is_exam": false,
+    "tags": ["Equilibrium Constant", "K"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Reaction Equilibria",
+    "entry_type": "THEORY",
+    "difficulty": "HARD",
+    "question": "What is the difference between K*, K, 1/K, and the reaction quotient Q?",
+    "answer": "K* uses activities (thermodynamic), while K uses concentrations (conditional). 1/K represents the constant for the reverse reaction. Q is the ratio calculated at any time to predict which way a system will shift to reach equilibrium.",
+    "is_exam": false,
+    "tags": ["K*", "K", "Q", "Reverse Reaction"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Henry's Law",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What is meant by gas–water partitioning equilibrium?",
+    "answer": "It is the state where the chemical potential is equal in both the gas and aqueous phases. Molecules move between phases, but the net exchange is zero.",
+    "is_exam": false,
+    "tags": ["Partitioning", "Chemical Potential"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Henry's Law",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "How do absorption and desorption differ conceptually and mathematically?",
+    "answer": "Absorption is the net transfer of gas from the gas phase into the liquid phase, calculated using the Henry constant (H). Desorption is the loss of gas from the liquid to the gas phase, calculated using the inverse Henry constant (H_inv = 1/H).",
+    "is_exam": false,
+    "tags": ["Absorption", "Desorption", "Volatility"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Henry's Law",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "What happens to gas solubility when temperature increases and why?",
+    "answer": "Solubility decreases as temperature increases because gas dissolution is exothermic (releases heat). Adding heat shifts the equilibrium toward the reactants (gas phase) to consume the extra energy.",
+    "is_exam": false,
+    "tags": ["Solubility", "Temperature", "Exothermic"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Henry's Law",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "How much O2, N2, or CO2 can be dissolved in water at a given T and p using Henry’s law?",
+    "answer": "First, calculate the equilibrium concentration (c = p * H). Then, compare this saturation concentration with the current dissolved concentration to determine the remaining capacity for dissolution.",
+    "is_exam": false,
+    "tags": ["Henry's Law", "Oxygen", "Saturation"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Henry's Law",
+    "entry_type": "THEORY",
+    "difficulty": "HARD",
+    "question": "In a closed bottle, how do Vg, Vaq, m_total, and Kc determine beta_g and beta_aq?",
+    "answer": "From the mass balance: m_total = beta_g*Vg + beta_aq*Vaq. Since beta_aq = Kc*beta_g, then m_total = beta_g(Vg + Kc*Vaq). Thus, beta_g = m_total / (Vg + Kc*Vaq) and beta_aq = Kc * beta_g.",
+    "is_exam": false,
+    "tags": ["Material Balance", "Closed System", "Mass Concentration"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Henry's Law",
+    "entry_type": "EXERCISE",
+    "difficulty": "HARD",
+    "question": "For a closed 1 L bottle (0.5 L water, 0.5 L gas) containing a volatile compound, do you need the gas density to compute concentrations?",
+    "answer": "No. You only need the total mass (m_total), the phase volumes, and the partition coefficient (Kc). Redistribution depends on chemical affinity and volume, not the physical density of the gas.",
+    "is_exam": false,
+    "tags": ["Closed System", "Logic"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Henry's Law",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Explain why warming a lake reduces dissolved oxygen using Le Chatelier’s principle?",
+    "answer": "Dissolving O2 is exothermic: O2(g) <=> O2(aq) + Heat. According to Le Chatelier, adding heat pushes the reaction to the left (toward the gas phase), allowing oxygen to escape into the atmosphere.",
+    "is_exam": false,
+    "tags": ["Oxygen", "Lake", "Le Chatelier"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Henry's Law",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "Calculate the solubility (mg/L) of O2 at 25°C if air is 20.9% O2, p_total = 1 bar, H = 1.247e-3 mol/(L*bar), and M = 32 g/mol.",
+    "answer": "p = 0.209 bar. c = 0.209 * 1.247e-3 = 0.0002606 mol/L. Mass concentration = 0.0002606 mol/L * 32,000 mg/mol = 8.34 mg/L.",
+    "is_exam": false,
+    "tags": ["Oxygen", "Calculation", "Solubility"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Henry's Law",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Which substance is easier to strip from water: one with a high inverse Henry constant (H_inv) or a low one?",
+    "answer": "A high H_inv indicates greater volatility and a higher tendency for the substance to enter the gas phase, making it easier to strip from water.",
+    "is_exam": false,
+    "tags": ["Stripping", "Volatility", "H_inv"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Henry's Law",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "How does the solubility of oxygen change at the bottom of a 20m deep lake compared to the surface?",
+    "answer": "Solubility is higher at the bottom. The hydrostatic pressure increases the total pressure, which in turn increases the partial pressure of oxygen, forcing more into solution according to Henry's Law.",
+    "is_exam": false,
+    "tags": ["Hydrostatic Pressure", "Solubility"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Reaction Equilibria",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "If you double the concentration of reactants in a system at equilibrium, how does the reaction quotient (Q) change relative to K?",
+    "answer": "Q becomes smaller than K because the denominator of the ratio increases. The system will shift toward the products to restore equilibrium.",
+    "is_exam": false,
+    "tags": ["Reaction Quotient", "Q", "K"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Henry's Law",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What is the physical meaning of a dimensionless partition coefficient KC = 0.1?",
+    "answer": "It means the mass concentration in the aqueous phase is 10% of the concentration in the gas phase. Most of the solute mass will reside in the gas phase.",
+    "is_exam": false,
+    "tags": ["KC", "Partitioning"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Henry's Law",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "Calculate the saturation concentration of Nitrogen in mg/L at 25°C (H = 6.4e-4 mol/L*bar) if the atmosphere is 78% N2 at 1 bar total pressure. (M=28g/mol)",
+    "answer": "p = 0.78 bar. c = 0.78 * 6.4e-4 = 4.992e-4 mol/L. Beta = 4.992e-4 * 28000 = 13.98 mg/L.",
+    "is_exam": false,
+    "tags": ["Nitrogen", "Solubility", "Exercise"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Henry's Law",
+    "entry_type": "EXERCISE",
+    "difficulty": "HARD",
+    "question": "A 100mL vial (20mL air, 80mL water) has 10mg of a chemical with KC = 9. Calculate the gas phase mass concentration (beta_g).",
+    "answer": "beta_g = 10 / (20 + 9*80) = 10 / 740 = 0.0135 mg/mL.",
+    "is_exam": false,
+    "tags": ["Closed System", "Calculation"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Reaction Equilibria",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "Does adding an inert gas to a closed system at equilibrium shift the reaction position if the volume is constant?",
+    "answer": "No. Adding an inert gas increases total pressure but does not change the partial pressures of the reacting species. Since the individual 'pushes' of the reactants/products remain the same, the equilibrium does not shift.",
+    "is_exam": false,
+    "tags": ["Partial Pressure", "Le Chatelier"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Henry's Law",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "If a gas dissolution is exothermic and H = 1.5e-3 at 20°C, would H at 40°C be 2.0e-3 or 1.0e-3?",
+    "answer": "It would be 1.0e-3. Solubility decreases as temperature increases for exothermic dissolutions according to Le Chatelier's principle.",
+    "is_exam": false,
+    "tags": ["Temperature", "Solubility"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Henry's Law",
+    "entry_type": "EXERCISE",
+    "difficulty": "HARD",
+    "question": "A closed system (Vg=1L, Vaq=4L) has KC = 0.25 and 50mg total mass. How much mass (in mg) is in the air vs water?",
+    "answer": "beta_g = 50 / (1 + 0.25*4) = 25 mg/L. Mass in air = 25mg. beta_aq = 0.25*25 = 6.25 mg/L. Mass in water = 6.25 * 4 = 25mg.",
+    "is_exam": false,
+    "tags": ["Mass Balance", "Partitioning"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Reaction Equilibria",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "How do you determine the overall equilibrium constant for the CO2-water-acid system using K1 (dissolution) and K2 (acidification)?",
+    "answer": "The overall constant is the product of the individual constants (K_total = K1 * K2). This represents the thermodynamic relationship for the multi-step process from gas to ions.",
+    "is_exam": false,
+    "tags": ["Combined Equilibria", "CO2"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What is the role of acid/base equilibria in aquatic systems and provide 3 examples in natural waters.",
+    "answer": "The role is to maintain the proton balance, affecting ecosystem health, charge, toxicity, and solubility. Examples: 1. Carbonate system (pH buffering), 2. Ammonia toxicity (ratio of NH3 to NH4+), 3. Metal solubility (mobility of heavy metals).",
+    "is_exam": false,
+    "tags": ["Equilibria", "Ammonia", "Carbonate System"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "Why is pH referred to as the master variable in aquatic chemistry?",
+    "answer": "It fundamentally affects the state of nearly every chemical, physical, and biological reaction in water, including complex formation, redox potentials, solubility, and biological growth.",
+    "is_exam": false,
+    "tags": ["pH", "Master Variable"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Explain the protolysis reaction.",
+    "answer": "Protolysis is a fast, reversible proton transfer reaction between an acid (proton donor) and a base (proton acceptor), forming two conjugate acid/base pairs.",
+    "is_exam": false,
+    "tags": ["Protolysis", "Proton Transfer"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Explain the autoprotolysis of water and describe the ion product of water.",
+    "answer": "Autoprotolysis is the reaction 2H2O <=> H3O+ + OH-. The ion product (Kw) is the simplified equilibrium constant Kw = c(H+)*c(OH-), which equals 10^-14 at 25°C.",
+    "is_exam": false,
+    "tags": ["Autoprotolysis", "Kw"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "THEORY",
+    "difficulty": "HARD",
+    "question": "Which 2 parameters define the strength of an acid or base, and what is the difference between a weak and a dilute acid?",
+    "answer": "Strength is defined by Ka/pKa (acids) and Kb/pKb (bases). Categories: Strong Acids (pKa < 0), Weak Acids (0 < pKa < 14), Strong Bases (pKb < 0), Weak Bases (0 < pKb < 14). Strength is an intrinsic chemical property (dissociation degree), while dilution is a non-intrinsic property (molar concentration).",
+    "is_exam": false,
+    "tags": ["Ka", "pKa", "Strength vs Dilution"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What is the relationship between Ka, Kb, and Kw, and how are these parameters calculated?",
+    "answer": "The relationship is Ka * Kb = Kw (or pKa + pKb = pKw). If two are known, the third is found via division or subtraction (e.g., Kb = Kw / Ka).",
+    "is_exam": false,
+    "tags": ["Ka", "Kb", "Kw"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "EXERCISE",
+    "difficulty": "EASY",
+    "question": "Calculate the pH of a wastewater sample with c(H+) = 3.2 x 10^-4 mol/L.",
+    "answer": "pH = -lg(3.2 x 10^-4) = 3.49.",
+    "is_exam": false,
+    "tags": ["pH", "Calculation"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "EASY",
+    "question": "How many times more acidic is a solution with pH 2 compared to pH 5?",
+    "answer": "Each pH unit is a factor of 10. A 3-unit difference (5 - 2 = 3) means the solution is 10^3 = 1000 times more acidic.",
+    "is_exam": false,
+    "tags": ["pH Scale", "Logarithm"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "A solution has a pH of 11.5 at 25°C. Calculate the pOH and the concentration of hydroxyl ions (OH-).",
+    "answer": "pOH = 14 - 11.5 = 2.5. c(OH-) = 10^-2.5 = 0.00316 mol/L.",
+    "is_exam": false,
+    "tags": ["pOH", "OH-"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "If the pKa of NH4+ is 9.25, calculate the pKb and Kb of its conjugate base, ammonia (NH3).",
+    "answer": "pKb = 14 - 9.25 = 4.75. Kb = 10^-4.75 = 1.78 x 10^-5.",
+    "is_exam": false,
+    "tags": ["pKa", "pKb", "Conjugate Pairs"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "At 50°C, the Kw of water is 5.47 x 10^-14. Calculate the neutral pH and explain if it is higher or lower than 7.",
+    "answer": "pKw = -lg(5.47 x 10^-14) = 13.26. Neutral pH = pKw / 2 = 6.63. The neutral pH is lower than 7 because water dissociation increases with temperature.",
+    "is_exam": false,
+    "tags": ["Kw", "Temperature", "Neutral pH"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Write the full protolysis reaction between HSO4- (acid) and H2O (base). Identify the conjugate pairs.",
+    "answer": "Reaction: HSO4- + H2O <=> SO4^2- + H3O+. Pairs: (HSO4-/SO4^2-) and (H3O+/H2O).",
+    "is_exam": false,
+    "tags": ["Protolysis", "Stoichiometry"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What is the actual chemical species formed when a proton is hydrated in water, and what is its primary hydration sphere formula?",
+    "answer": "The species is the hydronium ion (H3O+). Its primary hydration sphere is represented as H9O4+.",
+    "is_exam": false,
+    "tags": ["Hydronium", "Hydration"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Why does acid rain cause fish mortality in areas with aluminosilicate minerals?",
+    "answer": "Low pH levels cause the release of toxic Al^3+ ions from minerals like alumosilicates, which are lethal to aquatic life.",
+    "is_exam": false,
+    "tags": ["Acid Rain", "Toxicity", "Aluminum"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "An acid has a pKa = -3. Is it strong or weak, and in what form does it primarily exist in water?",
+    "answer": "It is a strong acid (pKa < 0). It exists primarily as the conjugate base (A-) and H+ because strong acids dissociate completely in water.",
+    "is_exam": false,
+    "tags": ["Acid Strength", "Dissociation"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "EXERCISE",
+    "difficulty": "EASY",
+    "question": "Calculate the p-value for a concentration of 0.005 mol/L.",
+    "answer": "p-value = -lg(0.005) = 2.30.",
+    "is_exam": false,
+    "tags": ["p-notation", "Calculation"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "How do you calculate the pH of a very strong acid?",
+    "answer": "For very strong acids (pKa < -1.74), dissociation is 100%. The pH is calculated as pH = -lg C0.",
+    "is_exam": false,
+    "tags": ["Very Strong Acid", "Formula"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "When should the quadratic formula be used for acidic pH calculations?",
+    "answer": "It is used for strong acids with pKa between -1.74 and 4.5, where dissociation is significant but not 100%.",
+    "is_exam": false,
+    "tags": ["Strong Acid", "Quadratic"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "What is the pH formula for a weak acid (pKa > 4.5)?",
+    "answer": "pH = 0.5 * (pKa - lg C0).",
+    "is_exam": false,
+    "tags": ["Weak Acid", "Formula"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "How is the pOH of a very strong base calculated?",
+    "answer": "pOH = -lg C0.",
+    "is_exam": false,
+    "tags": ["Strong Base", "pOH"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "How do you calculate the pH of a salt like NH4Cl?",
+    "answer": "NH4Cl is an acidic salt. Use the weak acid formula: pH = 0.5 * (pKa - lg C0_salt).",
+    "is_exam": false,
+    "tags": ["Acidic Salt", "Formula"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Which equation is used for buffer system pH calculations?",
+    "answer": "The Henderson-Hasselbalch Equation: pH = pKa + lg(c_base / c_acid).",
+    "is_exam": false,
+    "tags": ["Buffer", "Henderson-Hasselbalch"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "EASY",
+    "question": "What pH result is expected from dissolving a Neutral Salt (Strong Acid/Strong Base) in water?",
+    "answer": "pH = 7 (Neutral).",
+    "is_exam": false,
+    "tags": ["Neutral Salt"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "What pH result is expected from a salt of a Weak Acid and a Weak Base?",
+    "answer": "It depends on the relative strengths of the pKa of the acid and pKb of the base component.",
+    "is_exam": false,
+    "tags": ["Mixed Salt"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "How do you find the concentration ratio of a conjugate pair at a defined pH?",
+    "answer": "Rearrange Henderson-Hasselbalch: c(A-) / c(HA) = 10^(pH - pKa).",
+    "is_exam": false,
+    "tags": ["Speciation", "Ratio"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What chemical assumption does the simple weak acid formula rely upon?",
+    "answer": "It assumes the degree of dissociation is very small, so c(HA) at equilibrium is approximately the initial concentration C0.",
+    "is_exam": false,
+    "tags": ["Assumptions"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "Compare the chemical mechanism of pH change between HCl and NH4Cl.",
+    "answer": "HCl changes pH via direct dissociation (releasing H+). NH4Cl changes pH via hydrolysis (NH4+ reacts with water to release H+).",
+    "is_exam": false,
+    "tags": ["Mechanism", "Hydrolysis"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Why can OH- be ignored in the charge balance for strong acid calculations?",
+    "answer": "In acidic solutions (pH < 6), [OH-] is extremely small (< 10^-8 M) compared to [H+], making it numerically insignificant.",
+    "is_exam": false,
+    "tags": ["Charge Balance"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "Calculate the pH of 0.1 M H3PO4 (pKa = 2.1).",
+    "answer": "Using the quadratic formula: c(H+) approx 0.02448 M. pH = 1.61.",
+    "is_exam": false,
+    "tags": ["Strong Acid", "Calculation"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "Calculate the pH of 4-chlorophenol (pKa=9.4) with C0 = 1 g/L (M=128.5 g/mol).",
+    "answer": "C0 = 0.00778 M. pH = 0.5 * (9.4 - lg 0.00778) = 5.76.",
+    "is_exam": false,
+    "tags": ["Weak Acid", "Calculation"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "Calculate the pH of a 0.1 M Aniline solution (pKa_conj = 4.58).",
+    "answer": "pKb = 9.42. pOH = 0.5 * (9.42 - lg 0.1) = 5.21. pH = 8.79.",
+    "is_exam": false,
+    "tags": ["Weak Base", "Calculation"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "What is the pH of a buffer (0.4 M HAc / 0.4 M NaAc, pKa=4.75) if 0.1 M HCl is added?",
+    "answer": "pH = 4.75 + lg(0.3 / 0.5) = 4.53.",
+    "is_exam": false,
+    "tags": ["Buffer", "Acid Addition"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "EXERCISE",
+    "difficulty": "EASY",
+    "question": "What is the pH of a 0.1 M HCl solution?",
+    "answer": "pH = -lg(0.1) = 1.0.",
+    "is_exam": false,
+    "tags": ["Strong Acid"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "Calculate the pH of 0.05 M Ammonium Acetate (pKa_acid = 4.75, pKa_conj = 9.25).",
+    "answer": "pH = 0.5 * (4.75 + 9.25) = 7.00.",
+    "is_exam": false,
+    "tags": ["Mixed Salt"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "THEORY",
+    "difficulty": "HARD",
+    "question": "Write the Material Balance for 0.1 M Sodium Carbonate.",
+    "answer": "0.1 = [CO3^2-] + [HCO3^-] + [H2CO3].",
+    "is_exam": false,
+    "tags": ["Material Balance"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Why does KNO3 not change the pH of water?",
+    "answer": "K+ and NO3- are spectator ions; they are conjugates of strong species and do not undergo hydrolysis.",
+    "is_exam": false,
+    "tags": ["Spectator Ions"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "What happens to the buffer capacity of a solution upon 10x dilution?",
+    "answer": "The pH remains constant, but the buffer capacity decreases because there are fewer total moles of the conjugate pair to neutralize added acid/base.",
+    "is_exam": false,
+    "tags": ["Buffer Capacity"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "Calculate the pH of 0.05 M NaCN (pKa_HCN = 9.21).",
+    "answer": "pKb = 4.79. pOH = 0.5 * (4.79 - lg 0.05) = 3.045. pH = 10.95.",
+    "is_exam": false,
+    "tags": ["Basic Salt"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Explain why NaCN is basic while NH4Cl is acidic.",
+    "answer": "CN- hydrolyzes to produce OH- (basic). NH4+ hydrolyzes to produce H+ (acidic).",
+    "is_exam": false,
+    "tags": ["Hydrolysis"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "What is the [Base]/[Acid] ratio for a buffer with pH 9.0 and pKa 9.25?",
+    "answer": "Ratio = 10^(9.0 - 9.25) = 10^-0.25 = 0.56.",
+    "is_exam": false,
+    "tags": ["Buffer Ratio"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "Calculate the neutral pH of water at 50°C (pKw = 13.26).",
+    "answer": "Neutral pH = 13.26 / 2 = 6.63.",
+    "is_exam": false,
+    "tags": ["Neutral Point"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Why is pKa = 4.5 used as a boundary for simplification?",
+    "answer": "Below pKa 4.5, the acid is strong enough that the degree of dissociation exceeds 5%, making the [HA] approx C0 assumption invalid.",
+    "is_exam": false,
+    "tags": ["Simplification Boundary"]
+  }
+]
