@@ -1428,5 +1428,55 @@
     "answer": "Below pKa 4.5, the acid is strong enough that the degree of dissociation exceeds 5%, making the [HA] approx C0 assumption invalid.",
     "is_exam": false,
     "tags": ["Simplification Boundary"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "Calculate the pH of 0.02 M NaNO2 given pKa(HNO2) = 3.35.",
+    "answer": "pKb = 10.65. pOH = 0.5 * (10.65 - lg 0.02) = 6.175. pH = 14 - 6.175 = 7.825.",
+    "is_exam": false,
+    "tags": ["Basic Salt", "Calculation"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "EXERCISE",
+    "difficulty": "HARD",
+    "question": "A buffer is made by mixing 500mL of 0.2M NH3 and 500mL of 0.1M NH4Cl (pKa=9.25). What is the pH?",
+    "answer": "Mixing doubles volume, so [NH3]=0.1M and [NH4+]=0.05M. pH = 9.25 + lg(0.1 / 0.05) = 9.55.",
+    "is_exam": false,
+    "tags": ["Buffer", "Dilution"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "EXERCISE",
+    "difficulty": "HARD",
+    "question": "Check the 5% rule for 0.001 M Formic Acid (pKa=3.75). Is the simple weak acid formula valid?",
+    "answer": "Calculated c(H+) = 10^-3.375 = 4.2e-4. 5% of C0 is 0.5e-4. Since 4.2e-4 > 0.5e-4, the simple formula is invalid; the quadratic must be used.",
+    "is_exam": false,
+    "tags": ["5% Rule", "Quadratic vs Weak"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "Calculate the neutral pH of water at a temperature where pKw = 12.8.",
+    "answer": "Neutral pH = pKw / 2 = 12.8 / 2 = 6.4.",
+    "is_exam": false,
+    "tags": ["Neutral Point", "pKw"]
+  },
+  {
+    "subject": "Hydrochemistry",
+    "topic": "Acid/Base Equilibria",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Why does mixing two equal volumes of acid and base buffer components change the concentrations used in the HH equation?",
+    "answer": "Mixing increases the total volume of the solution. Since concentration = moles / volume, increasing the volume decreases the concentration of each species, though the ratio [Base]/[Acid] remains the same.",
+    "is_exam": false,
+    "tags": ["Buffer", "Dilution Logic"]
   }
 ]

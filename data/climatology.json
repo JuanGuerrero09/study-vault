@@ -1462,5 +1462,85 @@
     "answer": "d=0.6, z0=0.09. First find u*: 3 = (u*/0.4) * ln((2-0.6)/0.09) -> u* = 0.437 m/s. Then find u(10): u(10) = (0.437/0.4) * ln((10-0.6)/0.09) = 5.08 m/s.",
     "is_exam": true,
     "tags": ["Extrapolation", "Logarithmic Profile"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Specifics of near-surface turbulence",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "Which terms of the Control Volume Approach can be neglected over a flat and homogeneous surface, but not over a flat and heterogeneous surface?",
+    "answer": "Horizontal advection and vertical advection.",
+    "is_exam": true,
+    "tags": ["Control Volume", "Advection", "Heterogeneity"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Experimental determination of energy and mass exchange",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Which correction method can be used to correct for insufficient capture of energy transport by very small eddies?",
+    "answer": "Moore correction.",
+    "is_exam": true,
+    "tags": ["Corrections", "Eddy Covariance", "Moore"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Experimental determination of energy and mass exchange",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Which instruments are needed to measure latent and sensible heat fluxes with the eddy covariance method?",
+    "answer": "An Ultrasonic Anemometer (to measure wind speed components and sonic temperature) and an Infrared Gas Analyzer (IRGA) (to measure gas concentrations like H2O and CO2).",
+    "is_exam": true,
+    "tags": ["Instrumentation", "Eddy Covariance", "IRGA"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Experimental determination of energy and mass exchange",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What should be done with eddy covariance data when steady state conditions are not fulfilled?",
+    "answer": "Data should undergo quality testing, followed by flagging and discarding data that does not meet the necessary criteria for reliable flux estimation.",
+    "is_exam": true,
+    "tags": ["Data Quality", "Steady State"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Experimental determination of energy and mass exchange",
+    "entry_type": "THEORY",
+    "difficulty": "HARD",
+    "question": "Name the four groups of reasons for the energy balance closure gap.",
+    "answer": "1. Instrument error, 2. Data processing error, 3. Additional sources of energy (storage terms), and 4. Sub-mesoscale transport or secondary circulations.",
+    "is_exam": true,
+    "tags": ["Energy Balance Closure", "Error Sources"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Experimental determination of energy and mass exchange",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Name alternatives to the eddy covariance method for determining fluxes.",
+    "answer": "Profile method, Bowen-ratio method, Hyperbolic Relaxed Eddy Accumulation (HREA), and Disjunct Eddy Covariance (DEC).",
+    "is_exam": true,
+    "tags": ["Flux Methods", "Alternatives"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Modelling of energy and mass exchange",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Which modelling approaches are well suited to estimate potential Evapotranspiration (ET) on a daily basis?",
+    "answer": "Dalton, Priestley-Taylor, and Penman approaches.",
+    "is_exam": true,
+    "tags": ["Potential ET", "Modelling"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Modelling of energy and mass exchange",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Which modelling approach is well suited to estimate actual Evapotranspiration (ET) on a daily basis?",
+    "answer": "The Penman-Monteith approach.",
+    "is_exam": true,
+    "tags": ["Actual ET", "Penman-Monteith"]
   }
 ]
