@@ -1468,7 +1468,7 @@
     "topic": "Specifics of near-surface turbulence",
     "entry_type": "CONCEPTUAL",
     "difficulty": "HARD",
-    "question": "Which terms of the Control Volume Approach can be neglected over a flat and homogeneous surface, but not over a flat and heterogeneous surface?",
+    "question": "Which terms of the Control Volume Approach can be neglected over a flat and homogeneous surface, but not over a flat and heterogeneous surface? Options: vertical turbulent exchange\n storage change over time\nhorizontal advection\nvertical advection\nhorizontal flux divergence",
     "answer": "Horizontal advection and vertical advection.",
     "is_exam": true,
     "tags": ["Control Volume", "Advection", "Heterogeneity"]

@@ -624,5 +624,455 @@
     "answer": "False. The Method of Moments is used for parameter estimation (calculating u and alpha). Goodness-of-fit is tested using methods like the Kolmogorov-Smirnov or Chi-square tests.",
     "is_exam": false,
     "tags": ["Statistics", "Calibration"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "How does snow influence the hydrological water cycle?",
+    "answer": "Snow acts as a seasonal water reservoir (storage) and alters energy dynamics due to its high albedo (0.8–0.9), which reflects most solar radiation.",
+    "is_exam": false,
+    "tags": ["Snow", "Hydrological Cycle"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "Which instruments are used to measure snow depth (hs)?",
+    "answer": "Rods (portable), rulers (stationary), or ultrasonic sonar (non-invasive/continuous).",
+    "is_exam": false,
+    "tags": ["Instrumentation", "Snow Depth"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "In what ways does snow specifically influence the energy balance of a landscape compared to a forested area?",
+    "answer": "Snow has a high albedo (0.8–0.9) reflecting most net radiation, whereas forests have a low albedo (0.05–0.18) and absorb significantly more energy.",
+    "is_exam": false,
+    "tags": ["Albedo", "Energy Balance"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Identify the three primary phases of snowpack dynamics.",
+    "answer": "1. Accumulation, 2. Settlement/Metamorphosis, and 3. Melting.",
+    "is_exam": false,
+    "tags": ["Snowpack", "Dynamics"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "THEORY",
+    "difficulty": "HARD",
+    "question": "Differentiate between the three sub-phases of the melting process (Warming, Ripening, and Output).",
+    "answer": "Warming: T increases to 0°C. Ripening: Ice melts to fill pore spaces until saturation (theta_ret). Output: Snow is saturated at 0°C and produces free runoff.",
+    "is_exam": false,
+    "tags": ["Snowmelt", "Phases"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "What is the main challenge in scaling point estimates of snowmelt to a catchment level?",
+    "answer": "Snow distribution is extremely heterogeneous and anisotropic, making point-to-spatial averaging difficult.",
+    "is_exam": false,
+    "tags": ["Scaling", "Catchment"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Why is the Temperature Index approach preferred in many predictive models?",
+    "answer": "It has low data requirements, relying only on widely available air temperature data.",
+    "is_exam": false,
+    "tags": ["Modelling", "Temperature Index"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Compare the purpose of snow tubes versus ultrasonic sonar.",
+    "answer": "Snow tubes are used for gravimetric sampling (density/SWE), while sonar provides continuous, non-invasive depth monitoring.",
+    "is_exam": false,
+    "tags": ["Instrumentation"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Why is water equivalent (hm) more useful for hydrologists than snow depth (hs)?",
+    "answer": "hs changes with compaction without mass change; hm represents the actual mass of water available for the hydrological balance.",
+    "is_exam": false,
+    "tags": ["SWE", "Mass Balance"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "How do forest cover (F) and albedo adjust the melt factor (B)?",
+    "answer": "B is directly proportional to (1 - albedo) and inversely proportional to forest cover (shading reduces melt rate).",
+    "is_exam": false,
+    "tags": ["Melt Factor"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "How does heat input by rain (HR) contribute to the energy exchange?",
+    "answer": "It contributes advective sensible heat, transferring energy from the warm rain to the cooler snowpack.",
+    "is_exam": false,
+    "tags": ["Rain-on-snow"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "Calculate SWE (hm) in mm if hs = 120 cm and density = 250 kg/m3.",
+    "answer": "hm = (250/1000) * 1200 mm = 300 mm.",
+    "is_exam": false,
+    "tags": ["Calculation", "SWE"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "EXERCISE",
+    "difficulty": "EASY",
+    "question": "Calculate daily snowmelt in mm if Ta = 10°C and B = 0.35 cm/(d °C).",
+    "answer": "Delta w = 0.35 * 10 = 3.5 cm/d = 35 mm/d.",
+    "is_exam": false,
+    "tags": ["Calculation", "Melt Rate"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Why does snow albedo decrease over time even without dust?",
+    "answer": "Snow metamorphosis causes grains to round and grow, which decreases reflectivity and surface area.",
+    "is_exam": false,
+    "tags": ["Albedo", "Metamorphosis"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "THEORY",
+    "difficulty": "HARD",
+    "question": "Which radiation term is dominant for snowmelt in a shaded forest?",
+    "answer": "Long-wave radiation (RL) emitted by the trees/canopy.",
+    "is_exam": false,
+    "tags": ["Radiation", "Forest"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What does a Snow Pillow measure and why?",
+    "answer": "It measures the mass/weight of the snow directly via a pressure transducer, correlating to the water equivalent (hm).",
+    "is_exam": false,
+    "tags": ["Instrumentation", "Snow Pillow"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "Which measurement methods are used for runoff?",
+    "answer": "Runoff is determined by measuring water stage (Staff gauges, mechanical floats, or pressure sensors) and combining it with velocity measurements (Area-velocity method, ADCP, or tracers) or structural conversions (Weirs and Flumes).",
+    "is_exam": false,
+    "tags": ["Runoff", "Methods"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "Why is accurate runoff data collection vital for hydrological studies?",
+    "answer": "It is essential for adequate system characterization, sustainable water resource management, flood and drought risk assessment, and evaluating the impacts of Climate Change (CC).",
+    "is_exam": false,
+    "tags": ["Data Quality", "Importance"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "What are the main criteria for selecting a site for technically reliable discharge measurements?",
+    "answer": "A straight river section with a constant slope, a stable cross-section (to ensure a consistent stage-discharge relationship), and the absence of obstructions, weeds, or backwater effects.",
+    "is_exam": false,
+    "tags": ["Site Selection", "Hydraulics"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "Name and describe the three main types of gauges used for measuring water stage.",
+    "answer": "Staff Gauge (manual graduated plate), Mechanical Float (continuous recording via float transmission), and Pneumatic/Pressure Sensor (calculates stage via hydraulic pressure p = rho*g*h).",
+    "is_exam": false,
+    "tags": ["Instrumentation", "Stage"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "What is the difference between discrete and continuous runoff data?",
+    "answer": "Discrete data consists of single-point values used for specific investigations. Continuous data provides a full hydrograph over time, which is necessary for flood forecasting and reservoir operations.",
+    "is_exam": false,
+    "tags": ["Data Types", "Hydrograph"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What is the primary advantage of a pressure sensor over a float gauge?",
+    "answer": "Pressure sensors are less susceptible to frost and easier to maintain in rivers with medium sediment loads.",
+    "is_exam": false,
+    "tags": ["Sensors", "Maintenance"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Describe the Area-Velocity Method for deriving discharge.",
+    "answer": "The river cross-section is divided into segments. The area (Ai) and mean velocity (vi) are measured for each segment, and total discharge (Q) is calculated as the sum of all segments (Sum of vi * Ai).",
+    "is_exam": false,
+    "tags": ["Area-Velocity", "Calculation"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Identify alternative flow measurement methods to the area-velocity method.",
+    "answer": "Hydraulic structures (Weirs and Flumes), Tracer (dilution) methods using salts/dyes, and ADCP (Acoustic Doppler Current Profiler).",
+    "is_exam": false,
+    "tags": ["ADCP", "Tracer", "Weir"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What are the theoretical assumptions of a flow rating curve?",
+    "answer": "It assumes steady uniform flow, meaning the water surface is parallel to the riverbed and the relationship between stage and discharge is unique and stable.",
+    "is_exam": false,
+    "tags": ["Rating Curve", "Steady Flow"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "What is hysteresis in the context of a stage-discharge curve?",
+    "answer": "Hysteresis occurs when the stage-discharge relationship follows different paths for the rising limb (higher discharge) and falling limb (lower discharge) of a flood event.",
+    "is_exam": false,
+    "tags": ["Hysteresis", "Flood Hydraulics"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "Calculate the discharge (Q) for a rectangular weir with Cd=0.62, b=2m, and h=0.5m.",
+    "answer": "Q = (2/3) * 0.62 * 2 * sqrt(2 * 9.81) * 0.5^(3/2) = 1.295 m3/s.",
+    "is_exam": false,
+    "tags": ["Calculation", "Weir"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "How do backwater effects influence a standard rating curve prediction?",
+    "answer": "They cause the curve to overestimate discharge because the water level (stage) is artificially high due to a downstream obstruction, while the actual flow velocity is low.",
+    "is_exam": false,
+    "tags": ["Backwater", "Errors"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Why is it necessary to measure background concentration (Cb) in the Dilution Method?",
+    "answer": "To differentiate between the tracer concentration added and any existing salt/dye concentration already present in the river.",
+    "is_exam": false,
+    "tags": ["Tracer", "Concentration"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Why are velocity measurements taken at 0.2 and 0.8 of total depth in the Area-Velocity method?",
+    "answer": "The average of the velocities at these two points (v0.2 and v0.8) provides the most accurate mathematical approximation of the depth-averaged mean velocity in a parabolic flow profile.",
+    "is_exam": false,
+    "tags": ["Velocity Profile", "Hydraulics"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Why is a radar sensor preferred over a staff gauge in flash-flood prone areas?",
+    "answer": "Radar is a non-contact sensor, making it safe from debris damage and providing automated continuous data during dangerous flood conditions.",
+    "is_exam": false,
+    "tags": ["Sensors", "Flash Floods"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "What is a design flood and what is its engineering purpose?",
+    "answer": "A design flood is a hypothetical peak discharge or hydrograph (e.g., HQ100) determined by statistical methods. It serves as a benchmark for sizing hydraulic structures like dams, dikes, and spillways.",
+    "is_exam": false,
+    "tags": ["Design Flood", "Engineering"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "Name different meteorological and catastrophic reasons for a flood.",
+    "answer": "Meteorological: Extreme precipitation (Vb weather), snowmelt, ice/log jams, storm surges. Catastrophic: Dam failures or tsunamis (earthquakes).",
+    "is_exam": false,
+    "tags": ["Flood Causes"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What are the different types of droughts?",
+    "answer": "Meteorological (precipitation deficit), Agricultural (soil moisture/groundwater recharge deficit), and Hydrological (decline in streamflow and reservoir storage).",
+    "is_exam": false,
+    "tags": ["Drought Types"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What are the main reasons for a drought to occur?",
+    "answer": "Prolonged precipitation deficits often combined with high temperatures, solar radiation, and low humidity, which increase evapotranspiration rates.",
+    "is_exam": false,
+    "tags": ["Drought Causes"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "Define floods and droughts in hydrological terms.",
+    "answer": "Flood: Discharge rising to multiples of average flow over a short period. Drought: Discharge falling below a critical limit over an extended period.",
+    "is_exam": false,
+    "tags": ["Definitions"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Name the different flood criteria used for the design of protection structures.",
+    "answer": "Peak water level (inundation maps), flood peak discharge (canal capacity), high water duration (dike safety), and discharge sum (retention volume).",
+    "is_exam": false,
+    "tags": ["Design Criteria"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What are the main assumptions of the Flow Duration Curve?",
+    "answer": "Continuous data record, randomly distributed fluctuations with a stable mean (stationarity), and annual variations caused by climate alone.",
+    "is_exam": false,
+    "tags": ["FDC", "Assumptions"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "How do you estimate design floods for ungauged cross-sections?",
+    "answer": "Using the Reference HQ-Method, which correlates parameters from a similar gauged 'donor' catchment (morphology, land-use, soil).",
+    "is_exam": false,
+    "tags": ["Ungauged Catchments"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Name the different criteria used to define a drought.",
+    "answer": "Low flow (Qcrit), low water level, deficit volume, exceedance frequency (Q95), and intensity (severity/duration).",
+    "is_exam": false,
+    "tags": ["Drought Assessment"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "Calculate the non-exceedance probability (F) for a 50-year return period flood.",
+    "answer": "R = 1 / (1-F) -> 50 = 1 / (1-F) -> F = 0.98 or 98%.",
+    "is_exam": false,
+    "tags": ["Probability", "Return Period"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Why is the Flow Duration Curve (FDC) more useful for hydroelectric design than a peak flow value (HQ)?",
+    "answer": "Power generation depends on the duration and reliability of constant supply (e.g., Q95) rather than extreme instantaneous peaks.",
+    "is_exam": false,
+    "tags": ["Hydro-power", "FDC"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "Calculate the empirical non-exceedance probability using Gringorten (i=3, n=20).",
+    "answer": "P = (3 - 0.44) / (20 + 0.12) = 0.1272.",
+    "is_exam": false,
+    "tags": ["Gringorten", "Statistics"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Explain the difference between exceedance and non-exceedance probability for an HQ100 event.",
+    "answer": "Non-exceedance (F) is the 99% chance the flood is equaled or not reached; Exceedance (1-F) is the 1% annual chance it is exceeded.",
+    "is_exam": false,
+    "tags": ["Statistics", "Risk"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "Why is 'High Water Duration' a critical design criterion for earthen dikes?",
+    "answer": "Prolonged high water causes the phreatic line to move through the dike core, increasing pore water pressure and risking failure by seepage/internal erosion.",
+    "is_exam": false,
+    "tags": ["Dike Safety", "Hydraulics"]
   }
 ]
