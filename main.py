@@ -83,7 +83,7 @@ async def get_questions(
     with open(file_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
-    questions = [print(item) for item in data]
+    # questions = [print(item) for item in data]
     questions = [Question(**item) for item in data]
 
     if difficulty:
