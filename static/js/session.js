@@ -7,7 +7,7 @@ let currentIndex = 0;
 async function startSession() {
     // 1. Get Values from Modal
     const subject = document.getElementById('setup-subject').value;
-    const topic = document.getElementById('setup-topic').value;
+    const is_exam = document.getElementById('exam_checkmark').checked;
     const difficulty = document.getElementById('setup-difficulty').value;
     const limit = document.getElementById('setup-limit').value;
     const button = document.querySelector('button[onclick="startSession()"]');
@@ -20,7 +20,9 @@ async function startSession() {
     // 3. Build URL
     let url = `/api/questions?subject=${subject}&limit=${limit}`;
     if (difficulty) url += `&difficulty=${difficulty}`;
-    if (topic) url += `&topic=${encodeURIComponent(topic)}`;
+    if (is_exam) {
+        url += `&is_exam=true`;
+    }
 
     try {
         const response = await fetch(url);
@@ -64,7 +66,7 @@ async function startSession() {
 function renderQuestion() {
     if (currentIndex >= questions.length) {
         alert("Session Complete! Returning to menu.");
-        window.location.reload(); // Quick reset
+        window.location.reload(); 
         return;
     }
 
@@ -82,11 +84,17 @@ function renderQuestion() {
     document.getElementById('progress-bar').style.width = `${progressPercent}%`;
     document.getElementById('progress-text').textContent = `${currentIndex + 1} / ${questions.length}`;
 
-    // Set Tags
-    const tagHtml = `
+    // FIX 1: Change 'const' to 'let' so we can append to it
+    // FIX 2: Check the question object 'q.is_exam' instead of a global variable
+    let tagHtml = `
         <span class="px-2 py-1 rounded-md text-xs bg-slate-100 dark:bg-[#282f39] text-slate-700 dark:text-slate-300">${q.topic}</span>
         <span class="px-2 py-1 rounded-md text-xs bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300 border border-blue-100 dark:border-blue-900/30">${q.difficulty}</span>
     `;
+
+    if (q.is_exam) {
+        tagHtml += `<span class="px-2 py-1 rounded-md text-xs bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-300 border border-red-100 dark:border-red-900/30">Exam / Quiz</span>`;
+    }
+
     document.getElementById('tags-container').innerHTML = tagHtml;
 }
 

@@ -1074,5 +1074,815 @@
     "answer": "Prolonged high water causes the phreatic line to move through the dike core, increasing pore water pressure and risking failure by seepage/internal erosion.",
     "is_exam": false,
     "tags": ["Dike Safety", "Hydraulics"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What is the fundamental difference between base flow, interflow, and overland flow in terms of timing and path?",
+    "answer": "Overland flow: surface path, near-instantaneous. Interflow: lateral subsurface path (vadose zone), intermediate lag. Base flow: groundwater path, long-term slow release.",
+    "is_exam": false,
+    "tags": ["Runoff Components", "Hydraulics"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Mention 5 catchment or atmospheric factors that significantly affect runoff formation.",
+    "answer": "Catchment: Topography, Land Use, Soil Type, Geology, Antecedent Moisture. Atmospheric: Rainfall intensity and duration.",
+    "is_exam": false,
+    "tags": ["Runoff Factors"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "In the SCS-CN method, how does the Antecedent Moisture Condition (AMC) change the Curve Number?",
+    "answer": "AMC shifts the CN based on soil wetness: AMC I (Dry) reduces the CN; AMC III (Wet) increases it compared to the standard AMC II (Average).",
+    "is_exam": false,
+    "tags": ["SCS-CN", "AMC"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "What are the three main conceptual assumptions of a Unit Hydrograph?",
+    "answer": "1. Stationarity (time-invariant), 2. Proportionality (linear scaling), 3. Superposition (additive response).",
+    "is_exam": false,
+    "tags": ["Unit Hydrograph", "Theory"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Why is the SCS-CN method considered highly sensitive regarding its results?",
+    "answer": "The relationship is non-linear; small changes (15-20%) in the Curve Number value can result in doubling or halving the estimated runoff volume.",
+    "is_exam": false,
+    "tags": ["SCS-CN", "Sensitivity"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What is the difference between Runoff Formation and Runoff Concentration?",
+    "answer": "Formation determines the volume of effective precipitation (Pe); Concentration determines the temporal distribution/shape of the hydrograph at the outlet.",
+    "is_exam": false,
+    "tags": ["Modeling", "Workflow"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "THEORY",
+    "difficulty": "HARD",
+    "question": "Describe the components of the Saint-Venant equations for physically based routing.",
+    "answer": "The Continuity Equation (conservation of mass) and the Momentum Equation (conservation of energy/forces).",
+    "is_exam": false,
+    "tags": ["Saint-Venant", "Routing"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "In what scenarios are physically based models (White Box) preferred over conceptual (Grey Box) ones?",
+    "answer": "When simulating internal spatial processes like groundwater-surface water interactions or contaminant transport using measured physical parameters.",
+    "is_exam": false,
+    "tags": ["Modeling", "RR Models"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "Given P = 50 mm and S = 100 mm, calculate the Direct Runoff (QD) assuming Ia = 0.2S.",
+    "answer": "QD = (50 - 20)^2 / (50 + 80) = 900 / 130 = 6.92 mm.",
+    "is_exam": false,
+    "tags": ["SCS-CN", "Calculation"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Why is Flow Routing more critical for large catchments than small urban ones?",
+    "answer": "Large catchments involve significant travel times and wave attenuation (flattening/delay) which are negligible in small catchments.",
+    "is_exam": false,
+    "tags": ["Flow Routing", "Scale"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "In a Linear Storage Model, what happens to the hydrograph if the storage constant k increases?",
+    "answer": "The peak of the hydrograph becomes lower and occurs later in time.",
+    "is_exam": false,
+    "tags": ["Linear Storage", "k-value"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Why can the SCS-CN method be applied to ungauged catchments while the Unit Hydrograph usually cannot?",
+    "answer": "SCS-CN uses tabulated physical properties (Soil/Land use) while Unit Hydrographs describe a specific catchment response that requires P/Q history for calibration.",
+    "is_exam": false,
+    "tags": ["Ungauged", "Unit Hydrograph"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "What effect does Urbanization have on the Curve Number (CN) and Storage Capacity (S)?",
+    "answer": "Urbanization increases the CN and decreases the Storage Capacity (S), leading to higher runoff volumes.",
+    "is_exam": false,
+    "tags": ["Urbanization", "SCS-CN"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "Calculate S (mm) for a catchment with CN = 72.",
+    "answer": "S = 254 * (100/72 - 1) = 98.78 mm.",
+    "is_exam": false,
+    "tags": ["SCS-CN", "Calculation"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Evapotranspiration",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "What is the difference between potential (PET) and actual (ETR) evapotranspiration?",
+    "answer": "PET represents the theoretical atmospheric demand assuming unlimited water supply; ETR is the real-world water loss limited by actual soil moisture availability.",
+    "is_exam": false,
+    "tags": ["PET", "ETR"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Evapotranspiration",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Identify the four sub-components of ET and their typical percentages.",
+    "answer": "Transpiration (70-75%), Evaporation from open water/soil (10-15%), Interception evaporation (15%), and Sublimation (2-3%).",
+    "is_exam": false,
+    "tags": ["ET Components"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Evapotranspiration",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "How does the Penman-Monteith equation improve upon the original Penman equation?",
+    "answer": "It adds surface resistance (rs) to account for plant physiology/stomata and aerodynamic resistance (ra) for wind-driven vapor transport.",
+    "is_exam": false,
+    "tags": ["Penman-Monteith"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Evapotranspiration",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Does an increase in temperature always lead to an increase in transpiration?",
+    "answer": "No. At extremely high temperatures, plants close stomata to prevent desiccation (mid-day depression), causing transpiration to plateau or drop.",
+    "is_exam": false,
+    "tags": ["Stomata", "Temperature"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Evapotranspiration",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What is the difference between PET and ET0?",
+    "answer": "PET is general climate demand for any surface; ET0 (Reference ET) is a standardized calculation specifically for a 12 cm tall, well-watered grass surface.",
+    "is_exam": false,
+    "tags": ["Reference ET"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Evapotranspiration",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "List five ET measurement devices and their functions.",
+    "answer": "Porometer (stomata), Potometer (uptake), Sap Flow Meter (stem movement), Lysimeter (mass balance), and Eddy-Covariance (atmospheric fluxes).",
+    "is_exam": false,
+    "tags": ["Instrumentation"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Evapotranspiration",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Explain the Water Balance method for ETR and its limitations.",
+    "answer": "ETR = P - R. It is limited to long-term averages where storage changes are negligible and requires highly accurate precipitation data.",
+    "is_exam": false,
+    "tags": ["Water Balance"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Evapotranspiration",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "How do Kc factors differ between pineapple and cotton?",
+    "answer": "Kc scales ET0 to a crop. Pineapple (Kc ~0.3) uses very little water, while Cotton (Kc ~1.2) uses 20% more than the reference grass.",
+    "is_exam": false,
+    "tags": ["Crop Coefficient"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Evapotranspiration",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "How are PET and ETR estimated differently?",
+    "answer": "PET is estimated via theoretical climate models (Penman); ETR is measured directly via Lysimeters or Eddy-Covariance.",
+    "is_exam": false,
+    "tags": ["Modeling", "Measurement"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Evapotranspiration",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Which atmospheric components are used in Eddy-Covariance for ETR?",
+    "answer": "High-frequency measurements of vertical wind velocity (ua') and vertical humidity (q').",
+    "is_exam": false,
+    "tags": ["Eddy-Covariance"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Evapotranspiration",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "Calculate PET in a humid region if the energy-term alone is 4.0 mm/d (alpha=1.26).",
+    "answer": "PET = 1.26 * 4.0 = 5.04 mm/d.",
+    "is_exam": false,
+    "tags": ["Priestley-Taylor"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Evapotranspiration",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "What happens to the Penman-Monteith PET result if stomata are closed (rs -> infinity)?",
+    "answer": "The PET value mathematically goes to zero as the denominator becomes infinite, reflecting zero transpiration.",
+    "is_exam": false,
+    "tags": ["Physics", "Resistance"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Evapotranspiration",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Why does a Pan Evaporimeter overestimate lake evaporation?",
+    "answer": "Due to the Oasis Effect: the small water volume in the pan heats up much faster than a large lake, leading to higher evaporation rates.",
+    "is_exam": false,
+    "tags": ["Oasis Effect", "Pan Evaporation"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Evapotranspiration",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "How does increasing Relative Humidity affect the Vapour Pressure Deficit (VPD) and transpiration?",
+    "answer": "As RH increases, VPD decreases (air gets closer to saturation), which reduces the driving force for transpiration.",
+    "is_exam": false,
+    "tags": ["VPD", "Humidity"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Evapotranspiration",
+    "entry_type": "THEORY",
+    "difficulty": "HARD",
+    "question": "Why does Eddy-Covariance require high-frequency (10-20 Hz) data?",
+    "answer": "To capture the rapid fluctuations of turbulent 'eddies' that transport moisture vertically; slow averages would lose this covariance information.",
+    "is_exam": false,
+    "tags": ["Micrometeorology"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Fundamentals",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "Which physical laws are of fundamental importance for the description of the movement of water?",
+    "answer": "Conservation of mass and Conservation of energy.",
+    "is_exam": true,
+    "tags": ["Physical Laws", "Hydrology"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Hydrologic Cycle",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "Name the important components and processes of the hydrologic cycle.",
+    "answer": "Precipitation, Evapotranspiration, Runoff, Infiltration, and Storage.",
+    "is_exam": true,
+    "tags": ["Processes", "Components"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Hydrologic Cycle",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "How can the dynamics of the hydrologic cycle be described?",
+    "answer": "Through water and energy balance equations.",
+    "is_exam": true,
+    "tags": ["Dynamics", "Balance Equations"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Water Balance",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "Name the components of the water balance.",
+    "answer": "Precipitation (P), Evapotranspiration (ETR), Runoff (R), and Change in Storage (ΔS).",
+    "is_exam": true,
+    "tags": ["Components", "Water Balance"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Water Balance",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Write the water balance equations.",
+    "answer": "General: ΔS = P - ETR - R. Long-term average: P = ETR + R (where ΔS is assumed to be zero).",
+    "is_exam": true,
+    "tags": ["Equations", "Water Balance"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Energy Balance",
+    "entry_type": "THEORY",
+    "difficulty": "HARD",
+    "question": "Write down the water and energy balance equations. How are they linked?",
+    "answer": "Water Balance: ΔS = P - ETR - R. Energy Balance: Rn = G + H + LE. They are linked by the latent heat of vaporization (λ), where LE = λ · E.",
+    "is_exam": true,
+    "tags": ["Energy Balance", "Coupling"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Processes",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "Which hydrologic processes do you know?",
+    "answer": "Precipitation, Evapotranspiration (Interception, Evaporation, Transpiration), Runoff (Surface, Subsurface, Groundwater), Infiltration, and Storage.",
+    "is_exam": true,
+    "tags": ["Processes"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Modeling",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Which model concepts are mainly used in hydrology?",
+    "answer": "Black-box (Empirical), Grey-box (Conceptual), White-box (Physically based), Stochastic, and Machine Learning.",
+    "is_exam": true,
+    "tags": ["Modeling", "Concepts"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Catchment",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "What is a watershed?",
+    "answer": "A 3D hydrological system where all surface water converges toward a single outlet point.",
+    "is_exam": true,
+    "tags": ["Watershed", "Definition"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Catchment",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "How do you estimate the drainage area?",
+    "answer": "By delineating topographic divides using contour maps or DEMs, drawing divides perpendicular to contour lines starting from the outlet.",
+    "is_exam": true,
+    "tags": ["Drainage Area", "Delineation"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Catchment",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What is a subsurface watershed?",
+    "answer": "A groundwater basin defined by bedrock geometry and impermeable layers; it does not necessarily align with surface topographic divides.",
+    "is_exam": true,
+    "tags": ["Groundwater", "Watershed"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Catchment",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "What is the vertical structure of a watershed?",
+    "answer": "Surface, Soil and Vadose Zone, Groundwater System, and Bedrock.",
+    "is_exam": true,
+    "tags": ["Vertical Structure"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Catchment",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "What is the horizontal structure of a watershed?",
+    "answer": "Geomorphology/Topography, River Network Structure, Vegetation Cover, and Soil Types.",
+    "is_exam": true,
+    "tags": ["Horizontal Structure"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Processes",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Describe the interactions of the system: soil, vegetation, and atmosphere.",
+    "answer": "Water falls as precipitation, is intercepted or taken up by vegetation, infiltrates the soil, and is returned to the atmosphere via evaporation and transpiration, driven by energy gradients.",
+    "is_exam": true,
+    "tags": ["Interactions", "SPA"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What is Rainfall — describe?",
+    "answer": "The process of water falling from the atmosphere. It requires: 1) Cooling of moist air to dew-point (mostly adiabatic), 2) Condensation onto nuclei (dust/salt), and 3) Droplet Growth (coalescence/ice-crystal processes).",
+    "is_exam": true,
+    "tags": ["Precipitation", "Formation"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "What is a double mass curve and how it works as precipitation measurement?",
+    "answer": "It's a graphical technique in hydrology to check the consistency of hydrological data by plotting the cumulative data from a target station to the average data from surrounding stations.",
+    "is_exam": true,
+    "tags": ["Consistency", "Double Mass Curve"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Statistics",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What does it mean if a data set is homogenous?",
+    "answer": "It means the data series is consistent over time, and its statistical fluctuations are caused by climate alone, not by changes in measurement location, instruments, or surroundings.",
+    "is_exam": true,
+    "tags": ["Homogeneity", "Data Quality"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "THEORY",
+    "difficulty": "HARD",
+    "question": "Name different methods to calculate the spatial rainfall. Name their preferential fields of application and describe the calculation.",
+    "answer": "Arithmetic Mean: For uniform distributions. Thiessen Polygons: Weights based on area for non-uniform gauges. Isohyetal Method: Contour-based for mountainous terrain. IDW/Kriging: Statistical/deterministic interpolation for spatial modeling.",
+    "is_exam": true,
+    "tags": ["Spatial Rainfall", "Interpolation"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What is the probable maximum precipitation (PMP).",
+    "answer": "The greatest depth of precipitation for a given duration that is physically possible at a specific location and time.",
+    "is_exam": true,
+    "tags": ["PMP", "Extremes"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Statistics",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "How do we classify hydrological time series from a statistical point of view?",
+    "answer": "As Deterministic (predictable) or Stochastic (random). Further classified as Stationary (stable mean/variance) or Non-stationary (trends/shifts).",
+    "is_exam": true,
+    "tags": ["Time Series", "Statistics"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What is a DDF — Depth Duration Frequency curve?",
+    "answer": "A statistical tool that estimates the rainfall depth (P) for a specific duration (D) and a selected return period (R).",
+    "is_exam": true,
+    "tags": ["DDF", "Storm Analysis"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What is Runoff?",
+    "answer": "The surface and subsurface water flow originating from a catchment, measured at a specific outlet. It is the result of precipitation exceeding infiltration and storage capacities.",
+    "is_exam": true,
+    "tags": ["Runoff", "Definition"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Hydrometry",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "Name different methods of discharge measurements.",
+    "answer": "Stage Measurements: Staff Gauges, Mechanical Floats, and Pressure Sensors. Direct Discharge: Area-Velocity method, Weirs/Flumes, Tracer (Dilution) methods, and ADCP.",
+    "is_exam": true,
+    "tags": ["Discharge", "Hydrometry"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Hydrometry",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Describe the operation of different discharge methods.",
+    "answer": "Gauges: measure stage height or pressure. Area-Velocity: sums flow through cross-section segments. Tracers: use dilution to calculate Q. ADCP: uses acoustic Doppler shift for velocity profiles.",
+    "is_exam": true,
+    "tags": ["Hydrometry", "Operations"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Hydrometry",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "What is a stage discharge relationship? How can such a relationship be obtained? What is the purpose?",
+    "answer": "A rating curve relating river stage (h) to discharge (Q). Obtained by manual gauging at various water levels. Purpose is to create a continuous h/Q link for extrapolation.",
+    "is_exam": true,
+    "tags": ["Rating Curve", "Stage-Discharge"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "What is hysteresis in the context of a stage-discharge curve?",
+    "answer": "The phenomenon where the h/Q relationship is not unique; the rising limb of a flood typically has higher discharge for the same stage than the falling limb.",
+    "is_exam": true,
+    "tags": ["Hysteresis", "Runoff"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "What is a hydrograph?",
+    "answer": "A graph showing the variation of Discharge (Q) over time (t).",
+    "is_exam": true,
+    "tags": ["Hydrograph"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Why do we have to correct rainfall?",
+    "answer": "To account for systematic errors like wind-induced undercatch (especially for snow), evaporation, and wetting losses to ensure accurate modeling.",
+    "is_exam": true,
+    "tags": ["Data Correction", "Precipitation"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Snow",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Processes within the snowpack. Name the different phases of snowmelt.",
+    "answer": "Dynamics: Accumulation, Settlement/Metamorphosis. Melting Sub-phases: Warming (to 0°C), Ripening (saturating), and Output (free runoff).",
+    "is_exam": true,
+    "tags": ["Snow", "Snowmelt"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Snow",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "What is snow?",
+    "answer": "A solid form of precipitation that acts as a seasonal water reservoir and influences the energy balance due to its high albedo (0.8–0.9).",
+    "is_exam": true,
+    "tags": ["Snow", "Albedo"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Snow",
+    "entry_type": "THEORY",
+    "difficulty": "HARD",
+    "question": "Explain the energy and mass balance equations for snow cover.",
+    "answer": "Mass Balance: Δhm = P - M ± LEa. Energy Balance: ΔE = RS + RL + H + LE + HR + G (Radiation, sensible/latent heat, rain heat, ground flux).",
+    "is_exam": true,
+    "tags": ["Snow", "Mass Balance", "Energy Balance"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Snow",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Name different concepts of snow melt modeling.",
+    "answer": "Energy budget approach (mechanistic/accurate) and Temperature Index approach (empirical/simple).",
+    "is_exam": true,
+    "tags": ["Modeling", "Snowmelt"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Evapotranspiration",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "What is evaporation?",
+    "answer": "The physical process in which liquid water is converted into water vapor from free-water surfaces or bare soil.",
+    "is_exam": true,
+    "tags": ["Evaporation"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Evapotranspiration",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "What is transpiration?",
+    "answer": "The diffusion of water vapor from the plant stomata to the atmosphere.",
+    "is_exam": true,
+    "tags": ["Transpiration"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Evapotranspiration",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Which properties determine the amount of interception loss in relation to the total rainfall? Give an example for a developed coniferous forest.",
+    "answer": "Properties include vegetation type, canopy density, and storage capacity. Coniferous forests have high interception (~15%) due to high surface area and year-round foliage.",
+    "is_exam": true,
+    "tags": ["Interception", "Vegetation"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Evapotranspiration",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What kind of data do you need to run a physically based model for the calculation of evapotranspiration?",
+    "answer": "Solar radiation, air humidity (vapor pressure deficit), wind velocity, and temperature.",
+    "is_exam": true,
+    "tags": ["Modeling", "Data Requirements"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Hydrometry",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What is the velocity-area method for discharge measurement?",
+    "answer": "A method where a river cross-section is divided into segments (Ai); the mean velocity (vi) of each segment is measured, and total discharge (Q) is the sum of flows.",
+    "is_exam": true,
+    "tags": ["Hydrometry", "Velocity-Area"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Hydrometry",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "Why is accurate hydrological data collection important for water management?",
+    "answer": "Crucial for sustainable water management, climate change impact assessment, adequate system characterization, and flood regulation.",
+    "is_exam": true,
+    "tags": ["Data Quality", "Importance"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Evapotranspiration",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What is the purpose of a lysimeter? Explain its operation and setup the balance equation.",
+    "answer": "Purpose: Directly measure ETR. Operation: Tracks mass changes in a controlled soil volume. Equation: ETR = P - D - ΔS.",
+    "is_exam": true,
+    "tags": ["Lysimeter", "Measurement"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Hydrologic Cycle",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "What are the driving forces of the hydrological cycle?",
+    "answer": "Solar radiation and Gravity.",
+    "is_exam": true,
+    "tags": ["Driving Forces"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "What is the full form of DDF? Describe the graph of DDF when comparing different return periods.",
+    "answer": "Depth-Duration-Frequency. On log-log or semi-log axes, the curves relating rainfall depth to duration for various return periods appear as nearly straight lines.",
+    "is_exam": true,
+    "tags": ["DDF", "Graph"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Catchment",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Describe how to delineate surface catchment boundaries and the direction of water flow.",
+    "answer": "Created by drawing perpendicular lines at the maximum elevation points (topographic divides) starting from an outlet point; flow goes from higher to lower grounds.",
+    "is_exam": true,
+    "tags": ["Delineation", "Flow Direction"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "SCS-CN: Compare catchments based on the Curve Number (CN), soil type, and prior rainfall data.",
+    "answer": "Higher CN means lower storage and higher runoff. Soil determines base CN. Prior rainfall determines AMC (Dry/Wet/Average) requiring CN adjustment.",
+    "is_exam": true,
+    "tags": ["SCS-CN", "Comparison"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Water Balance",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Write the water balance equations for different spatial and temporal scales.",
+    "answer": "Global Annual: P = ETR. Land Surface: P = ETR + R. Catchment scale: ΔS = P - ETR - R.",
+    "is_exam": true,
+    "tags": ["Equations", "Scales"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Hydrometry",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "Name and describe common rainfall measurement instruments.",
+    "answer": "Tipping-bucket (fixed volumes), float recorder (depth via float), weighing gauge (actual weight of liquid/solid precipitation).",
+    "is_exam": true,
+    "tags": ["Instrumentation", "Precipitation"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Modeling",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Identify different modelling types and list their advantages and disadvantages.",
+    "answer": "Empirical (fast/simple, no transferability). Conceptual (flexible/efficient, needs calibration). Physically based (interpretable/transferable, high data/CPU cost).",
+    "is_exam": true,
+    "tags": ["Modeling", "Pros/Cons"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Hydrometry",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Give 3 measurement instruments for each: precipitation, runoff, and evapotranspiration.",
+    "answer": "Precipitation: Tipping bucket, Pluviometer, Float gauge. Runoff: Pneumatic gauges, Weirs, ADCP. ET: Lysimeter, Porometer, Sap flow meter.",
+    "is_exam": true,
+    "tags": ["Instrumentation", "Summary"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Modeling",
+    "entry_type": "THEORY",
+    "difficulty": "HARD",
+    "question": "Explain the different types of modelling (Conceptual vs. Physically Based) and their advantages/disadvantages in detail.",
+    "answer": "Conceptual: uses simplified storage-outflow relations and calibrated parameters. Physically Based: built on physical laws (PDEs), easily extrapolable, but computationally intensive.",
+    "is_exam": true,
+    "tags": ["Modeling", "Details"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What are the factors affecting the shape of the runoff hydrograph?",
+    "answer": "Catchment (shape/size/topography), Land Surface (urbanization/vegetation), and Atmospheric (rainfall intensity/duration).",
+    "is_exam": true,
+    "tags": ["Hydrograph", "Factors"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "List the systematic and random errors in precipitation measurement methods.",
+    "answer": "Systematic: Wind-induced undercatch (largest for snow), evaporation, splashing. Random: Reading/transcription mistakes.",
+    "is_exam": true,
+    "tags": ["Measurement Errors"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "THEORY",
+    "difficulty": "HARD",
+    "question": "List the catchment average (spatial interpolation) methods and their advantage, disadvantage, and when can those be applied.",
+    "answer": "Arithmetic Mean (fast, for uniform data). Thiessen Polygons (area-weighted, for non-uniform data). Isohyetal (contour-based, most accurate for mountains). IDW/Kriging (statistical).",
+    "is_exam": true,
+    "tags": ["Interpolation", "Details"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Extremes",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What causes floods?",
+    "answer": "Meteorological: extreme storm events, snowmelt, storm surge. Catastrophic: dam failure, earthquakes, tsunamis.",
+    "is_exam": true,
+    "tags": ["Floods", "Causes"]
   }
 ]
