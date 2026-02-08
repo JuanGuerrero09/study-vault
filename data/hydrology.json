@@ -2074,5 +2074,185 @@
     "answer": "It is a specialized soil container that measures actual evapotranspiration (ETR) by tracking precipitation, drainage, and soil storage changes.",
     "is_exam": true,
     "tags": ["Lysimeter", "ETR"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Fundamentals",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "What is the definition of hydrology?",
+    "answer": "The scientific study of the movement, distribution, and quality of water on Earth.",
+    "is_exam": false,
+    "tags": ["Definition", "Basics"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Processes",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What are the two characteristics of hydrological processes?",
+    "answer": "Non-stationary (change in time) and interconnected with other natural systems.",
+    "is_exam": false,
+    "tags": ["Processes", "Non-stationarity"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Water Quality",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "How does the Global hydrological cycle act as a natural pollution control?",
+    "answer": "Through evaporation and distillation in the atmosphere, physical filtration in soils and surface water, and chemical/biological transformations.",
+    "is_exam": false,
+    "tags": ["Pollution Control", "Hydrological Cycle"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Storage",
+    "entry_type": "THEORY",
+    "difficulty": "HARD",
+    "question": "Sort the following water reservoirs by residence times: Atmosphere, Rivers/Lakes, Oceans, Groundwater, Soils, Glaciers/Ice caps.",
+    "answer": "Atmosphere (9 days) < Soils (6 months) < Rivers/Lakes (0.3 - 80 years) < Oceans (3,200 years) < Groundwater (100 to 10,000 years) < Glaciers/Ice caps (10^5 years).",
+    "is_exam": false,
+    "tags": ["Residence Time", "Reservoirs"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Storage",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "Name four storages in which water can be stored.",
+    "answer": "Snow/ice, soil moisture, groundwater, and surface water.",
+    "is_exam": false,
+    "tags": ["Storage", "Basics"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Water Balance",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Name the phases of the temporal variation of the water components and their definitions.",
+    "answer": "1. Water surplus (P > ETR). 2. Water deficit (ETR > P; soil and groundwater storage depletion). 3. Subsurface recharge (P > ETR).",
+    "is_exam": false,
+    "tags": ["Water Balance", "Temporal Variation"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Water Balance",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Name the factors influencing the local water balance.",
+    "answer": "Climate, morphology, geology, vegetation, and soil characteristics.",
+    "is_exam": false,
+    "tags": ["Water Balance", "Factors"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Catchment",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What is the difference between a catchment, subsurface catchment, and a drainage area?",
+    "answer": "Catchment and subsurface catchment are land areas where surface or subsurface flow converges to an outlet. The drainage area is specifically the horizontal projection of that catchment.",
+    "is_exam": false,
+    "tags": ["Catchment", "Drainage Area"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Groundwater",
+    "entry_type": "THEORY",
+    "difficulty": "HARD",
+    "question": "What is a multi-storey groundwater catchment, and where do they exist?",
+    "answer": "These are groundwater catchments separated by impermeable layers, resulting in vertically stacked systems. They typically exist in coastal regions or areas with confined aquifers.",
+    "is_exam": false,
+    "tags": ["Groundwater", "Aquifers"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Soil Water",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "What is the vadose zone?",
+    "answer": "The underground layer extending from the land surface down to the top of the water table (groundwater).",
+    "is_exam": false,
+    "tags": ["Vadose Zone", "Definitions"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What are the main stages of runoff generation?",
+    "answer": "Runoff formation, runoff concentration, and wave/flood propagation.",
+    "is_exam": false,
+    "tags": ["Runoff", "Generation"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Modeling",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "Which are the model scales for a basin?",
+    "answer": "Microscale, mesoscale, and macroscale.",
+    "is_exam": false,
+    "tags": ["Modeling", "Scales"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "What are the characteristics of a precipitation event?",
+    "answer": "Volume (or depth), duration, intensity, and return period.",
+    "is_exam": false,
+    "tags": ["Precipitation", "Events"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What are the steps for the formation of precipitation?",
+    "answer": "1. Cooling of moist air to dew-point temperature. 2. Condensation. 3. Droplet growth.",
+    "is_exam": false,
+    "tags": ["Precipitation", "Formation"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "THEORY",
+    "difficulty": "HARD",
+    "question": "Which are the meteorological uplift situations and how do they occur?",
+    "answer": "Convective (surface heating), Orographic (mountain barriers), Frontal (Warm front glides over cold / Cold front pushes under warm), and Convergence (air flows into low-pressure regions).",
+    "is_exam": false,
+    "tags": ["Uplift", "Meteorology"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Instrumentation",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Which are the gauge types for recording precipitation?",
+    "answer": "Non-recording storage gauges; Conventional recording (float, tipping bucket, pluviometer); and Unconventional recording (disdrometers, capacitance sensors).",
+    "is_exam": false,
+    "tags": ["Instrumentation", "Precipitation"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "THEORY",
+    "difficulty": "HARD",
+    "question": "Which types of measurement errors exist for precipitation?",
+    "answer": "Systematic errors (evaporation, splashing/wetting, snow undercatch, and wind-induced error—the largest source) and random errors (reading mistakes, transcription errors).",
+    "is_exam": false,
+    "tags": ["Errors", "Measurement"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Data Analysis",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What is the usage of a double mass curve?",
+    "answer": "To detect inhomogeneities and check consistency across long-term rainfall records.",
+    "is_exam": false,
+    "tags": ["Data Consistency", "Double Mass Curve"]
   }
 ]

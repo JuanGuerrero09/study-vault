@@ -1,8 +1,7 @@
-# Hydrology Notes
 
-## 📖Summary
+# 📖Summary
 
-### Knowledge
+## Knowledge
 - The hydrological cycle and the coupling to the energy cycle
 - The water balance and its main components
 - Hydrological processes and scales
@@ -10,7 +9,7 @@
 - Human impact on water resources
 - Specific hydrological situation of different regions
 
-### Competences
+## Competences
 
 - Catchment Delineation
 - Areal precipitation
@@ -20,7 +19,7 @@
 - Catchment water balance
 
 
-## 🕸️Resources and Relevant Links
+# 🕸️Resources and Relevant Links
 
 Books:
 - Dingman S. L., (2008/2014): Physical Hydrology, Waveland Press.
@@ -67,7 +66,7 @@ Fundamental physical laws:
 ---
 
 # 2. Hydrologic Cycle
-## Global Hydrological Cycle
+## The Global Hydrological Cycle
 
 Driven mainly by:
 
@@ -356,11 +355,11 @@ They follow the principle:
 
 > “As simple as possible, as complex as necessary.”
 
-|Scale|Typical Size|Focus / Examples|
-|---|---|---|
-|**Microscale**|1 m² – 1 ha|Field or lysimeter experiments; local infiltration; preferential flow.|
-|**Mesoscale**|1 ha – 10² km²|Catchments and aquifers; spatial heterogeneity and hydrological connectivity.|
-|**Macroscale**|10² km² – 10⁶ km²|River basins, large watersheds, continental hydrology; links with GCMs.|
+| Scale          | Typical Size      | Focus / Examples                                                              |
+| -------------- | ----------------- | ----------------------------------------------------------------------------- |
+| **Microscale** | 1 m² – 1 ha       | Field or lysimeter experiments; local infiltration; preferential flow.        |
+| **Mesoscale**  | 1 ha – 10² km²    | Catchments and aquifers; spatial heterogeneity and hydrological connectivity. |
+| **Macroscale** | 10² km² – 10⁶ km² | River basins, large watersheds, continental hydrology; links with GCMs.       |
 
 > **Watershed vs River Basin:**  
 > A _watershed_ drains into a local outlet (stream or wetland), while a _river basin_ aggregates multiple watersheds draining into a major river or sea.
@@ -548,6 +547,10 @@ A common criterion is the **Nash–Sutcliffe Efficiency (NSE):**
 $NSE = 1 - \frac{\sum (Q_{obs} - Q_{sim})^2}{\sum (Q_{obs} - \bar{Q}_{obs})^2}$
 Values close to 1 indicate a good fit.
 
+- $NSE = 1$: Perfect fit.
+- $NSE = 0$: The model is only as good as using the mean of the observed data.
+- $NSE < 0$: The model is worse than just using the mean.
+
 
 #### Optimization Methods
 
@@ -656,47 +659,7 @@ Precipitation associated with atmospheric fronts and cyclonic systems.
 
 
 ---
-### 6.2 Precipitation measurements
-
-#### Precipitation regimes
-
-The table classifies global precipitation regimes and their seasonal patterns.
-Interpretation of abbreviations:
-- **Wi** = Winter
-- **Su** = Summer
-- **max** = Maximum precipitation in that season
-- **dry / wet** = Seasonal dryness or wetness
-
-| --- | Climate                | Precipitation                   |
-| --- | ---------------------- | ------------------------------- |
-| A   | Equatorial             | All year, max 2 seasons         |
-| B1  | Tropical (inner, 10º)  | Wi dry, Su wet, 2 summer max    |
-| B2  | Tropical (outer, 23º)  | 1 summer max, longer dry season |
-| C   | Monsoon                | high Su max, long dry season    |
-| D   | Subtropical (23-30º)   | dry (desert) very little rain   |
-| E   | Mediterranean (30-40º) | Wi rain, Su dry                 |
-| F   | Mid-latitudes          | all seasons                     |
-| G   | Polar                  | all seasons, small amounts      |
-Clarification:  
-"Summer max" means **summer has the highest rainfall of the year**.  
-"Wi dry" means **winter is dry**, "Su wet" means **summer is wet**, etc.
-
----
-#### Point measurements
-
-##### Rainfall depth
-Total accumulated precipitation during an event or time interval (mm).
-##### Rainfall intensity
-Rate of precipitation:
-- $[\text{mm/min}]$
-- $[\text{mm/hr}]$
-Intensity is especially important for stormwater design and runoff modeling.
-##### Rainfall duration
-Total time over which precipitation occurs.
-##### Rain yield factor
-Units: $\text{mm·s}^{-1}\text{·ha}^{-1}$  
-Used to estimate the volume of stormwater generated from rainfall over a catchment.  
-Less common today but still appears in older hydrological references.
+### 6.2 Precipitation Measurements
 
 #### Rainfall depth, intensity, duration, rain yield factor
 
@@ -805,19 +768,20 @@ Measure **drop size distribution**.
     - Height = 1 m
     - Area = 200 cm²
     - Daily measurement at 7am
-- WMO provides guidelines but not uniformly adopted
+- **Why we don't put gauges higher:** Wind speed increases with height, which drastically increases the **systematic undercatch error**.
+- WMO provides guidelines but not uniformly adopted.
 
 ---
-#### Measurement errors (~5–15% typical)
+### Measurement errors (~5–15% typical)
 
-##### Systematic errors
+#### Systematic errors
 
 - Evaporation
 - Splashing / wetting
 - Wind-induced errors
 - Snow undercatch
 
-##### Random errors
+#### Random errors
 
 - Reading mistakes
 - Data transcription errors
@@ -849,7 +813,7 @@ Outliers are not always “bad”; hydrology must keep genuine extremes.
 #### Detection Methods
 
 - **Extreme value analysis**, e.g.
-    $$z_i = \frac{x_i - \mu}{\sigma}$$
+$$z_i = \frac{x_i - \mu}{\sigma}$$
 - **Probabilistic models**
 - **Clustering techniques**
 - **Distance or density-based methods**
@@ -891,6 +855,8 @@ Guidelines:
 - Must test statistical significance (t-test or Mann–Kendall)
 - If possible, discard data before the breakpoint
 - Otherwise, multiply past values by a correction factor $K$
+
+A crucial technical point: If the slope of a DMC changes, it indicates a **non-climatic** change (e.g., the gauge was moved, or a tall building was built nearby), not a change in climate
 
 ---
 
@@ -941,6 +907,8 @@ Accuracy depends on:
 - Measurement error
 - Selected interpolation method
 
+Note that for **short-duration convective storms** (high spatial variability), simple methods like the Arithmetic Mean are very poor; you need Radar or IDW/Kriging
+
 ---
 
 #### Methods Overview
@@ -961,6 +929,10 @@ Choice depends on:
 
 ##### Arithmetic Mean
 
+- **Definition:** The simplest approach for calculating catchment precipitation, where the total rainfall depth is determined by taking the simple average of all measurements from stations located within or in the immediate vicinity of the catchment.
+- **Application:** It is most effective in areas with a dense, uniform network of gauges and flat topography where rainfall is relatively homogeneous.
+- **Limitation:** It fails to account for the spatial distribution of gauges or topographic influences, making it poor for capturing high-variability events like convective storms.
+
 Example:
 
 |Station|Rainfall (mm)|
@@ -975,25 +947,44 @@ Average = 35 mm
 ---
 
 ##### Thiessen Polygons
-
-$$P = \frac{1}{A}\sum a_i p_i$$
-- $a_i$: polygon area
-- $p_i$: rainfall at station $i$
+- **Definition:** A geometric method that assigns an "area of influence" to each rain gauge by creating polygons through the perpendicular bisectors of lines connecting adjacent stations.
+- **Mechanism:** Every point within a specific polygon is assigned the rainfall value of the nearest station.
+- **Equation:** The catchment average is calculated using an area-weighted sum:$$P = \frac{1}{A}\sum a_i p_i$$
+    
+    - $a_i$: The area of the polygon associated with station $i$.
+    - $p_i$: The rainfall depth recorded at station $i$.
+    - $A$: The total area of the catchment.
+- **Advantage:** It accounts for the non-uniform distribution of gauges.
 
 > CHECK EXERCISE 2 OPAL
 
 ---
 ##### Isohyetal Method
 
+- **Definition:** This method involves drawing lines of equal rainfall depth, known as **isohyets**, across the catchment area based on point measurements.
+    
+- **Mechanism:** The average rainfall is determined by calculating the area between successive isohyets and weighting it by the average rainfall of those two lines.
+    
+- **Precision:** It is considered one of the most accurate deterministic methods because it allows the hydrologist to manually incorporate topographic and orographic effects (such as mountain ranges) into the lines.
+
 
 ---
 
 ##### Inverse Distance Weighting (IDW)
 
-General form:
-
-$$P_x = \frac{\sum p_i d_{xi}^{-1}}{\sum d_{xi}^{-1}}$$
-
+- **Definition:** A mathematical interpolation technique that estimates the rainfall at any unknown point $x$ by taking a weighted average of all nearby known stations.
+    
+- **Mechanism:** The influence of a station on the target point decreases as the distance between them increases. This is governed by the reciprocal of the distance ($d_{xi}^{-1}$).
+    
+- **Equation:**
+    
+    $$P_x = \frac{\sum p_i d_{xi}^{-1}}{\sum d_{xi}^{-1}}$$
+    
+    - $P_x$: The estimated rainfall at point $x$.
+        
+    - $d_{xi}$: The distance between the known station $i$ and the point $x$.
+        
+- **Key Feature:** IDW allows for a more continuous representation of the rainfall field compared to the "step-change" approach of Thiessen Polygons.
 ---
 
 #### Statistical methods
@@ -1104,6 +1095,10 @@ Two tools:
 ---
 #### Depth–Duration–Frequency (DDF) Curves
 
+- **Definition:** These curves represent the relationship between **rainfall depth** (measured in mm), its **duration** (the time interval of the storm), and its **return period** (frequency of occurrence).
+- **Usage:** They are primarily used to determine the total volume of water expected from a storm of a specific length (e.g., a 24-hour storm) that occurs once every 10, 50, or 100 years.
+- **Key Property:** Rainfall depth increases with both duration and return period.
+
 
 
 A **formal statistical method** to estimate extreme rainfall.
@@ -1118,7 +1113,7 @@ A **formal statistical method** to estimate extreme rainfall.
     For each duration.
     Alternatively: **peaks over threshold** (POT).
 4. **Create empirical PDF**  
-  
+
     Values are normalized so the integral = 1.
 5. **Compute empirical CDF**    
     Sum of PDF bars from left to right.
@@ -1208,7 +1203,8 @@ These tests indicate whether the theoretical distribution adequately represents 
 Given:
 
 - Empirical mean: $\mu_p = 14.1$    
-- Empirical standard deviation: $\sigma_p = 3.48$
+- Variance: $\sigma_p^2 = 34.8$
+- Empirical standard deviation: $\sigma_p = 5.9$
 
 From the method of moments:
 
@@ -1237,7 +1233,6 @@ Este es el procedimiento usado para generar tablas de lluvia extrema.
 - Compute $P$ for $R = 2, 10, 50, 100$ años.
 
   
-
 These $P$ values populate the Depth–Duration–Frequency (DDF) tables used for design rainfall.
 
 Fuente: Dingman: _Physical Hydrology_ (2nd Ed. 2014), Sec. 4.4.3, p. 185ff.
@@ -1245,6 +1240,10 @@ Fuente: Dingman: _Physical Hydrology_ (2nd Ed. 2014), Sec. 4.4.3, p. 185ff.
 ---
 
 ##### IDF (Intensity–Duration–Frequency Analysis)
+
+- **Definition:** These curves describe the relationship between **rainfall intensity** (measured in mm/h or mm/min), **duration**, and **return period**.
+- **Usage:** They are critical for urban stormwater engineering and small catchment modeling, where the peak flow (maximum intensity) is more important than the total volume.
+- **Key Property:** Rainfall intensity decreases as the duration of the storm increases.
 
 The IDF approach expresses rainfall in terms of **intensity**, not depth.
 
@@ -1273,6 +1272,7 @@ This curve is used in:
 - SCS-CN and unit hydrograph rainfall inputs
 - Stormwater models (SWMM, MIKE URBAN, etc.)
 - Flood protection design
+
 
 ### 6.6 Snow and Snowmelt
 
@@ -1469,9 +1469,7 @@ $$B = 0.4 (1-\alpha) \exp(-4F) f_{sl}$$
 - $\alpha$: **Albedo**.
 - $F$: **Forest cover**.
 - $f_{sl}$: **Slope factor**.
-
 # 7. Runoff
-
 
 **Runoff** is defined as the surface and subsurface flow originating from a catchment, typically measured at a specific river cross-section. It is the most reliably determined component of the water balance equation:
 
@@ -1708,43 +1706,28 @@ $$R = \frac{1}{1-F}$$
 **Case Study**: Elbe River at Aken
 
 - **Catchment Size**: $70,093 \text{ km}^2$.
-    
 - **Historical Reference**: $NQ = 82.5, MQ = 435, HHQ = 4,490 \text{ m}^3\text{/s}$.
-    
 - **Input**: Annual peak flows ($HQ$) from $1936\text{--}1965$.
-    
 
 **Methodological Steps**:
 
 1. Calculate the sample **mean ($\bar{x}$)** and **standard deviation ($s_x$)** of the $HQ$ record.
-    
-2. Determine the **empirical non-exceedance probability** using the Gringorten (1963) formula:
-    
-    $$P_{U, Gringorten} = \frac{i - 0.44}{n + 0.12}$$
-    
+2. Determine the **empirical non-exceedance probability** using the Gringorten (1963) formula:$$P_{U, Gringorten} = \frac{i - 0.44}{n + 0.12}$$
 3. **Fit the Gumbel (EV1) distribution** to the sample:
+$$P_{U, Gumbel} = e^{-e^{-\frac{x - u}{\alpha}}} \qquad \text{where } \alpha = \frac{s_x \sqrt{6}}{\pi} \text{ and } u = \bar{x} - 0.5772 \cdot \alpha$$
     
-    $$P_{U, Gumbel} = e^{-e^{-\frac{x - u}{\alpha}}} \qquad \text{where } \alpha = \frac{s_x \sqrt{6}}{\pi} \text{ and } u = \bar{x} - 0.5772 \cdot \alpha$$
-    
-4. **Test Goodness of Fit** via the Kolmogorov-Smirnov test:
-    
-    $$d_{1,i} = |P_{U, Gumbel}(x_i) - P_{U, Gringorten}(x_i)|$$
-    
-    $$d_{2,i} = |P_{U, Gumbel}(x_i) - P_{U, Gringorten}(x_{i-1})|$$
-    
+5. **Test Goodness of Fit** via the Kolmogorov-Smirnov test:
+$$d_{1,i} = |P_{U, Gumbel}(x_i) - P_{U, Gringorten}(x_i)|$$$$d_{2,i} = |P_{U, Gumbel}(x_i) - P_{U, Gringorten}(x_{i-1})|$$
     The fit is valid if $c > \max([d_1 \ d_2])$.
     
-5. **Calculate $HQ(R)$** for specific return periods using: $R = 1 / (1 - P_U)$.
+6. **Calculate $HQ(R)$** for specific return periods using: $R = 1 / (1 - P_U)$.
     
 
 **Common Theoretical Distributions**:
 
 - **Gumbel (EV1)**: $F(x) = \exp[-\exp(-\frac{x-\xi}{\alpha})]$.
-    
 - **Generalized Extreme Value (GEV)**: $F(x) = \exp\{-(1 - \frac{\kappa(x-\xi)}{\alpha})^{1/k}\}$.
-    
 - **Log Pearson Type 3 (LP3)**: $F(x) = \frac{G(\alpha, \frac{x-\xi}{\beta})}{\Gamma(\alpha)}$.
-    
 - **Lognormal**: $F(x) = \frac{1}{\sqrt{2\pi}\sigma} \int_{0}^{x} \frac{1}{t} e^{-\frac{(\ln(t)-\mu)^2}{2\sigma^2}} dt$.
 
 ---
@@ -1775,13 +1758,12 @@ It is vital to understand that these droughts are **causally linked**. A _Meteor
 - **Long Records**: Statistical analysis of annual $7$-day minimum flows or cumulative days below $Q_{crit}$.
 - **Unobserved Catchments**: Regional analysis using correlation or **Reference $LQ$-methods**.
 
-
 ### 7.4 Runoff components
 
 Streamflow is a combination of three distinct components:
 
 - **Base flow:** Long-term groundwater contribution to the stream.
-- **Interflow:** Lateral flow in the unsaturated or perched saturated zone above the main groundwater table.
+- **Interflow:** Lateral flow of water in the **vadose zone** (unsaturated) or through **macropores** (root holes, cracks) above the main water table. It travels faster than groundwater but slower than surface flow.. 
 - **Overland flow:** Saturated flow that travels over the soil surface to the channel.
 
 _Note:_ It is important to normalize flow when comparing different catchments.
@@ -1946,11 +1928,8 @@ For numerical application, the convolution is expressed as:
 $$q_n = \sum_{m=1}^{n} p_m \cdot u_{n-m+1}$$
 
 - $n$: time step.
-    
 - $m$: time step.
-    
 - $p_m$: effective precipitation at time $m$.
-    
 - $u$: unit response ordinate.
 
 **Linear Storage Model**
@@ -1958,11 +1937,8 @@ $$q_n = \sum_{m=1}^{n} p_m \cdot u_{n-m+1}$$
 A conceptual model where the catchment is treated as a reservoir.
 
 - **Storage Equation:** $S = k \cdot Q$.
-    
 - **Continuity Equation:** $I - Q = \frac{dS}{dt}$.
-    
 - **Linear Differential Equation:** $I - Q = k \frac{dQ}{dt}$.
-    
 - **Analytical Solution (Impulse Response):** $h(t) = \frac{1}{k} e^{-t/k}$.
 
 ---
@@ -1980,13 +1956,8 @@ Determines wave propagation and retention as a water wave moves through a river 
 
 **Saint-Venant Equations:**
 
-1. **Continuity (Mass Balance):**
-    
-    $$\frac{\partial A}{\partial t} + \frac{\partial Q}{\partial x} = q_l$$
-    
-2. **Momentum (Energy Balance):**
-    
-    $$\frac{\partial Q}{\partial t} + \frac{\partial}{\partial x} \left( \frac{Q^2}{A} \right) + gA \left( \frac{\partial h}{\partial x} - S_0 + S_f \right) = 0$$
+1. **Continuity (Mass Balance):**$$\frac{\partial A}{\partial t} + \frac{\partial Q}{\partial x} = q_l$$
+2. **Momentum (Energy Balance):**$$\frac{\partial Q}{\partial t} + \frac{\partial}{\partial x} \left( \frac{Q^2}{A} \right) + gA \left( \frac{\partial h}{\partial x} - S_0 + S_f \right) = 0$$
 
 ---
 
@@ -2005,6 +1976,8 @@ RR models transform rainfall into runoff by simulating runoff formation, concent
 
 - **Conceptual Models:** Flood forecasting, water balance calculations, land use/climate change impact studies.
 - **Physically Based Models:** Groundwater-surface water interactions, contaminant transport, process identification.
+
+# 8. Evapotranspiration
 
 
 Evapotranspiration is the combined process of water loss through plant transpiration and surface evaporation.
@@ -2029,6 +2002,8 @@ Transpiration is the diffusion of water vapor from the stomata to the atmosphere
 
 - **Drivers:** It is driven by available energy and the **vapour pressure deficit**.
 - **Pressure Gradient:** Pressure in the soil is near zero, while in the atmosphere, it is significantly lower than zero.
+
+Transpiration is driven by a massive **Water Potential Gradient**. While soil water potential is near 0 MPa, dry air at 50% humidity can have a potential of **-100 MPa**. Plants are essentially "wicking" water along this gradient.
 
 **Air Water Potential ($\Psi_{air}$):**
 
@@ -2088,8 +2063,8 @@ $$
 $$
 
 - $G$: Net ground heat flux.
-- $r_a$: Aerodynamic resistance ($f(u)$).
-- $r_s$: (Bulk) surface resistance ($f(\text{stomata, } CO_2, \text{ light})$).
+- $r_a$: **Aerodynamic resistance** ($f(u)$). :Describes how difficult it is for water vapor to move from the leaf surface into the bulk air. It decreases as **wind speed** increases.
+- $r_s$: **(Bulk) surface resistance** ($f(\text{stomata, } CO_2, \text{ light})$). Describes the physiological control by the plant (stomata). It increases when the plant is **stressed** or CO₂ levels are high.
 
 for a well-watered Bermuda grass (12 cm)
 
@@ -2124,8 +2099,6 @@ $$ETR = P - R$$
 $$ETR = \frac{\rho_a}{\rho_w} \cdot \overline{u_a' \cdot q'}$$
   
 _(where $u_a'$ is the vertical wind component and $q'$ is the vertical humidity component)_
-
-# 8. Evapotranspiration
 
 # 9. Regional Aspects of Hydrology
 
