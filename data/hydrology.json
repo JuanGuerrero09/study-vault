@@ -1884,5 +1884,195 @@
     "answer": "Meteorological: extreme storm events, snowmelt, storm surge. Catastrophic: dam failure, earthquakes, tsunamis.",
     "is_exam": true,
     "tags": ["Floods", "Causes"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "EXERCISE",
+    "difficulty": "HARD",
+    "question": "DDF Calculation: Describe the full procedure to determine rainfall depth P(D,R) using Gumbel parameters.",
+    "answer": "1. Aggregate annual maxima for a duration (D). 2. Calculate sample mean (μp) and standard deviation (σp). 3. Derive scale parameter α = (sqrt(6)*σp)/π and location parameter u = μp - 0.5772*α. 4. Calculate depth P = u + α*[-ln(-ln((R-1)/R))] for return period R.",
+    "is_exam": true,
+    "tags": ["DDF", "Gumbel", "Extremes", "Calculation"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What is the full form of DDF? How should the DDF for different return periods graph behave?",
+    "answer": "Depth-Duration-Frequency. On log-log axes, the curves relating rainfall depth to duration for various return periods appear as nearly straight lines.",
+    "is_exam": true,
+    "tags": ["DDF", "Graph"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Water Balance",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Write the water balance equations for different time scales.",
+    "answer": "Global annual: P = ETR. Land surface annual: P = ETR + R. Shorter periods: P = ETR + R + ΔS. Arbitrary area: P = ETR + ΔS + SW_out - SW_in + GW_out - GW_in.",
+    "is_exam": true,
+    "tags": ["Water Balance", "Equations"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Identify the steps for analysis of precipitation measurements.",
+    "answer": "1. Homogeneity (ensuring variations are meteorological). 2. Consistency (removing outliers/filling gaps). 3. Correction (addressing wetting, evaporation, and wind errors).",
+    "is_exam": true,
+    "tags": ["Precipitation", "Data Analysis"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What factors affect the shape of the runoff hydrograph?",
+    "answer": "Catchment factors (shape, size, geology), Land Surface factors (urbanization, vegetation, wetness), and Atmospheric factors (rainfall intensity and duration).",
+    "is_exam": true,
+    "tags": ["Hydrograph", "Runoff"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "List the errors in precipitation measurement methods.",
+    "answer": "Systematic errors include wetting, evaporation, and wind-induced undercatch. Other errors include fog, mist, and frost impacts.",
+    "is_exam": true,
+    "tags": ["Precipitation", "Errors"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Water Balance",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "What are the six storage compartments for water?",
+    "answer": "Rivers/lakes, Oceans, Groundwater, Soil storage, Interception, and Snow/ice storage.",
+    "is_exam": true,
+    "tags": ["Storage", "Reservoirs"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Name the three processes of Runoff dynamics.",
+    "answer": "1. Runoff formation (hillslope processes). 2. Runoff concentration (routing to outlet). 3. Flow routing (wave propagation in channels).",
+    "is_exam": true,
+    "tags": ["Runoff", "Processes"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Hydrometry",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Name different methods of discharge measurement.",
+    "answer": "Stage gauges (Manual, float, pneumatic), Flow measurements (Current meters, weirs, flumes, tracers, ADCP), and Stage-discharge relationships (Rating curves).",
+    "is_exam": true,
+    "tags": ["Discharge", "Hydrometry"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Runoff",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "What is a hydrograph?",
+    "answer": "A graph showing how river discharge (Q) or water level (h) changes over time (t) at a specific location.",
+    "is_exam": true,
+    "tags": ["Hydrograph"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Soil",
+    "entry_type": "THEORY",
+    "difficulty": "HARD",
+    "question": "What governs the transport processes in soils?",
+    "answer": "Non-linear hydraulic functions (K, h, θ), boundary conditions, water potential, porosity, and gravity.",
+    "is_exam": true,
+    "tags": ["Soil", "Transport"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Statistics",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What does it mean if a data set is homogeneous?",
+    "answer": "A time series is homogeneous if its variations are caused by meteorological reasons only, without changes in instruments or location.",
+    "is_exam": true,
+    "tags": ["Homogeneity", "Statistics"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Water Balance",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What are the factors influencing the water balance?",
+    "answer": "Climate, morphology, geology, vegetation, and soil characteristics.",
+    "is_exam": true,
+    "tags": ["Water Balance", "Factors"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Snow",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Name the processes within the snowpack.",
+    "answer": "Accumulation and Settlement/Metamorphosis.",
+    "is_exam": true,
+    "tags": ["Snowpack", "Processes"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Snow",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Name the different phases of snowmelt.",
+    "answer": "Warming (to 0°C), Ripening (saturating pore space), and Output (generating runoff).",
+    "is_exam": true,
+    "tags": ["Snowmelt", "Phases"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Hydrometry",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Describe the operation of Current meters, Stage readings, Weirs, Tracers, and ADCP.",
+    "answer": "Current meter: rotational sensor counting rotations for velocity. Stage: relates height to Q. Weir: uses Bernoulli-based formulas for discharge. Tracer: uses dilution of a known mass. ADCP: uses acoustic Doppler shift.",
+    "is_exam": true,
+    "tags": ["Hydrometry", "Operations"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Water Balance",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "How does the subsurface recharge change over the year?",
+    "answer": "It follows a cycle of water surplus, soil/groundwater depletion, and subsurface recharge phases.",
+    "is_exam": true,
+    "tags": ["Recharge", "Seasonality"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Precipitation",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Which processes lead to precipitation?",
+    "answer": "Cooling of moist air to dew point (adiabatic cooling), Condensation onto nuclei, and Droplet growth (coalescence).",
+    "is_exam": true,
+    "tags": ["Precipitation", "Formation"]
+  },
+  {
+    "subject": "Hydrology",
+    "topic": "Evapotranspiration",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "How does a lysimeter work?",
+    "answer": "It is a specialized soil container that measures actual evapotranspiration (ETR) by tracking precipitation, drainage, and soil storage changes.",
+    "is_exam": true,
+    "tags": ["Lysimeter", "ETR"]
   }
 ]

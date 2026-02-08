@@ -1542,5 +1542,555 @@
     "answer": "The Penman-Monteith approach.",
     "is_exam": true,
     "tags": ["Actual ET", "Penman-Monteith"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Land-Cover Characteristics",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Which types of special characteristic of different land-cover are?",
+    "answer": "Land-cover types are distinguished by their aerodynamic roughness length ($z_0$), albedo ($\\alpha$), and surface resistance ($r_s$).",
+    "is_exam": false,
+    "tags": ["Land-cover", "Roughness", "Albedo", "Resistance"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Microclimatology",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "What effects do land-cover characteristics have on local climate?",
+    "answer": "Turbulence (specifically friction velocity $u_*$) enhances the transport of water vapor from the surface. In urban or rougher areas, increased turbulence can dry out surfaces faster.",
+    "is_exam": false,
+    "tags": ["Turbulence", "Local Climate", "Water Vapor"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Energy Balance",
+    "entry_type": "THEORY",
+    "difficulty": "HARD",
+    "question": "How to identify the land-cover based on measurements?",
+    "answer": "By observing the diurnal cycle of Sensible Heat ($H$) and Latent Heat ($\\lambda E$). A dominant $\\lambda E$ indicates well-watered vegetation or water bodies.",
+    "is_exam": false,
+    "tags": ["Energy Flux", "Sensible Heat", "Latent Heat"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Radiation",
+    "entry_type": "EXERCISE",
+    "difficulty": "MEDIUM",
+    "question": "How would the emission change if the emissivity ($\\epsilon$) was 0.95 instead of a perfect black body?",
+    "answer": "Radiation emission is directly proportional to emissivity ($\\epsilon$). If $\\epsilon = 0.95$, the total radiation emitted would be 95% of that of a black body ($I = \\epsilon \\sigma T^4$).",
+    "is_exam": false,
+    "tags": ["Emissivity", "Stefan-Boltzmann", "Radiation"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Biogeochemical Cycles",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Why is the CO2 flux (NEE) considered 'negative' during the daytime for healthy vegetation?",
+    "answer": "Photosynthesis (CO2 uptake) exceeds Respiration (CO2 release). Because the net exchange is measured from the atmosphere's perspective, uptake is shown as a negative value.",
+    "is_exam": false,
+    "tags": ["CO2 Flux", "NEE", "Photosynthesis"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Microclimatology",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "What is the 'Oasis Effect,' and how does it influence the Bowen Ratio?",
+    "answer": "It is the cooling effect caused by the evaporation of a water source in a dry environment. Energy is consumed as Latent Heat, leaving less for Sensible Heat, which lowers the air temperature and the Bowen Ratio.",
+    "is_exam": false,
+    "tags": ["Oasis Effect", "Bowen Ratio", "Cooling"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Plant Physiology",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "Explain the feedback loop between stomatal resistance ($r_c$) and the canopy temperature ($T_0$) during water stress.",
+    "answer": "During water stress, plants increase $r_c$ by closing stomata. This prevents transpiration, causing the canopy temperature ($T_0$) to rise because the surface can no longer cool itself through evaporation.",
+    "is_exam": false,
+    "tags": ["Stomatal Resistance", "Water Stress", "Canopy Temperature"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Microclimatology",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "How does the 'Clothesline Effect' differ from the 'Oasis Effect' in terms of microclimatic energy exchange?",
+    "answer": "The Oasis Effect is a vertical process where local evaporation cools the air. The Clothesline Effect is a horizontal process where warm, dry air is advected laterally into a canopy edge, spiking the Vapor Pressure Deficit (VPD) and increasing water stress.",
+    "is_exam": false,
+    "tags": ["Clothesline Effect", "Oasis Effect", "Advection", "VPD"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Thermal Circulations",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Explain why the land-sea breeze reverses between day and night based on pressure and temperature gradients.",
+    "answer": "During the day, land heats faster, creating low pressure that draws in a sea breeze. At night, the land cools faster than the sea, reversing the pressure gradient and creating a land breeze.",
+    "is_exam": false,
+    "tags": ["Land-Sea Breeze", "Pressure Gradient", "Thermal Inertia"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Local Climate Modification",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "How does geometry control in agriculture (like asparagus cultivation) specifically reduce longwave radiative loss?",
+    "answer": "Specific surface geometries trap radiation by reflecting emitted longwave waves multiple times within trenches or the canopy, preventing them from escaping to the open sky and maintaining higher soil temperatures.",
+    "is_exam": false,
+    "tags": ["Geometry Control", "Radiation Trapping", "Longwave Loss"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Flux Footprint",
+    "entry_type": "THEORY",
+    "difficulty": "HARD",
+    "question": "Under what conditions would you expect a 'footprint mismatch' to lead to a significant energy balance underclosure?",
+    "answer": "This occurs when ground heat flux ($Q_G$) is measured in a small, non-representative soil area while atmospheric fluxes ($Q_H, Q_E$) are integrated over a much larger, heterogeneous upwind footprint.",
+    "is_exam": false,
+    "tags": ["Footprint Mismatch", "Energy Balance", "Underclosure"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Flux Footprint",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What is the difference between Analytic models and Lagrangian models in the context of flux footprint estimation?",
+    "answer": "Analytic models solve the diffusion equation mathematically. Lagrangian models use stochastic calculations of particle distributions to simulate the transport from the source area to the sensor.",
+    "is_exam": false,
+    "tags": ["Analytic Models", "Lagrangian Models", "Footprint Estimation"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Flux Footprint",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "How does atmospheric stability (stratification) specifically influence the area and extent of a flux footprint?",
+    "answer": "Stability dictates mixing efficiency. Highly unstable conditions lead to rapid vertical transport and a small footprint ($0.15\\text{ km}^2$). Stable conditions suppress vertical mixing, expanding the footprint upwind to roughly $7.5\\text{ km}^2$.",
+    "is_exam": false,
+    "tags": ["Atmospheric Stability", "Stratification", "Footprint Area"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Internal Boundary Layers",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Describe the three different wind profile scenarios that occur when air moves across a surface roughness change.",
+    "answer": "1. Before change: Profile is in equilibrium with the original surface. 2. Leading Edge: Wind speed immediately accelerates (rough to smooth) or decelerates (smooth to rough) near the ground. 3. Adaptation: An Internal Boundary Layer (IBL) grows downwind.",
+    "is_exam": false,
+    "tags": ["Wind Profiles", "Roughness Change", "Internal Boundary Layers"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Flux Footprint",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "What are the General Requirements for a footprint model to be considered valid?",
+    "answer": "Requirements include: Height-constant fluxes within the surface layer, horizontally homogeneous wind fields and surfaces, and the valid applicability of a diffusion model.",
+    "is_exam": false,
+    "tags": ["Footprint Models", "Model Validity"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Local Climate Modification",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Contrast the effects of Shelter Effects on air and soil temperature ($T_{air}, T_{soil}$) between daytime and nighttime.",
+    "answer": "In the daytime, shelters reduce mixing and generally increase $T_{air}$ and $T_{soil}$ (heat trapping). At nighttime, they reduce longwave loss and mixing, keeping temperatures higher to provide frost protection.",
+    "is_exam": false,
+    "tags": ["Shelter Effects", "Temperature", "Frost Protection"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Internal Boundary Layers",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Explain how Internal Boundary Layers (IBL) develop as air moves from one surface type to another.",
+    "answer": "As air crosses a surface discontinuity, the atmosphere re-equilibrates through turbulent mixing. This starts at the ground and propagates upward as a 'wedge' (the IBL) that carries the properties of the new surface.",
+    "is_exam": false,
+    "tags": ["IBL Development", "Roughness Transition", "Re-equilibration"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Thermal Circulations",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What are 'Secondary Circulations' and how do they differ from the mean circulation?",
+    "answer": "Secondary circulations are organized flows, like roll vortices, superimposed on the mean wind. They typically have a width 2–3 times the boundary layer depth and help distribute energy vertically.",
+    "is_exam": false,
+    "tags": ["Secondary Circulation", "Roll Vortices", "Boundary Layer"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Eddy Covariance",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Which conditions have to be true for the control volume approach for the Eddy covariance?",
+    "answer": "Steady state (removes storage changes over time), Homogeneous flow (removes horizontal and vertical advection), and Isotropic Turbulence (removes horizontal flux divergence).",
+    "is_exam": false,
+    "tags": ["EC", "Assumptions", "Control Volume"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Eddy Covariance",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "Name two advantages and disadvantages for the eddy covariance measurements.",
+    "answer": "Advantages: Direct measurement with no empirical constants and non-invasive to the ecosystem. Disadvantages: High financial cost (10k–50k €) and extreme sensitivity to mathematical assumptions.",
+    "is_exam": false,
+    "tags": ["EC", "Pros and Cons"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Eddy Covariance",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Which instruments are used to measure eddy covariance and what do they measure?",
+    "answer": "Ultrasonic Anemometer (Sonic) measures the 3D wind vector and virtual temperature. Infrared Gas Analyzer (IRGA) measures H2O and CO2 concentrations.",
+    "is_exam": false,
+    "tags": ["Instrumentation", "EC"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Eddy Covariance",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Which limitations and corrections can be done to the eddy covariance measurements?",
+    "answer": "Limitations include steady state and spectral resolution needs. Corrections include WPL (density), Spectral (frequency loss), and Coordinate Rotation (flow alignment).",
+    "is_exam": false,
+    "tags": ["EC", "Corrections"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Eddy Covariance",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "How to convert buoyancy flux to sensible heat flux, why do we need to do that in the first place?",
+    "answer": "Converted via the Schotanus Correction. It is necessary because sonics measure temperature based on the speed of sound, which is influenced by humidity and wind velocity (buoyancy) rather than just air temperature.",
+    "is_exam": false,
+    "tags": ["Schotanus", "Buoyancy Flux", "Sensible Heat"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Eddy Covariance",
+    "entry_type": "EXERCISE",
+    "difficulty": "HARD",
+    "question": "Exercise (Schotanus): Using the coefficients for a CSAT3 anemometer, calculate the correction term for a buoyancy flux measurement where mean u = 5 m/s.",
+    "answer": "The measured buoyancy flux must be corrected by subtracting cross-wind contamination terms that use the mean wind speed (5 m/s) and specific anemometer coefficients (A and B) to isolate the true sensible heat.",
+    "is_exam": false,
+    "tags": ["Schotanus", "Calculation"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Eddy Covariance",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Explain why the Planar Fit coordinate rotation is considered superior to Double Rotation for long-term datasets.",
+    "answer": "Double Rotation treats 30-min intervals independently, risking over-rotation. Planar Fit uses long-term records to define a stable mean streamline plane, preserving large-scale turbulent signals.",
+    "is_exam": false,
+    "tags": ["Coordinate Rotation", "Planar Fit"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Indirect Methods",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What are the specific height and wind speed requirements for the Bowen-ratio method to be accurate?",
+    "answer": "The ratio of measurement heights must be > 4 (tall tower) and the horizontal wind speed must be > 1 m/s.",
+    "is_exam": false,
+    "tags": ["Bowen Ratio", "Requirements"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Energy Balance",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "How do biochemical energy storage and canopy heat storage influence the energy balance closure?",
+    "answer": "They represent energy storage terms (S) not measured as air fluxes. If ignored, the measured turbulent fluxes (H + LE) will be smaller than the net radiation, causing an energy balance gap.",
+    "is_exam": false,
+    "tags": ["Energy Balance", "Storage"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Indirect Methods",
+    "entry_type": "THEORY",
+    "difficulty": "HARD",
+    "question": "Compare HREA and DEC. Which method is better suited for substances where gas analyzers cannot react to very small concentration differences?",
+    "answer": "HREA is better because it uses a vertical wind threshold to sample only stronger eddies with detectable concentration signals. DEC is primarily for slow-response analyzers.",
+    "is_exam": false,
+    "tags": ["HREA", "DEC", "Indirect Methods"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Eddy Covariance",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Define the 'WPL Correction' (Webb-Pearman-Leuning) and explain the physical reason why it is necessary.",
+    "answer": "Correction for air density fluctuations. Necessary because analyzers measure concentration per volume; temperature and humidity changes alter volume, distorting the true molar flux calculation.",
+    "is_exam": false,
+    "tags": ["WPL", "Density", "EC"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Eddy Covariance",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "Explain the 'Control Volume Approach' in the context of NEE (Net Ecosystem Exchange).",
+    "answer": "NEE treats the ecosystem as a box where horizontal advection is ignored and steady-state is assumed, meaning the vertical flux measured at the top equals the net exchange at the surface.",
+    "is_exam": false,
+    "tags": ["NEE", "Control Volume"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Indirect Methods",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Mention three alternatives to Eddy Covariance for measuring energy fluxes and specify the core theory behind each.",
+    "answer": "1. Bowen-ratio (energy balance relationship), 2. HREA (flux-variance similarity), and 3. Profile methods (flux-gradient similarity/MOST).",
+    "is_exam": false,
+    "tags": ["Indirect Methods", "Fluxes"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Energy Balance",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Describe the 'Energy Balance Gap' and list the four categories of reasons why Q* != H + LE + G.",
+    "answer": "Systematic failure of measurements to account for all net radiation. Reasons: Instrument error, data processing error, additional energy sources/storage, and sub-mesoscale transport.",
+    "is_exam": false,
+    "tags": ["Energy Balance Gap", "Closure"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Atmospheric Structures",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "What is the difference between 'Turbulent Organized Structures' (TOS) and 'Thermally-induced Mesoscale Circulations' (TMC)?",
+    "answer": "TOS develop randomly and occur over homogeneous surfaces. TMC are specifically induced by surface heterogeneity (e.g., land-use differences) and do not occur over homogeneous surfaces.",
+    "is_exam": false,
+    "tags": ["TOS", "TMC", "Circulations"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Evaporation Modeling",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "What is the fundamental difference between potential and actual evaporation regarding water availability?",
+    "answer": "Potential evaporation assumes an unlimited water supply and is limited only by energy demand. Actual evaporation is restricted by real-world soil moisture availability and surface/canopy resistances.",
+    "is_exam": false,
+    "tags": ["Potential E", "Actual E", "Water Availability"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Evaporation Modeling",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Which modeling approaches are considered the most precise for estimating potential E(T) and actual E(T) on a daily basis?",
+    "answer": "Potential E: Penman and Priestley-Taylor. Actual E: Penman-Monteith approach, as it incorporates surface and canopy resistance logic.",
+    "is_exam": false,
+    "tags": ["Modeling", "Penman-Monteith", "Priestley-Taylor"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Evaporation Modeling",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Explain the role of the alpha_PT coefficient in the Priestley-Taylor approach and why it is typically set to 1.26.",
+    "answer": "It is an empirical coefficient accounting for the entrainment of dry air from the upper boundary layer. It is set to 1.26 to represent a 26% increase in evaporation over purely radiation-driven equilibrium conditions.",
+    "is_exam": false,
+    "tags": ["Priestley-Taylor", "Alpha_PT", "Equilibrium Evaporation"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Evaporation Modeling",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "How does the Penman-Monteith approach account for non-saturated surfaces compared to the original Penman approach?",
+    "answer": "It introduces surface/canopy resistance (rc) into the equation. While original Penman assumes a wet surface (rc=0), Penman-Monteith allows the model to simulate restricted water loss through stomata.",
+    "is_exam": false,
+    "tags": ["Penman-Monteith", "Resistance", "Stomata"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Resistance Concept",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "In the context of resistance assumptions, what physical layers do ra and rmt represent?",
+    "answer": "ra (Turbulence resistance) represents resistance within the turbulent layer. rmt (Molecular turbulence resistance) represents resistance within the viscous and molecular sub-layers near the surface.",
+    "is_exam": false,
+    "tags": ["Resistance", "Turbulence", "ra", "rmt"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Area Averaging",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Why is the parallel connection formula used when calculating total resistance for multiple adjacent landcovers?",
+    "answer": "Adjacent landcovers act as simultaneous, independent pathways for water vapor. According to Ohm's Law analogy, independent parallel pathways for a flux are modeled by adding their conductances (1/r).",
+    "is_exam": false,
+    "tags": ["Area Averaging", "Ohm's Law", "Parallel Resistance"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Area Averaging",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "Describe the difference between the Tile approach and the Subgrid method regarding the treatment of advection.",
+    "answer": "The Tile (Mosaic) approach averages fluxes by area-weighting while ignoring horizontal interaction. The Subgrid method uses multi-layer models to explicitly calculate how advection from one tile affects the next downwind.",
+    "is_exam": false,
+    "tags": ["Tile Approach", "Subgrid Method", "Advection"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Evaporation Modeling",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "Define the 'Big-Leaf Model' and explain its primary limitation when modeling a complex, multi-story forest.",
+    "answer": "It treats a whole canopy as a single uniform leaf with one resistance value. The limitation is that it ignores vertical gradients in light and wind, failing to capture the different behaviors of shaded understory vs sunlit overstory.",
+    "is_exam": false,
+    "tags": ["Big-Leaf", "Canopy", "Modeling Limitations"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Evaporation Modeling",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "In the Penman-Monteith equation, what happens to the Latent Heat Flux (QE) if the Aerodynamic Resistance (ra) decreases due to very high wind speeds?",
+    "answer": "QE increases. Lower ra means less resistance to vapor transport; higher winds remove humid air from the surface more efficiently, driving higher evaporation rates.",
+    "is_exam": false,
+    "tags": ["ra", "QE", "Wind Speed"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Evaporation Modeling",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "What is the 'Haude-factor' used for in the Sponagel-Haude approach, and why is this method considered low-accuracy?",
+    "answer": "It is a seasonal, land-cover-dependent factor used for monthly averages based on 2 p.m. measurements. It is low-accuracy because it is empirical and primarily calibrated for North-German flatlands.",
+    "is_exam": false,
+    "tags": ["Haude-factor", "Empirical Modeling"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Area Averaging",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Explain the difference between 'Parameter Aggregation' and 'Flux Aggregation' in the context of area averaging.",
+    "answer": "Parameter Aggregation averages surface properties (like z0) to create one 'effective' value. Flux Aggregation calculates fluxes for each patch first and then averages the results, which is more accurate due to non-linear atmospheric physics.",
+    "is_exam": false,
+    "tags": ["Aggregation", "Parameters", "Fluxes"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Evaporation Modeling",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Which specific term in the Penman equation represents the 'atmospheric pull' (drying power of the air) vs. the 'energy push' (net radiation)?",
+    "answer": "The (Q* - QG) term represents the 'Energy Push' (radiation-driven). The ventilation term Ea represents the 'Atmospheric Pull' (vapor pressure deficit and wind-driven).",
+    "is_exam": false,
+    "tags": ["Penman Equation", "Energy Push", "Atmospheric Pull"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Urban Climate",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "How do piped water supply (I) and water from combustion (F) change the urban water balance?",
+    "answer": "They are additional water inputs. The city equation becomes P + I + F = E + ΔS + G + ΔR, whereas natural fields only consider P as an input.",
+    "is_exam": false,
+    "tags": ["Water Balance", "Urban Inputs", "Piped Water"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Urban Heat Island",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "What is the difference between UHISurf and UHIUCL during the day and night?",
+    "answer": "UHISurf (surface temp) is strongest during the day due to solar heating of pavement. UHIUCL (air temp) is strongest at night due to radiation trapping and heat release from building mass.",
+    "is_exam": false,
+    "tags": ["UHI", "Surface vs Canopy", "Diurnal Cycle"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Urban Aerodynamics",
+    "entry_type": "THEORY",
+    "difficulty": "HARD",
+    "question": "Describe the behavior of roughness length (z0) as urban density increases from low to very high.",
+    "answer": "z0 initially increases with density as obstacles increase. At very high density, z0 decreases because the wind begins to 'skim' over the rooftops, effectively seeing a smoother surface.",
+    "is_exam": false,
+    "tags": ["Roughness Length", "Skimming Flow", "Urban Density"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Urban Hydrology",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Why does a commercial area produce 60% runoff compared to only 5% in a forest?",
+    "answer": "Due to the high fraction of impervious surfaces (concrete, asphalt) in commercial areas which prevent soil infiltration, forcing the majority of precipitation into the runoff term.",
+    "is_exam": false,
+    "tags": ["Runoff", "Impervious Surfaces", "Urban Hydrology"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Urban Aerodynamics",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "HARD",
+    "question": "What are 'sweeps' and 'ejections' in the context of urban momentum transport?",
+    "answer": "Sweeps are turbulent gusts that bring high-velocity air downward into the canopy. Ejections are upward movements that carry low-momentum air and pollutants out of the canopy layer.",
+    "is_exam": false,
+    "tags": ["Sweeps", "Ejections", "Momentum Transport"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Urban Heat Island",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Explain the role of weak background wind in the formation of an urban heat island dome.",
+    "answer": "Weak wind allows the city's buoyant, thermally-driven 'urban breeze' to form a localized dome. Strong winds would instead transport the heat away horizontally as a plume.",
+    "is_exam": false,
+    "tags": ["UHI", "Wind Speed", "Urban Dome"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Urban Energy Balance",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "Why is QF (anthropogenic heat) often difficult to measure individually in energy balance studies?",
+    "answer": "It originates from a vast number of mobile and stationary sources (cars, AC, heating) that are hard to isolate and measure with single sensors.",
+    "is_exam": false,
+    "tags": ["Anthropogenic Heat", "Energy Balance"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Urban Heat Island",
+    "entry_type": "CONCEPTUAL",
+    "difficulty": "MEDIUM",
+    "question": "How does the Sky View Factor (SVF) contribute to the formation of the nocturnal Urban Heat Island?",
+    "answer": "A low SVF means street canyons are narrow; this traps longwave radiation between building walls and prevents it from escaping to the cold sky at night.",
+    "is_exam": false,
+    "tags": ["SVF", "Radiation Trapping", "Nocturnal UHI"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Urban Hydrology",
+    "entry_type": "THEORY",
+    "difficulty": "EASY",
+    "question": "Contrast the urban water balance equation with the natural field water balance equation. What are the two unique urban inputs?",
+    "answer": "Urban: P + I + F = E + ΔS + G + ΔR. The two unique inputs are Piped Water (I) and Anthropogenic Water from combustion (F).",
+    "is_exam": false,
+    "tags": ["Water Balance", "Urban Inputs"]
+  },
+  {
+    "subject": "Climatology",
+    "topic": "Urban Aerodynamics",
+    "entry_type": "THEORY",
+    "difficulty": "MEDIUM",
+    "question": "What happens to the displacement height (zd) as building density increases?",
+    "answer": "zd increases with building density until it eventually reaches the average height of the building canopy (zH) in a fully built-up environment.",
+    "is_exam": false,
+    "tags": ["Displacement Height", "Urban Density"]
   }
 ]
