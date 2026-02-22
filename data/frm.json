@@ -1,0 +1,407 @@
+[
+  {
+    "subject": "Flood Risk Management",
+    "topic": "Vulnerability",
+    "entry_type": "THEORY",
+    "question": "Describe the three terms of the vulnerability concept.",
+    "answer": "Value: The importance, worth, or usefulness of something (economic, social, or ecological). Susceptibility: The state or fact of being likely or liable to be influenced or harmed by something. Coping capacity: The ability to deal effectively with something difficult and manage the aftermath.",
+    "is_exam": true,
+    "tags": ["Vulnerability", "Definitions"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "Asset Analysis",
+    "entry_type": "PROCESS",
+    "question": "Two steps for the asset analysis, and the data sources that can be used:",
+    "answer": "1. Land cover classification (for a spatial differentiation of vulnerability). 2. Data mining on socio-economic statistical sources to derive economic land use values. Data sources: CORINE and ATKIS.",
+    "is_exam": true,
+    "tags": ["Asset Analysis", "Data Sources"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "Vulnerability",
+    "entry_type": "THEORY",
+    "question": "Explain the three dimensions of vulnerability.",
+    "answer": "The intersection of Coping capacity x Function x Susceptibility across Social, economic, and physical dimensions.",
+    "is_exam": true,
+    "tags": ["Vulnerability", "Dimensions"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "Resilience",
+    "entry_type": "THEORY",
+    "question": "What are engineering resilience of building types?",
+    "answer": "Flood protection (External defense structures like dikes), Flood resistance (Preventing water from entering / dry-proofing), and Flood resilience (Minimizing impact and facilitating recovery / wet-proofing).",
+    "is_exam": true,
+    "tags": ["Resilience", "Engineering"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "Damage Categories",
+    "entry_type": "THEORY",
+    "question": "Which are the three categories of flood damage in buildings?",
+    "answer": "Moisture / water damages; Statical damages (Foundation, hydrostatic and flotsam damage, overloaded building components); Contamination damages (e.g., oil, chemicals).",
+    "is_exam": true,
+    "tags": ["Damage", "Buildings"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "Taxonomy",
+    "entry_type": "CONCEPTUAL",
+    "question": "Why is building taxonomy a prerequisite for damage simulation of buildings?",
+    "answer": "It is used to create a building type matrix to identify representative buildings for large-scale modeling.",
+    "is_exam": true,
+    "tags": ["Taxonomy", "Modeling"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "Taxonomy",
+    "entry_type": "THEORY",
+    "question": "Mention four factors of building taxonomy:",
+    "answer": "Geometric (Area, elongatedness, height); Surface (Roof slope, roof vertices form); Topology (Compactness, adjacency).",
+    "is_exam": true,
+    "tags": ["Taxonomy", "Parameters"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "Flood Variables",
+    "entry_type": "THEORY",
+    "question": "Which variables are important for static and dynamic floods?",
+    "answer": "Rainfall, topography, soil, land use, flood movement, and impact.",
+    "is_exam": true,
+    "tags": ["Variables", "Flood Dynamics"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "Flood Types",
+    "entry_type": "COMPARISON",
+    "question": "How do variables behave in the two flood types (Flash vs. Plain)?",
+    "answer": "Flash floods (dynamic): High velocity, high energy, short warning time. Plain floods (static): Slow rise, long duration, high water depth.",
+    "is_exam": true,
+    "tags": ["Flash Flood", "Plain Flood"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "Proofing",
+    "entry_type": "COMPARISON",
+    "question": "Difference between wet proofing and dry proofing?",
+    "answer": "Dry proofing: Keeping water out via permanent or mobile barrier systems. Wet proofing: Allowing water in but using water-proof materials and relocating/elevating central heating and utilities.",
+    "is_exam": true,
+    "tags": ["Wet Proofing", "Dry Proofing"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "Damage Functions",
+    "entry_type": "PROCESS",
+    "question": "Steps to derive a depth-damage function?",
+    "answer": "1. Building taxonomy & determination of representative buildings. 2. Simulation of synthetic flood stages and damage types. 3. Specification and monetization of replacement/repair costs. 4. Correlation of monetary damage to flood stage/water depth per building type.",
+    "is_exam": true,
+    "tags": ["Depth-Damage", "Economics"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "MCE",
+    "entry_type": "THEORY",
+    "question": "Describe two functions of MCE (Multi-criteria Evaluation):",
+    "answer": "MADM: Finite alternatives with weights for rankings. MODM: Infinite/continuous alternatives using linear programming (optimization).",
+    "is_exam": true,
+    "tags": ["MCE", "MADM", "MODM"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "MCE",
+    "entry_type": "PROCESS",
+    "question": "What are the general MCE Steps?",
+    "answer": "1. Impact analysis (assignment of criteria + individual evaluation). 2. Equity analysis (assignment of weights + ranking).",
+    "is_exam": true,
+    "tags": ["MCE", "Steps"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "Risk Evaluation",
+    "entry_type": "THEORY",
+    "question": "Definition of risk evaluation:",
+    "answer": "The systematic investigation of an evaluand's worth and merits, where risk is the probability of negative consequences.",
+    "is_exam": true,
+    "tags": ["Risk Evaluation", "Definitions"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "Swiss Matrix",
+    "entry_type": "THEORY",
+    "question": "Variables defined in the Swiss matrix for risk hazard with units:",
+    "answer": "Probability: Years. High (1-50 yr), Medium (100-200 yr), Low (300+ yr). Intensity: Depth (d) and Flow Velocity (v * d).",
+    "is_exam": true,
+    "tags": ["Swiss Matrix", "Probability", "Intensity"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "Swiss Matrix",
+    "entry_type": "THEORY",
+    "question": "Intensity thresholds in the Swiss Matrix:",
+    "answer": "Strong: d > 2m or v * d > 2 m^2/s. Medium: d > 0.5m or v * d > 0.5 m^2/s. Low: d < 0.5m and v * d < 0.5 m^2/s.",
+    "is_exam": true,
+    "tags": ["Swiss Matrix", "Thresholds"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "Efficiency",
+    "entry_type": "THEORY",
+    "question": "What is efficiency in FRM?",
+    "answer": "Measured as cost-effectiveness (expenditure vs. outcomes) or benefit-cost ratio (monetary benefits vs. costs).",
+    "is_exam": true,
+    "tags": ["Efficiency", "Cost-Benefit"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "MCE",
+    "entry_type": "PROCESS",
+    "question": "Analyse the first step of multi-criteria evaluation (Impact Analysis):",
+    "answer": "Determination of relevant indicators/criteria, definition of targets/thresholds, and calculation of individual indicators.",
+    "is_exam": true,
+    "tags": ["MCE", "Impact Analysis"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "MCE",
+    "entry_type": "PROCESS",
+    "question": "Analyse the second step of multi-criteria evaluation (Equity Analysis):",
+    "answer": "Adjustment of weights for each indicator/criteria to reach a final evaluation or ranking.",
+    "is_exam": true,
+    "tags": ["MCE", "Equity Analysis"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "Risk Analysis",
+    "entry_type": "THEORY",
+    "question": "What is risk analysis and how is it done?",
+    "answer": "The structured process of identifying and assessing potential threats. It is done by calculating the probability of an event and its potential consequences (R = P x C).",
+    "is_exam": true,
+    "tags": ["Risk Analysis", "Calculations"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "Scenarios",
+    "entry_type": "PROCESS",
+    "question": "Five steps of scenario development (Parameterized regional futures):",
+    "answer": "1. Delineation and description of the system. 2. Coupled modeling for system simulation. 3. Formulation/parameterization of scenarios. 4. Composition of futures. 5. Ex-ante analysis and evaluation.",
+    "is_exam": true,
+    "tags": ["Scenarios", "Methodology"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "Scenarios",
+    "entry_type": "THEORY",
+    "question": "In which framework are the five scenario steps embedded?",
+    "answer": "They are embedded in the Scenario Planning framework (Development and Analysis phases).",
+    "is_exam": true,
+    "tags": ["Scenarios", "Framework"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "Scenarios",
+    "entry_type": "THEORY",
+    "question": "Definition of scenario:",
+    "answer": "A coherent, consistent, and plausible description of a possible future situation based on specific assumptions.",
+    "is_exam": true,
+    "tags": ["Scenarios", "Definition"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "Scenarios",
+    "entry_type": "THEORY",
+    "question": "How is scenario development done, what are storylines?",
+    "answer": "Storylines describe developments and relationships between system elements (factors) prone to change, which are then shown in projections.",
+    "is_exam": true,
+    "tags": ["Scenarios", "Storylines"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "Scenarios",
+    "entry_type": "PROCESS",
+    "question": "How is scenario planning done?",
+    "answer": "Done in two phases: Scenario Development (system delineation, drivers, projections) and Scenario Analysis.",
+    "is_exam": true,
+    "tags": ["Scenarios", "Planning"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "Scenarios",
+    "entry_type": "THEORY",
+    "question": "Types of scenarios:",
+    "answer": "Explorative (Forecasting current trends); Normative (Target-reaching or futures to avoid); Policy scenarios (Testing intended policy actions).",
+    "is_exam": true,
+    "tags": ["Scenarios", "Types"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "LU/LC",
+    "entry_type": "COMPARISON",
+    "question": "Differences between land cover and land use:",
+    "answer": "Land cover: Observable physical/biological cover (soil, vegetation). Land use: Human arrangements, activities, and objectives on that surface.",
+    "is_exam": true,
+    "tags": ["Land Cover", "Land Use"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "LU/LC",
+    "entry_type": "PROCESS",
+    "question": "How is LU/LC projected?",
+    "answer": "1. Retrospective analysis. 2. Allocation of LC class changes. 3. Projection of demand for LC classes.",
+    "is_exam": true,
+    "tags": ["LU/LC", "Projection"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "Strategy",
+    "entry_type": "COMPARISON",
+    "question": "Differences between measures and instruments?",
+    "answer": "Measures: Direct biophysical impact (dikes). Instruments: Indirect mechanisms triggering impact (regulations, incentives).",
+    "is_exam": true,
+    "tags": ["Measures", "Instruments"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "Measures",
+    "entry_type": "THEORY",
+    "question": "What are the categories of measures?",
+    "answer": "Adaptation (biophysical), Control (built structures), and Retreat (relocation).",
+    "is_exam": true,
+    "tags": ["Measures", "Categories"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "Instruments",
+    "entry_type": "THEORY",
+    "question": "What are the categories of instruments?",
+    "answer": "Regulation (laws), Stimulation (financial), Compensation (risk distribution), and Information (hazard maps).",
+    "is_exam": true,
+    "tags": ["Instruments", "Categories"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "SPRC",
+    "entry_type": "THEORY",
+    "question": "Explain the SPRC model:",
+    "answer": "Source: Origin (Rain); Pathway: Route (Inundation); Receptor: Entity affected (People/Property); Consequence: Final impact (Economic/Social loss).",
+    "is_exam": true,
+    "tags": ["SPRC", "Risk Model"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "Intervention",
+    "entry_type": "THEORY",
+    "question": "What are the intervention forms?",
+    "answer": "Pre-event (Prevention, Protection, Preparedness); Event (Defense, Warning, Response); Post-event (Recovery).",
+    "is_exam": true,
+    "tags": ["Intervention", "Phases"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "IWRM",
+    "entry_type": "THEORY",
+    "question": "Types of actors relevant in IWRM:",
+    "answer": "State/regional authorities, municipalities, citizens, businesses, and scientific organizations.",
+    "is_exam": true,
+    "tags": ["Actors", "IWRM"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "Networks",
+    "entry_type": "THEORY",
+    "question": "What are networks and which types are there?",
+    "answer": "Social/organizational structures: Evolutionary (emergent) or Goal-directed (planned).",
+    "is_exam": true,
+    "tags": ["Networks", "Types"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "Strategy",
+    "entry_type": "THEORY",
+    "question": "What are strategies?",
+    "answer": "Social processes where diverse stakeholders come together to design plan-making processes.",
+    "is_exam": true,
+    "tags": ["Strategy", "Definition"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "EU Directive",
+    "entry_type": "THEORY",
+    "question": "Describe three instruments of risk evaluation (EU Directive):",
+    "answer": "Preliminary flood risk map, Flood hazard/risk maps, and FRM Plans.",
+    "is_exam": true,
+    "tags": ["EU Directive", "Instruments"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "Public Participation",
+    "entry_type": "THEORY",
+    "question": "Importance of public participation in FRM:",
+    "answer": "Ensures communication of facts, improves plan plausibility, and increases overall benefits/acceptance.",
+    "is_exam": true,
+    "tags": ["Participation", "Governance"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "Legislation",
+    "entry_type": "THEORY",
+    "question": "What is primary vs. secondary legislation?",
+    "answer": "Primary: Treaties (Constitutional law, e.g., Lisbon). Secondary: Regulations (direct), Directives (transposed), and Decisions.",
+    "is_exam": true,
+    "tags": ["Legislation", "EU"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "EU Institutions",
+    "entry_type": "THEORY",
+    "question": "What are the institutions of the EU?",
+    "answer": "Parliament (Citizens), Council (Member States), Commission (Union interest).",
+    "is_exam": true,
+    "tags": ["EU", "Institutions"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "Solidarity",
+    "entry_type": "THEORY",
+    "question": "What is the principle of solidarity?",
+    "answer": "Measures in one state should not significantly increase flood risk for neighbors (upstream/downstream).",
+    "is_exam": true,
+    "tags": ["Solidarity", "Transboundary"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "Spatial Planning",
+    "entry_type": "THEORY",
+    "question": "Why is spatial planning important for FRM?",
+    "answer": "It coordinates differing demands, resolves spatial conflicts, and safeguards land use functions.",
+    "is_exam": true,
+    "tags": ["Spatial Planning", "Coordination"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "Exam MHSE",
+    "entry_type": "THEORY",
+    "question": "Objectives of the Sendai Framework for Disaster Risk Reduction (4 main)",
+    "answer": "State primary responsibility to reduce risk; shared responsibility with local authorities; protecting persons/property/health; empowering local communities.",
+    "is_exam": true,
+    "tags": ["Sendai", "DRR"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "Exam MHSE",
+    "entry_type": "CONCEPTUAL",
+    "question": "To predict a plain flood downstream, what is more important? Rainfall upstream, Temporal development of the discharge upstream, or Discharge upstream?",
+    "answer": "Temporal development of the discharge upstream is most important because plain floods result from the accumulation of water volume over time.",
+    "is_exam": true,
+    "tags": ["Prediction", "Plain Flood"]
+  },
+  {
+    "subject": "Flood Risk Management",
+    "topic": "Exam MHSE",
+    "entry_type": "THEORY",
+    "question": "What is the difference between efficiency and effectiveness in risk evaluation?",
+    "answer": "Effectiveness is the general degree of achievement of goals; efficiency is the degree of economical achievement (e.g., benefit-cost ratio).",
+    "is_exam": true,
+    "tags": ["Evaluation", "Efficiency", "Effectiveness"]
+  }
+]

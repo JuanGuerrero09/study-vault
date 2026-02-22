@@ -1,3 +1,4 @@
+from operator import sub
 import json
 import os
 import random
@@ -55,6 +56,10 @@ def list_files():
 @app.get("/api/note/{subject}")
 async def get_note(subject: str):
     # Security: ensure we only read .md files from data folder
+    if subject.lower() not in ["hydrology", "climatology", "flood risk management"]:
+        return PlainTextResponse("Invalid subject", status_code=400)
+    if subject.lower() == "flood risk management":
+        subject = "frm"
     filename = f"{subject.lower()}_notes.md"
     file_path = os.path.join("data", filename)
 
@@ -75,6 +80,10 @@ async def get_questions(
     is_exam: Optional[bool] = None,
     limit: Optional[int] = None,  # New parameter
 ):
+    if subject.lower() not in ["hydrology", "climatology", "flood risk management"]:
+        raise HTTPException(status_code=400, detail="Invalid subject")
+    if subject.lower() == "flood risk management":
+        subject = "frm"
     file_path = os.path.join("data", f"{subject.lower()}.json")  # type: ignore
 
     if not os.path.exists(file_path):
